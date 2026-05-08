@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Dental Sonrisa Familiar - CDMX</title>
+    <style>
+        :root {
+            --color-blanco: #ffffff;
+            --color-azul-cielo: #87ceeb;
+            --color-menta: #98ff98;
+            --color-azul-oscuro: #2c3e50;
+            --color-gris-claro: #f8f8f8;
+            --color-gris-medio: #ecf0f1;
+            --color-texto-principal: #333;
+            --color-texto-secundario: #555;
+            --fuente-sistema: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            --espaciado-seccion: 60px;
+            --borde-redondeado: 8px;
+        }
+
+        body {
+            font-family: var(--fuente-sistema);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: var(--color-texto-principal);
+            background-color: var(--color-blanco);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: var(--color-azul-cielo);
+            color: var(--color-blanco);
+            text-align: center;
+            padding: var(--espaciado-seccion) 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 70vh;
+            box-sizing: border-box;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero h1 {
+            font-size: 2.8em;
+            margin-bottom: 15px;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.3em;
+            margin-bottom: 30px;
+            max-width: 700px;
+            opacity: 0.9;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--color-menta);
+            color: var(--color-azul-oscuro);
+            padding: 15px 30px;
+            border-radius: var(--borde-redondeado);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta-button:hover {
+            background-color: #7de07d; /* Menta un poco más oscura */
+            transform: translateY(-2px);
+        }
+
+        /* Value Sections */
+        .value-section {
+            background-color: var(--color-gris-claro);
+            padding: var(--espaciado-seccion) 20px;
+            text-align: center;
+        }
+
+        .value-section:nth-of-type(odd) {
+            background-color: var(--color-blanco);
+        }
+
+        .value-section h2 {
+            font-size: 2.2em;
+            margin-bottom: 40px;
+            color: var(--color-azul-oscuro);
+        }
+
+        .value-cards {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        @media (min-width: 768px) {
+            .value-cards {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .card {
+            background-color: var(--color-blanco);
+            padding: 30px;
+            border-radius: var(--borde-redondeado);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+        }
+
+        .card svg {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 20px;
+            fill: var(--color-azul-cielo);
+        }
+
+        .card h3 {
+            font-size: 1.4em;
+            margin-bottom: 15px;
+            color: var(--color-azul-oscuro);
+        }
+
+        .card p {
+            font-size: 1em;
+            color: var(--color-texto-secundario);
+        }
+
+        /* Testimonial Section */
+        .testimonial-section {
+            background-color: var(--color-azul-cielo);
+            color: var(--color-blanco);
+            padding: var(--espaciado-seccion) 20px;
+            text-align: center;
+        }
+
+        .testimonial-section h2 {
+            font-size: 2.2em;
+            margin-bottom: 40px;
+        }
+
+        .testimonial-card {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.15);
+            padding: 40px;
+            border-radius: var(--borde-redondeado);
+            font-style: italic;
+            font-size: 1.2em;
+            line-height: 1.8;
+        }
+
+        .testimonial-card p:first-of-type {
+            margin-bottom: 20px;
+        }
+
+        .testimonial-card span {
+            display: block;
+            margin-top: 20px;
+            font-weight: bold;
+            font-style: normal;
+        }
+
+        /* Final CTA Section */
+        .final-cta-section {
+            background-color: var(--color-gris-medio);
+            padding: var(--espaciado-seccion) 20px;
+            text-align: center;
+        }
+
+        .final-cta-section h2 {
+            font-size: 2em;
+            margin-bottom: 30px;
+            color: var(--color-azul-oscuro);
+        }
+
+        /* Footer */
+        .footer {
+            background-color: var(--color-azul-oscuro);
+            color: var(--color-blanco);
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 0.9em;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 2em;
+            }
+
+            .hero p {
+                font-size: 1em;
+            }
+
+            .cta-button {
+                padding: 12px 25px;
+                font-size: 1em;
+            }
+
+            .value-section h2,
+            .testimonial-section h2,
+            .final-cta-section h2 {
+                font-size: 1.8em;
+            }
+
+            .testimonial-card {
+                padding: 25px;
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="container">
+            <h1>Tu Sonrisa, Nuestra Familia. Cuidado Dental de Confianza en CDMX.</h1>
+            <p>En Clínica Sonrisa Familiar, transformamos las visitas al dentista en experiencias cálidas y seguras para toda la familia. Modernidad y empatía para tu salud bucal.</p>
+            <a href="#contacto" class="cta-button">Reserva tu primera consulta</a>
+        </div>
+    </div>
+
+    <div class="value-section">
+        <div class="container">
+            <h2>¿Por qué elegir Sonrisa Familiar?</h2>
+            <div class="value-cards">
+                <div class="card">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15L6 12.5l1.41-1.41L11 14.17l4.59-4.59L17 11l-6 6z"/>
+                    </svg>
+                    <h3>Atención Familiar y Cercana</h3>
+                    <p>Creamos un ambiente donde cada miembro de tu familia, desde los más pequeños, se siente cómodo y cuidado.</p>
+                </div>
+                <div class="card">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 9h-2V7h2v2zm0 4h-2v-2h2v2zm0 4h-2v-2h2v2zm-1-9c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm0-7C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
+                    </svg>
+                    <h3>Tecnología Avanzada</h3>
+                    <p>Utilizamos equipos de última generación para diagnósticos precisos y tratamientos efectivos, con la mínima incomodidad.</p>
+                </div>
+                <div class="card">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 12c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0-10C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+                    </svg>
+                    <h3>Resultados que Inspiran Confianza</h3>
+                    <p>Desde la salud bucal integral hasta la estética dental, te ayudamos a lograr la sonrisa sana y brillante que siempre quisiste.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="testimonial-section">
+        <div class="container">
+            <h2>Lo que dicen nuestras familias</h2>
+            <div class="testimonial-card">
+                <p>"¡La mejor clínica dental! Son muy profesionales y todo el personal es excelente. Toda mi familia lleva años viniendo aquí. Te recuerdan tus citas y hacen que ir al dentista sea una experiencia agradable y sin estrés."</p>
+                <span>— Familia Rodríguez, CDMX</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="final-cta-section">
+        <div class="container">
+            <h2>Da el primer paso hacia una sonrisa más sana hoy.</h2>
+            <a href="#contacto" class="cta-button">Reserva tu primera consulta</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <p>&copy; 2026 Clínica Dental Sonrisa Familiar. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</body>
+</html>
