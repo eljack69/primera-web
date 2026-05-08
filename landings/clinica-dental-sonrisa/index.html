@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Dental Avanzada | Sonrisa sin dolor</title>
+    <style>
+        :root {
+            --color-primary: #0A1931; /* Azul Marino Profundo */
+            --color-secondary: #F8F8F8; /* Blanco Hueso */
+            --color-accent: #66CCCC; /* Menta Turquesa */
+            --font-family-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        body {
+            font-family: var(--font-family-sans);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: var(--color-primary);
+            background-color: var(--color-secondary);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: var(--color-primary);
+            color: var(--color-secondary);
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.8em;
+            margin-bottom: 10px;
+            line-height: 1.1;
+        }
+
+        header p {
+            font-size: 1.3em;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--color-accent);
+            color: var(--color-primary);
+            padding: 15px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #4CAF50; /* Un verde un poco más oscuro para el hover */
+        }
+
+        .section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .section:nth-of-type(odd) {
+            background-color: var(--color-secondary);
+        }
+
+        .section:nth-of-type(even) {
+            background-color: #E0E7EB; /* Un gris claro sutil */
+        }
+
+        .section h2 {
+            font-size: 2.2em;
+            margin-bottom: 40px;
+            color: var(--color-primary);
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .feature-item {
+            flex: 1 1 300px;
+            max-width: 350px;
+            background-color: #FFFFFF;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            text-align: left;
+        }
+
+        .feature-item svg {
+            color: var(--color-accent);
+            margin-bottom: 20px;
+            width: 48px;
+            height: 48px;
+        }
+
+        .feature-item h3 {
+            font-size: 1.5em;
+            margin-top: 0;
+            color: var(--color-primary);
+        }
+
+        .feature-item p {
+            font-size: 1em;
+            color: #555;
+        }
+
+        .testimonial-section {
+            background-color: var(--color-primary);
+            color: var(--color-secondary);
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .testimonial-section h2 {
+            color: var(--color-secondary);
+            margin-bottom: 20px;
+        }
+
+        .testimonial-text {
+            font-size: 1.4em;
+            font-style: italic;
+            max-width: 800px;
+            margin: 0 auto 20px auto;
+            line-height: 1.5;
+        }
+
+        .testimonial-author {
+            font-weight: bold;
+            font-size: 1.1em;
+            opacity: 0.8;
+        }
+
+        footer {
+            background-color: var(--color-primary);
+            color: var(--color-secondary);
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 0.9em;
+            opacity: 0.7;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            header p {
+                font-size: 1.1em;
+            }
+
+            .section h2 {
+                font-size: 1.8em;
+            }
+
+            .features {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .feature-item {
+                max-width: 100%;
+            }
+
+            .testimonial-text {
+                font-size: 1.1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Tu Sonrisa Perfecta Empieza Aquí</h1>
+            <p>Descubre la estética dental sin dolor con tecnología 3D, blanqueamiento láser y ortodoncia invisible. <br>Innovación y comodidad para una sonrisa que te encantará.</p>
+            <a href="#contacto" class="cta-button">Agenda tu primera consulta gratis</a>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <h2>Tecnología Avanzada para tu Bienestar</h2>
+            <div class="features">
+                <div class="feature-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+                    </svg>
+                    <h3>Diagnóstico Digital Preciso</h3>
+                    <p>Utilizamos lo último en tecnología de imagen 3D para un diagnóstico exacto y planes de tratamiento personalizados, minimizando invasiones y maximizando resultados.</p>
+                </div>
+                <div class="feature-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h2v-4h-2v4zm0-6h2V7h-2v4z"/>
+                    </svg>
+                    <h3>Blanqueamiento Láser Efectivo</h3>
+                    <p>Consigue una sonrisa más blanca y brillante en una sola sesión con nuestro avanzado tratamiento de blanqueamiento láser, seguro y sin sensibilidad.</p>
+                </div>
+                <div class="feature-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 14c-2.76 0-5-2.24-5-5h2c0 1.66 1.34 3 3 3s3-1.34 3-3-1.34-3-3-3V7c3.87 0 7 3.13 7 7s-3.13 7-7 7z"/>
+                    </svg>
+                    <h3>Ortodoncia Invisible Personalizada</h3>
+                    <p>Alinea tus dientes discretamente con la ortodoncia invisible. Tratamientos cómodos y estéticos, diseñados para adaptarse a tu ritmo de vida.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonial-section">
+        <div class="container">
+            <h2>Resultados que te hacen sonreír</h2>
+            <p class="testimonial-text">"Siempre tuve miedo al dentista, pero en esta clínica todo fue diferente. El trato es increíble, la tecnología me dio mucha confianza y mi blanqueamiento láser fue totalmente sin dolor. ¡Mi sonrisa nunca se vio tan bien!"</p>
+            <p class="testimonial-author">— María G., 34 años</p>
+        </div>
+    </section>
+
+    <section class="section" id="contacto">
+        <div class="container">
+            <h2>¿Listo para transformar tu sonrisa?</h2>
+            <p style="margin-bottom: 30px;">Agenda hoy mismo tu primera consulta gratuita y descubre cómo podemos ayudarte a conseguir la sonrisa que siempre has deseado.</p>
+            <a href="#" class="cta-button">Agenda tu primera consulta gratis</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Clínica Dental Avanzada. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
