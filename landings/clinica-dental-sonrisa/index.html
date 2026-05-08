@@ -3,42 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Clínica dental moderna en 2026: tecnología 3D, blanqueamiento láser, ortodoncia invisible y diagnóstico digital. Agenda tu primera consulta gratis.">
-    <meta name="keywords" content="clínica dental, estética dental, tecnología 3D, blanqueamiento láser, ortodoncia invisible, diagnóstico digital, sin dolor, sonrisa, salud dental">
-    <meta name="author" content="Clínica Sonrisa Futura">
-    <title>Clínica Sonrisa Futura | Estética Dental Avanzada 2026</title>
+    <title>Clínica NovaDental | Sonríe al Futuro</title>
     <style>
         :root {
-            --color-navy-deep: #0A1128;
-            --color-bone-white: #F8F7F4;
-            --color-mint-turquoise: #2EC4B6;
-            --color-mint-dark: #26A89B; /* Slightly darker mint for hover */
-            --color-text-light: rgba(248, 247, 244, 0.85);
-            --color-text-dark: var(--color-navy-deep);
-
-            --space-xs: 0.5rem;
-            --space-sm: 1rem;
-            --space-md: 2rem;
-            --space-lg: 3rem;
-            --space-xl: 4rem;
-            --space-xxl: 6rem;
-
-            --font-size-sm: 0.9rem;
-            --font-size-base: 1rem;
-            --font-size-md: 1.25rem;
-            --font-size-lg: 1.5rem;
-            --font-size-xl: 2.25rem;
-            --font-size-xxl: 3rem;
-            --font-size-xxxl: 4rem;
-
+            --color-primary: #001F3F; /* Azul Marino Profundo */
+            --color-secondary: #F8F8F0; /* Blanco Hueso */
+            --color-accent: #66CCB3; /* Menta Turquesa */
+            --color-text: #333;
+            --color-light-text: #666;
+            --spacing-unit: 1rem;
             --border-radius: 0.5rem;
-            --transition-speed: 0.3s;
-        }
-
-        *, *::before, *::after {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
         }
 
         html {
@@ -46,84 +20,301 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            margin: 0;
+            padding: 0;
             line-height: 1.6;
-            color: var(--color-bone-white);
-            background-color: var(--color-navy-deep);
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-            min-height: 100vh;
+            color: var(--color-text);
+            background-color: var(--color-secondary);
             display: flex;
             flex-direction: column;
+            min-height: 100vh;
         }
 
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 var(--space-md);
+            padding: var(--spacing-unit);
+        }
+
+        header {
+            background-color: var(--color-primary);
+            color: var(--color-secondary);
+            padding: var(--spacing-unit) 0;
+            text-align: center;
+        }
+
+        .hero {
+            background-color: var(--color-primary);
+            color: var(--color-secondary);
+            text-align: center;
+            padding: 4rem var(--spacing-unit);
+            min-height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at top left, rgba(102, 204, 179, 0.1) 0%, transparent 50%),
+                        radial-gradient(circle at bottom right, rgba(102, 204, 179, 0.1) 0%, transparent 50%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+            line-height: 1.1;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            color: rgba(248, 248, 240, 0.8);
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--color-accent);
+            color: var(--color-primary);
+            padding: 1rem 2rem;
+            border-radius: var(--border-radius);
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+            border: none;
+            cursor: pointer;
+            font-size: 1.1rem;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            background-color: #50bda4;
         }
 
         section {
-            padding: var(--space-xl) 0;
-            position: relative;
+            padding: 4rem var(--spacing-unit);
+            text-align: center;
         }
 
-        h1, h2, h3 {
-            line-height: 1.2;
-            margin-bottom: var(--space-sm);
+        section:nth-of-type(even) {
+            background-color: var(--color-secondary);
+        }
+
+        h2 {
+            font-size: 2.2rem;
+            margin-bottom: 2.5rem;
+            color: var(--color-primary);
             font-weight: 600;
         }
 
-        h1 { font-size: var(--font-size-xl); }
-        h2 { font-size: var(--font-size-lg); }
-        h3 { font-size: var(--font-size-md); }
+        .features {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .feature-item {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+            text-align: left;
+        }
+
+        .feature-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-item svg {
+            width: 4rem;
+            height: 4rem;
+            color: var(--color-accent);
+            margin-bottom: 1.5rem;
+            display: block;
+        }
+
+        .feature-item h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--color-primary);
+        }
+
+        .feature-item p {
+            color: var(--color-light-text);
+        }
+
+        .stats-section {
+            background-color: var(--color-primary);
+            color: var(--color-secondary);
+            padding: 4rem var(--spacing-unit);
+            text-align: center;
+        }
+
+        .stats-section h2 {
+            color: var(--color-secondary);
+        }
+
+        .testimonial {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.25rem;
+            font-style: italic;
+            color: rgba(248, 248, 240, 0.9);
+            margin-bottom: 1.5rem;
+        }
+
+        .testimonial-author {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--color-accent);
+        }
+
+        .cta-final {
+            background-color: var(--color-secondary);
+            padding: 5rem var(--spacing-unit);
+            text-align: center;
+        }
+
+        .cta-final h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        footer {
+            background-color: var(--color-primary);
+            color: rgba(248, 248, 240, 0.7);
+            text-align: center;
+            padding: 1.5rem var(--spacing-unit);
+            margin-top: auto;
+            font-size: 0.9rem;
+        }
 
         @media (min-width: 768px) {
-            h1 { font-size: var(--font-size-xxl); }
-            h2 { font-size: var(--font-size-xl); }
-            h3 { font-size: var(--font-size-lg); }
-        }
+            .hero h1 {
+                font-size: 4rem;
+            }
 
-        @media (min-width: 1024px) {
-            h1 { font-size: var(--font-size-xxxl); }
-        }
+            .hero p {
+                font-size: 1.6rem;
+            }
 
-        p {
-            margin-bottom: var(--space-sm);
-            color: var(--color-text-light);
-        }
+            .features {
+                grid-template-columns: repeat(3, 1fr);
+            }
 
-        .button {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            padding: var(--space-sm) var(--space-lg);
-            background-color: var(--color-mint-turquoise);
-            color: var(--color-navy-deep);
-            text-decoration: none;
-            font-weight: 700;
-            border-radius: var(--border-radius);
-            transition: background-color var(--transition-speed) ease, transform var(--transition-speed) ease;
-            white-space: nowrap;
-            font-size: var(--font-size-base);
-            border: none;
-            cursor: pointer;
-        }
+            .feature-item {
+                padding: 2.5rem;
+            }
 
-        .button:hover, .button:focus-visible {
-            background-color: var(--color-mint-dark);
-            transform: translateY(-2px);
-            outline: 2px solid var(--color-bone-white);
-            outline-offset: 2px;
-        }
+            .feature-item svg {
+                margin-bottom: 2rem;
+            }
 
-        .button:active {
-            transform: translateY(0);
-        }
+            .feature-item h3 {
+                font-size: 1.8rem;
+            }
 
-        /* Hero Section */
-        .hero {
-            background-color: var(--color-navy-deep);
-            color: var(--color-bone-white);
-            text-align: center;
-            padding: var(--space-
+            h2 {
+                font-size: 3rem;
+            }
+
+            .cta-final h2 {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <!-- Minimal nav for a single-page landing -->
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Tu Sonrisa, Nuestra Tecnología</h1>
+                <p>Experimenta la odontología del futuro: sin dolor, precisa y diseñada para ti. Descubre una nueva era en estética y salud dental.</p>
+                <a href="#cta" class="btn">Agenda tu primera consulta gratis</a>
+            </div>
+        </section>
+
+        <section id="servicios">
+            <div class="container">
+                <h2>Innovación al servicio de tu Bienestar</h2>
+                <div class="features">
+                    <div class="feature-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                        <h3>Diagnóstico Digital 3D</h3>
+                        <p>Precisión milimétrica para tratamientos personalizados. Visualiza tu sonrisa antes de empezar con nuestra tecnología de escaneo 3D.</p>
+                    </div>
+                    <div class="feature-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M10.29 3.86L1.82 17.06c-.83 1.43.2 3.22 1.82 3.22h16.72c1.62 0 2.65-1.79 1.82-3.22L13.71 3.86c-.83-1.43-2.19-1.43-3.02 0zM12 9v4m0 4h.01"/>
+                        </svg>
+                        <h3>Blanqueamiento Láser Avanzado</h3>
+                        <p>Resultados espectaculares en una sola sesión. Olvídate de las manchas y luce una sonrisa más blanca y brillante de forma segura.</p>
+                    </div>
+                    <div class="feature-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M19 12H5M12 19V5"/>
+                        </svg>
+                        <h3>Ortodoncia Invisible</h3>
+                        <p>Corrige tu sonrisa discretamente con alineadores transparentes. Comodidad y estética para un tratamiento sin que nadie lo note.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats-section">
+            <div class="container">
+                <h2>La Opinión de Nuestros Pacientes</h2>
+                <p class="testimonial">"Después de años posponiendo mi tratamiento, NovaDental me dio la confianza que necesitaba. La ortodoncia invisible fue increíble, ¡y mi sonrisa nunca se vio tan bien! Sin dolor y con un equipo humano excepcional."</p>
+                <p class="testimonial-author">— Ana P., 34 años</p>
+            </div>
+        </section>
+
+        <section id="cta" class="cta-final">
+            <div class="container">
+                <h2>¿Listo para Transformar tu Sonrisa?</h2>
+                <p>Agenda tu primera consulta gratis y descubre cómo podemos ayudarte a lograr la sonrisa que siempre has deseado.</p>
+                <a href="mailto:info@novadental.com?subject=Consulta%20Gratis%20NovaDental" class="btn">Agenda tu Consulta Hoy</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Clínica NovaDental. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
