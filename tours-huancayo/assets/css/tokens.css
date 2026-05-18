@@ -1,0 +1,122 @@
+:root {
+  /* === Paleta · Andino editorial ===
+     Crema cálida + teal de laguna andina + cobre/terracota
+     Inspirada en el Mantaro, Paca y los textiles wanka */
+  --color-bg:        #f4efe6;   /* crema base */
+  --color-bg-alt:    #ede5d4;   /* arena cálida */
+  --color-bg-soft:   #faf7f0;   /* ivory */
+  --color-surface:   #ffffff;
+  --color-text:      #1c1a17;
+  --color-text-muted:#5a5347;   /* WCAG AA en xs/2xs sobre las 3 cremas */
+  --color-border:    #ddd3bf;
+  --color-hairline:  #c9bda3;   /* línea fina editorial */
+
+  --color-accent:        #1f5d68; /* teal laguna Paca */
+  --color-accent-hover:  #174a55;
+  --color-accent-soft:   #cfe0e3;
+  --color-accent-glow:   #9ec5cb;
+
+  --color-secondary:     #9a6840; /* cobre andino — AA sobre dark */
+  --color-secondary-soft:#ecd6c0;
+
+  --color-dark:      #14201f;
+  --color-dark-text: #f4efe6;
+
+  /* Tipografía */
+  --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
+  --font-sans:    'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono:    ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --fs-2xs:  0.6875rem;
+  --fs-xs:   0.75rem;
+  --fs-sm:   0.875rem;
+  --fs-base: 1rem;
+  --fs-lg:   1.125rem;
+  --fs-xl:   1.375rem;
+  --fs-2xl:  1.75rem;
+  --fs-3xl:  2.25rem;
+  --fs-4xl:  3rem;
+  --fs-5xl:  clamp(3rem, 7.5vw, 6.5rem);
+  --fs-hero: clamp(3.25rem, 9vw, 8rem);
+
+  --fw-regular: 400;
+  --fw-medium:  500;
+  --fw-semibold:600;
+
+  --lh-tight:   1.02;
+  --lh-snug:    1.25;
+  --lh-normal:  1.6;
+  --lh-relaxed: 1.75;
+
+  --tracking-tighter:-0.04em;
+  --tracking-tight:  -0.025em;
+  --tracking-normal:  0;
+  --tracking-wide:    0.1em;
+  --tracking-wider:   0.18em;
+
+  /* Espacio */
+  --space-1:  0.25rem;
+  --space-2:  0.5rem;
+  --space-3:  0.75rem;
+  --space-4:  1rem;
+  --space-6:  1.5rem;
+  --space-8:  2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-24: 6rem;
+  --space-32: 8rem;
+  --section-y: clamp(4rem, 9vw, 8rem);
+
+  --container-narrow: 640px;
+  --container-base:   1180px;
+  --container-wide:   1360px;
+  --gutter: clamp(1.25rem, 4vw, 2.5rem);
+
+  --radius-sm: 4px;
+  --radius-md: 12px;
+  --radius-lg: 28px;
+  --radius-xl: 40px;
+  --radius-full: 9999px;
+
+  --shadow-xs: 0 1px 2px rgba(20,32,31,0.04);
+  --shadow-sm: 0 4px 18px rgba(20,32,31,0.06);
+  --shadow-md: 0 22px 48px -12px rgba(20,32,31,0.18);
+  --shadow-lg: 0 40px 80px -20px rgba(20,32,31,0.25);
+
+  --ease-out:    cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast:    180ms;
+  --dur-base:    420ms;
+  --dur-slow:    820ms;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg:        #11181a;
+    --color-bg-alt:    #181f22;
+    --color-bg-soft:   #1c2428;
+    --color-surface:   #1f282d;
+    --color-text:      #f3ede0;
+    --color-text-muted:#9a948a;
+    --color-border:    #2b3137;
+    --color-hairline:  #3a4148;
+    --color-accent:        #8fc5cd;
+    --color-accent-hover:  #b5dadf;
+    --color-accent-soft:   #1f3a3f;
+    --color-accent-glow:   #2c4e54;
+    --color-secondary:     #d5a787;
+    --color-secondary-soft:#2e2820;
+    --color-dark:      #0a0d0e;
+    --color-dark-text: #f3ede0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

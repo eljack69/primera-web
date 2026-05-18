@@ -1,0 +1,64 @@
+/* ==========================================================================
+   Norte Studio · Design tokens (brutalismo suave)
+   ========================================================================== */
+
+:root {
+  /* Color · Light */
+  --bone: #f7f5f0;
+  --bone-2: #efece4;
+  --ink: #0a0a0a;
+  --ink-2: #1a1a1a;
+  --muted: #6b6b66;
+  --line: #0a0a0a;
+  --acid: #e9ff70;       /* amarillo neón sutil */
+  --rojo: #ff4a1c;       /* rojo brutal */
+  --paper: #ffffff;
+
+  /* Color · Surfaces para bento (composiciones CSS) */
+  --grad-1: linear-gradient(135deg, #ff4a1c 0%, #ffb199 100%);
+  --grad-2: linear-gradient(180deg, #0a0a0a 0%, #2a2a2a 100%);
+  --grad-3: linear-gradient(135deg, #e9ff70 0%, #c6e000 100%);
+  --grad-4: linear-gradient(135deg, #0a0a0a 0%, #ff4a1c 100%);
+  --grad-5: linear-gradient(180deg, #efece4 0%, #d6d2c4 100%);
+
+  /* Type */
+  --ff-display: 'Space Grotesk', system-ui, sans-serif;
+  --ff-body: 'Inter', system-ui, sans-serif;
+
+  --fs-eyebrow: clamp(0.75rem, 0.7rem + 0.2vw, 0.85rem);
+  --fs-body: clamp(1rem, 0.95rem + 0.2vw, 1.0625rem);
+  --fs-h2: clamp(2.25rem, 1.5rem + 3.5vw, 4.5rem);
+  --fs-h3: clamp(1.5rem, 1.2rem + 1vw, 2rem);
+  --fs-hero: clamp(4rem, 2rem + 11vw, 11rem);
+  --fs-step-num: clamp(3rem, 2rem + 5vw, 6rem);
+  --fs-marquee: clamp(1.75rem, 1.25rem + 2vw, 3rem);
+
+  /* Layout */
+  --maxw: 1320px;
+  --gutter: clamp(1rem, 0.6rem + 2vw, 2.5rem);
+  --section-y: clamp(4rem, 3rem + 5vw, 8rem);
+
+  /* Stroke */
+  --bw-1: 2px;
+  --bw-2: 3px;
+
+  /* Motion */
+  --ease: cubic-bezier(.2,.7,.2,1);
+  --t-fast: 160ms;
+  --t-mid: 280ms;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bone: #0c0c0a;
+    --bone-2: #141413;
+    --ink: #f4f1e9;
+    --ink-2: #e6e2d6;
+    --muted: #8b8b85;
+    --line: #f4f1e9;
+    --paper: #161614;
+
+    --grad-2: linear-gradient(180deg, #1a1a1a 0%, #3a3a3a 100%);
+    --grad-5: linear-gradient(180deg, #1a1a18 0%, #2a2a26 100%);
+  }
+}

@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="es-PE">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0f1e1a" />
+  <title>[Demo] Mesa Norte · Bistró de autor en Barranco</title>
+  <meta name="description" content="Plantilla demo de Mesa Norte, un bistró peruano contemporáneo ficticio en Barranco. Reserva por WhatsApp en menos de 1 minuto. Contenido y precios son placeholder." />
+  <meta name="robots" content="noindex,nofollow" />
+  <link rel="canonical" href="https://eljack69.github.io/primera-web/restaurante-demo/" />
+
+  <meta property="og:title" content="[Demo] Mesa Norte · Bistró de autor en Barranco" />
+  <meta property="og:description" content="Plantilla demo · cocina peruana contemporánea con reservas por WhatsApp gestionadas por chatbot." />
+  <meta property="og:type" content="restaurant.restaurant" />
+  <meta property="og:url" content="https://eljack69.github.io/primera-web/restaurante-demo/" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=80" />
+  <meta property="og:locale" content="es_PE" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin />
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1600&q=80" fetchpriority="high" />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Mesa Norte (DEMO — datos ficticios)",
+    "description": "Plantilla demo de bistró peruano contemporáneo. Todos los datos son placeholder.",
+    "url": "https://eljack69.github.io/primera-web/restaurante-demo/",
+    "image": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=80",
+    "servesCuisine": ["Peruana contemporánea", "Cocina de autor", "Mediterránea"],
+    "telephone": "+51 978 303 358",
+    "priceRange": "S/. S/. S/.",
+    "acceptsReservations": true,
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. Saenz Peña 234",
+      "addressLocality": "Barranco",
+      "addressRegion": "Lima",
+      "postalCode": "15063",
+      "addressCountry": "PE"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday"], "opens": "19:00", "closes": "23:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday","Saturday"], "opens": "19:00", "closes": "00:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "12:30", "closes": "17:00" }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <div class="demo-banner" role="note" aria-label="Aviso de plantilla demo">
+    <strong>Plantilla demo</strong> · marca, platos, fotos y precios son ficticios — uso de portafolio
+  </div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav">
+    <div class="container container--wide">
+      <div class="nav__inner">
+        <a href="#" class="nav__logo" aria-label="Mesa Norte — inicio">
+          Mesa <span>·</span> Norte
+        </a>
+        <nav aria-label="Navegación principal">
+          <ul class="nav__links" id="menu">
+            <li><a class="nav__link" href="#carta">Carta</a></li>
+            <li><a class="nav__link" href="#filosofia">Filosofía</a></li>
+            <li><a class="nav__link" href="#chef">El chef</a></li>
+            <li><a class="nav__link" href="#visita">Visítanos</a></li>
+            <li>
+              <a class="nav__cta" href="https://wa.me/51978303358?text=Hola%20Mesa%20Norte%2C%20quisiera%20reservar%20una%20mesa." target="_blank" rel="noopener">
+                Reservar
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <button class="nav__toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">
+          <span class="nav__toggle-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" aria-label="Bienvenida">
+      <div class="hero__bg" aria-hidden="true">
+        <img
+          src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1600&q=80"
+          alt=""
+          width="1600" height="1067"
+          loading="eager"
+          fetchpriority="high" />
+      </div>
+      <div class="container container--wide">
+        <div class="hero__inner" data-reveal>
+          <p class="eyebrow hero__eyebrow">Bistró peruano · Barranco, Lima</p>
+          <h1 class="hero__title">
+            Una mesa con <em>vista al mar</em><br>
+            y un menú con memoria.
+          </h1>
+          <p class="hero__lede">
+            Cocina de autor con producto local — caigua, pejerrey, queso de Cajamarca, vino del valle. Sin manteles blancos, sin pretensiones, sin prisa. Solo lo que crece cerca, cocinado despacio.
+          </p>
+          <div class="hero__cta">
+            <a href="https://wa.me/51978303358?text=Hola%20Mesa%20Norte%2C%20quisiera%20reservar%20una%20mesa." target="_blank" rel="noopener" class="btn btn--primary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.87 9.87 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.83 9.83 0 0 0 12.04 2zm0 18.15a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.11.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.39c0-4.54 3.7-8.23 8.23-8.23 2.2 0 4.27.86 5.82 2.41a8.2 8.2 0 0 1 2.41 5.82c0 4.54-3.7 8.24-8.24 8.24zm4.51-6.16c-.25-.12-1.46-.72-1.69-.8-.23-.08-.39-.12-.56.12-.16.25-.64.8-.79.97-.15.16-.29.18-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.14-.25-.02-.39.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.16.04-.31-.02-.43-.06-.12-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43-.14-.01-.31-.01-.48-.01-.16 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.88 2.4 1.01 2.56.12.16 1.74 2.65 4.22 3.72.59.25 1.05.4 1.4.52.59.19 1.12.16 1.55.1.47-.07 1.46-.6 1.66-1.17.21-.58.21-1.07.15-1.17-.06-.1-.23-.16-.48-.28z" fill="currentColor"/></svg>
+              Reservar por WhatsApp
+            </a>
+            <a href="#carta" class="btn btn--ghost">Ver la carta</a>
+          </div>
+          <div class="hero__meta" aria-label="Información rápida">
+            <span>Av. Saenz Peña 234 · Barranco</span>
+            <span>Mar – Dom · desde las 19:00</span>
+            <span>Reserva en 1 minuto por WhatsApp</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FILOSOFÍA ============ -->
+    <section class="section" id="filosofia" data-reveal>
+      <div class="container container--wide">
+        <div class="section__head">
+          <p class="eyebrow">Cómo cocinamos</p>
+          <h2>Tres reglas que no negociamos.</h2>
+        </div>
+
+        <div class="filosofia__grid">
+
+          <article class="filosofia__card" data-reveal>
+            <p class="filosofia__num">01</p>
+            <h3>Producto que viaja poco.</h3>
+            <p>
+              Pescado del muelle de Chorrillos al amanecer, verduras del Mercado de Surquillo, quesos de Bambamarca. Si no crece o se pesca a menos de doce horas, no entra a la cocina.
+            </p>
+          </article>
+
+          <article class="filosofia__card" data-reveal>
+            <p class="filosofia__num">02</p>
+            <h3>Cocina lenta a fuego sentido.</h3>
+            <p>
+              Caldos de doce horas, masas que reposan, pescado a la brasa con leña seca de algarrobo. La velocidad la pone el comensal cuando se va, no la cocina cuando empieza.
+            </p>
+          </article>
+
+          <article class="filosofia__card" data-reveal>
+            <p class="filosofia__num">03</p>
+            <h3>Sin pretensiones, sin disfraces.</h3>
+            <p>
+              Los platos llegan a la mesa como se cocinaron — sin pinzas, sin nubes de humo, sin emplatados de competencia. Lo que importa pasa entre la primera mordida y la conversación.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CARTA ============ -->
+    <section class="section section--alt" id="carta" data-reveal>
+      <div class="container container--wide">
+        <div class="section__head">
+          <p class="eyebrow">La carta</p>
+          <h2>Una página breve, dos veces al año.</h2>
+          <p>Cambiamos la carta cada seis meses según lo que da la temporada en la costa central. Estos son los platos de esta temporada — algunos volverán, otros no.</p>
+        </div>
+
+        <div class="carta__tabs" role="tablist" aria-label="Secciones de la carta">
+          <button class="carta__tab is-active" data-tab="entradas" role="tab" aria-selected="true">Entradas</button>
+          <button class="carta__tab" data-tab="principales" role="tab" aria-selected="false">Principales</button>
+          <button class="carta__tab" data-tab="postres" role="tab" aria-selected="false">Postres</button>
+        </div>
+
+        <!-- Entradas -->
+        <div class="carta__grid carta__panel is-active" data-panel="entradas" role="tabpanel">
+
+          <article class="plato" data-reveal>
+            <div class="plato__photo">
+              <img src="https://images.unsplash.com/photo-1532980400857-e8d9d275d858?auto=format&fit=crop&w=600&q=80" alt="Tiradito de pejerrey con leche de tigre de rocoto, sobre plato oscuro" width="600" height="750" loading="lazy" />
+            </div>
+            <div class="plato__head">
+              <h3 class="plato__name">Tiradito del muelle</h3>
+              <span class="plato__price">S/. 38</span>
+            </div>
+            <p class="plato__desc">Pejerrey del día, leche de tigre de rocoto suave, palta hass y aceite de cilantro.</p>
+          </article>
+
+          <article class="plato" data-reveal>
+            <div class="plato__photo">
+              <img src="https://images.unsplash.com/photo-1593504049359-74330189a345?auto=format&fit=crop&w=600&q=80" alt="Causa limeña de palta y trucha ahumada, presentada en disco rosado" width="600" height="750" loading="lazy" />
+            </div>
+            <div class="plato__head">
+              <h3 class="plato__name">Causa de palta y trucha</h3>
+              <span class="plato__price">S/. 32</span>
+            </div>
+            <p class="plato__desc">Causa de palta peruana, trucha ahumada del Mantaro, encurtido de cebolla morada.</p>
+          </article>
+
+          <article class="plato" data-reveal>
+            <div class="plato__photo">
+              <img src="https://images.unsplash.com/photo-1547928576-b822bc410bdf?auto=format&fit=crop&w=600&q=80" alt="Ensalada de caigua, queso de Cajamarca y nueces tostadas sobre plato de cerámica oscura" width="600" height="750" loading="lazy" />
+            </div>
+            <div class="plato__head">
+              <h3 class="plato__name">Caigua del valle</h3>
+              <span class="plato__price">S/. 28</span>
+            </div>
+            <p class="plato__desc">Caigua asada, queso fresco de Bambamarca, nueces tostadas, vinagreta de chicha morada.</p>
+          </article>
+
+          <article class="plato" data-reveal>
+            <div class="plato__photo">
+              <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=600&q=80" alt="Anticuchos de corazón con maíz amarillo a la brasa servidos sobre tabla de madera" width="600" height="750" loading="lazy" />
+            </div>
+            <div class="plato__head">
+              <h3 class="plato__name">Anticucho de corazón</h3>
+              <span class="plato__price">S/. 36</span>
+            </div>
+            <p class="plato__desc">Corazón de res marinado 18 horas, choclo a la brasa, salsa de panca y rocoto.</p>
+          </article>
+
+          <article class="plato" data-reveal>
+            <div class="plato__photo">
+              <img src="https://images.unsplash.com/photo-1432139509613-5c4255815697?auto=format&fit=crop&w=600&q=80" alt="Pan amasado de campo con mantequilla de algarrobo en plato de cerámica" width="600" height="750" loading="lazy" />
+            </div>
+            <div class="plato__head">
+              <h3 class="plato__name">Pan de campo + algarrobo</h3>
+              <span class="plato__price">S/. 18</span>
+            </div>
+            <p class="plato__desc">Pan amasado de fermentación lenta, mantequilla de algarrobo del norte, sal de Maras.</p>
+          </article>
+
+          <article class="plato" data-reveal>
+            <div class="plato__photo">
+              <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=600&q=80" alt="Ceviche de conchas negras con choclo y maíz cancha en plato profundo" width="600" height="750" loading="lazy" />
+            </div>
+            <div class="plato__head">
+              <h3 class="plato__name">Conchas negras de Tumbes</h3>
+              <span class="plato__price">S/. 42</span>
+            </div>
+            <p class="plato__desc">Conchas negras de manglar, limón de Chulucanas, ají limo, camote glaseado.</p>
+          </article>
+
+        </div>
+
+        <!-- Principales -->
+        <div class="carta__grid carta__panel" data-panel="principales" role="tabpanel">
+
+          <article class="plato" data-reveal>
+            <div class="plato__photo">
+              <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=600&q=80" alt="Filete de pescado a la brasa con guarnición de tubérculos andinos asados" width="600" height="750" loading="lazy" />
+            </div>
+            <div class="plato__head">
+              <h3 class="plato__name">Cabrilla a la leña</h3>
+              <span class="plato__price">S/. 72</span>
+            </div>
+            <p class="plato__desc">Cabrilla entera a la brasa de algarrobo, papas nativas, manteca de huacatay.</p>
+          </article>
+
+          <article class="plato" data-reveal>
+            <div class="plato__photo">
+              <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80" alt="Costillas glaseadas en chicha de jora con puré de oca y cebolla encurtida" width="600" height="750" loading="lazy" />
+            </div>
+            <div class="plato__head">
+              <h3 class="plato__name">Costilla en chicha de jora</h3>
+              <span class="plato__price">S/. 68</span>
+            </div>
+            <p class="plato__desc">Costilla cocida 12 horas, glaseado de chicha de jora, puré de oca y cebolla en vinagre.</p>
+          </article>
+
+          <article class="plato" data-reveal>
+            <div class="plato__photo">
+              <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=600&q=80" alt="Plato de tallarines verdes con bistec de lomo y rodajas de tomate fresco" width="600" height="750" loading="lazy" />
+            </div>
+            <div class="plato__head">
+              <h3 class="plato__name">Tallarín verde de la abuela</h3>
+              <span class="plato__price">S/. 48</span>
+            </div>
+            <p class="plato__desc">Tallarín fresco, salsa de albahaca y espinaca, bistec del lomo, queso fresco rallado.</p>
+          </article>
+
+          <article class="plato" data-reveal>
+            <div class="plato__photo">
+              <img src="https://images.unsplash.com/photo-1432139509613-5c4255815697?auto=format&fit=crop&w=600&q=80" alt="Risotto cremoso de hongos con láminas de trufa sobre plato oscuro" width="600" height="750" loading="lazy" />
+            </div>
+            <div class="plato__head">
+              <h3 class="plato__name">Arroz con hongos del bosque</h3>
+              <span class="plato__price">S/. 54</span>
+            </div>
+            <p class="plato__desc">Arroz arborio peruano, hongos suyo de Oxapampa, mantequilla de hierbas y parmesano.</p>
+          </article>
+
+          <article class="plato" data-reveal>
+            <div class="plato__photo">
+              <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=600&q=80" alt="Lomo saltado contemporáneo con papas crocantes y tomate caramelizado" width="600" height="750" loading="lazy" />
+            </div>
+            <div class="plato__head">
+              <h3 class="plato__name">Lomo del bistró</h3>
+              <span class="plato__price">S/. 64</span>
+            </div>
+            <p class="plato__desc">Lomo fino salteado a fuego vivo, papa amarilla crocante, tomate y cebolla en wok.</p>
+          </article>
+
+          <article class="plato" data-reveal>
+            <div class="plato__photo">
+              <img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?auto=format&fit=crop&w=600&q=80" alt="Hamburguesa de cordero peruano con queso fundido y pan brioche tostado" width="600" height="750" loading="lazy" />
+            </div>
+            <div class="plato__head">
+              <h3 class="plato__name">Cordero & queso paria</h3>
+              <span class="plato__price">S/. 58</span>
+            </div>
+            <p class="plato__desc">Hamburguesa de cordero del Mantaro, queso paria fundido, brioche de mantequilla y ají amarillo.</p>
+          </article>
+
+        </div>
+
+        <!-- Postres -->
+        <div class="carta__grid carta__panel" data-panel="postres" role="tabpanel">
+
+          <article class="plato" data-reveal>
+            <div class="plato__photo">
+              <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=600&q=80" alt="Mousse de lúcuma con crocante de cacao y polvo de café sobre plato negro" width="600" height="750" loading="lazy" />
+            </div>
+            <div class="plato__head">
+              <h3 class="plato__name">Lúcuma + cacao</h3>
+              <span class="plato__price">S/. 26</span>
+            </div>
+            <p class="plato__desc">Mousse de lúcuma, ganache de cacao Pangoa al 70%, crocante de cañihua.</p>
+          </article>
+
+          <article class="plato" data-reveal>
+            <div class="plato__photo">
+              <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=600&q=80" alt="Helado artesanal de chirimoya con miel de caña en copa de cerámica" width="600" height="750" loading="lazy" />
+            </div>
+            <div class="plato__head">
+              <h3 class="plato__name">Chirimoya & miel de caña</h3>
+              <span class="plato__price">S/. 22</span>
+            </div>
+            <p class="plato__desc">Helado artesanal de chirimoya cumbe, miel de caña de Pacora, hojas de hierbabuena.</p>
+          </article>
+
+          <article class="plato" data-reveal>
+            <div class="plato__photo">
+              <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=600&q=80" alt="Suspiro a la limeña tradicional con merengue tostado en copa de vidrio" width="600" height="750" loading="lazy" />
+            </div>
+            <div class="plato__head">
+              <h3 class="plato__name">Suspiro a la barranquina</h3>
+              <span class="plato__price">S/. 24</span>
+            </div>
+            <p class="plato__desc">Manjar blanco artesanal, merengue al oporto del valle de Ica, sal de Maras.</p>
+          </article>
+
+          <article class="plato" data-reveal>
+            <div class="plato__photo">
+              <img src="https://images.unsplash.com/photo-1464195244916-405fa0a82545?auto=format&fit=crop&w=600&q=80" alt="Tarta tibia de frutos rojos andinos con bola de helado de vainilla" width="600" height="750" loading="lazy" />
+            </div>
+            <div class="plato__head">
+              <h3 class="plato__name">Tarta tibia de aguaymanto</h3>
+              <span class="plato__price">S/. 28</span>
+            </div>
+            <p class="plato__desc">Masa de mantequilla, aguaymanto del Cusco, helado de vainilla del Chanchamayo.</p>
+          </article>
+
+          <article class="plato" data-reveal>
+            <div class="plato__photo">
+              <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=600&q=80" alt="Tabla de degustación con tres trozos de queso peruano y miel" width="600" height="750" loading="lazy" />
+            </div>
+            <div class="plato__head">
+              <h3 class="plato__name">Quesos del norte</h3>
+              <span class="plato__price">S/. 32</span>
+            </div>
+            <p class="plato__desc">Tres quesos artesanales de Cajamarca, miel de eucalipto, nueces y pan de campo.</p>
+          </article>
+
+          <article class="plato" data-reveal>
+            <div class="plato__photo">
+              <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=600&q=80" alt="Copa de pisco sour con espuma cremosa y aceite de huacatay" width="600" height="750" loading="lazy" />
+            </div>
+            <div class="plato__head">
+              <h3 class="plato__name">Pisco sour de la casa</h3>
+              <span class="plato__price">S/. 28</span>
+            </div>
+            <p class="plato__desc">Pisco quebranta de Lunahuaná, limón sutil, jarabe de hierbaluisa, gotas de amargo.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CHEF ============ -->
+    <section class="section chef" id="chef" data-reveal>
+      <div class="container container--wide">
+        <div class="chef__inner">
+          <figure class="chef__photo">
+            <img
+              src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=600&q=80"
+              alt="Retrato del chef Joaquín Vera en su cocina, con delantal y luz cálida"
+              width="600" height="750"
+              loading="lazy" />
+          </figure>
+          <div class="chef__body">
+            <p class="eyebrow">Detrás de los fogones</p>
+            <blockquote class="chef__quote">
+              Cocinar es escuchar al producto antes de tocarlo.
+            </blockquote>
+            <p>
+              Joaquín creció entre la cocina de su abuela en Cajamarca y los puestos del mercado central de Lima. Estudió en San Ignacio de Loyola, pasó tres años en Vasco — Donostia y Getaria — y volvió a Lima porque, como dice, "en el Perú la despensa es más larga que cualquier carta".
+            </p>
+            <p>
+              Mesa Norte abrió en 2024 con una idea simple: cocinar lo que se pesca y se cosecha a doce horas de Barranco, con técnicas peruanas y disciplina vasca. Sin estrellas, sin pinzas, sin postureo. Solo una mesa larga, una brasa encendida y mucho tiempo.
+            </p>
+            <p class="chef__name">Joaquín Vera</p>
+            <p class="chef__role">Chef ejecutivo · fundador</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ VISÍTANOS ============ -->
+    <section class="section" id="visita" data-reveal>
+      <div class="container container--wide">
+        <div class="section__head">
+          <p class="eyebrow">Visítanos</p>
+          <h2>Av. Saenz Peña 234, Barranco.</h2>
+          <p>A dos cuadras del Puente de los Suspiros. Recomendamos reservar — los viernes y sábados se llenan con dos semanas de anticipación.</p>
+        </div>
+
+        <div class="visita__inner">
+          <div class="visita__info">
+            <div class="visita__block">
+              <strong>Dirección</strong>
+              <p>Av. Saenz Peña 234 <span>Barranco · Lima 15063</span></p>
+            </div>
+            <div class="visita__block">
+              <strong>Horario</strong>
+              <p>
+                Mar – Jue · 19:00 – 23:30<br>
+                Vie – Sáb · 19:00 – 00:30<br>
+                Dom · 12:30 – 17:00 (brunch)
+                <span>Lunes cerrado</span>
+              </p>
+            </div>
+            <div class="visita__block">
+              <strong>Reservas y contacto</strong>
+              <p>WhatsApp +51 978 303 358 <span>Atención automática 24/7 vía chatbot</span></p>
+            </div>
+
+            <div class="visita__ctas">
+              <a href="https://wa.me/51978303358?text=Hola%20Mesa%20Norte%2C%20quisiera%20reservar%20una%20mesa." target="_blank" rel="noopener" class="btn btn--primary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.87 9.87 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.83 9.83 0 0 0 12.04 2z" fill="currentColor"/></svg>
+                Reservar por WhatsApp
+              </a>
+              <a href="tel:+51978303358" class="btn btn--ghost">Llamar al restaurante</a>
+              <a href="https://maps.google.com/?q=Av.+Saenz+Pe%C3%B1a+234+Barranco+Lima" target="_blank" rel="noopener" class="btn btn--ghost">Ver en Google Maps</a>
+            </div>
+          </div>
+
+          <div class="visita__map" aria-label="Mapa con la ubicación del restaurante en Barranco">
+            <img src="https://images.unsplash.com/photo-1524813686514-a57563d77965?auto=format&fit=crop&w=800&q=80" alt="Vista aérea estilizada de Barranco, Lima — placeholder de mapa" width="800" height="1000" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CHATBOT (BLOQUE ESTRELLA) ============ -->
+    <section class="section chatbot" id="chatbot" data-reveal aria-label="Reserva por chatbot de WhatsApp">
+      <div class="container container--wide">
+        <div class="chatbot__inner">
+
+          <div class="chatbot__copy">
+            <p class="eyebrow">Reservas sin esperar</p>
+            <h2>Reserva en menos de <em>un minuto</em>, sin tener que llamar.</h2>
+            <p>
+              Nuestro chatbot en WhatsApp atiende las 24 horas. Confirma tu mesa, recuerda alergias del cliente, gestiona cambios y envía la dirección. Tú cocinas. Él agenda.
+            </p>
+
+            <div class="chatbot__features">
+              <div class="chatbot__feature"><span><strong>Atención 24/7</strong> — incluso a las 2 AM del sábado cuando el comensal aún no decidió la hora.</span></div>
+              <div class="chatbot__feature"><span><strong>Cero llamadas perdidas</strong> — el bot nunca está ocupado, nunca cuelga, nunca olvida.</span></div>
+              <div class="chatbot__feature"><span><strong>Recordatorios automáticos</strong> — confirma la reserva 4 horas antes y reduce no-shows hasta en un 60%.</span></div>
+              <div class="chatbot__feature"><span><strong>Captura datos del cliente</strong> — nombre, teléfono, ocasión, alergias. Listo para tu próxima campaña.</span></div>
+            </div>
+
+            <div class="hero__cta">
+              <a href="https://wa.me/51978303358?text=Hola%20Mesa%20Norte%2C%20quisiera%20probar%20el%20chatbot%20de%20reservas." target="_blank" rel="noopener" class="btn btn--primary">
+                Probar el chatbot ahora
+              </a>
+            </div>
+          </div>
+
+          <div class="chatbot__phone" aria-hidden="true">
+            <span class="chatbot__tag">Conversación real demo</span>
+            <span class="chatbot__phone-notch"></span>
+            <div class="chatbot__screen">
+              <div class="chatbot__header">
+                <div class="chatbot__avatar">M</div>
+                <div class="chatbot__who">
+                  <strong>Mesa Norte</strong>
+                  <span>en línea · responde al instante</span>
+                </div>
+              </div>
+              <div class="chatbot__messages">
+                <div class="bubble bubble--out">
+                  Hola, quisiera una mesa para 2 el sábado a las 8pm
+                  <span class="bubble__time">8:42 PM</span>
+                </div>
+                <div class="bubble bubble--in">
+                  ¡Hola! Con gusto. ¿A nombre de quién hago la reserva y a qué número confirmamos?
+                  <span class="bubble__time">8:42 PM</span>
+                </div>
+                <div class="bubble bubble--out">
+                  Andrea Vargas, 987 654 321. Es nuestro aniversario 🍷
+                  <span class="bubble__time">8:43 PM</span>
+                </div>
+                <div class="bubble bubble--in">
+                  ¡Felicidades! Te reservé la mesa 4 junto a la ventana, sábado 18 a las 20:00 hrs para 2 personas. Te enviaré un recordatorio el sábado a las 16:00. Llega 10 min antes 🌿
+                  <span class="bubble__time">8:43 PM</span>
+                </div>
+                <div class="bubble bubble--out">
+                  Perfecto, muchas gracias 🙌
+                  <span class="bubble__time">8:43 PM</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIOS ============ -->
+    <section class="section section--alt" id="testimonios" data-reveal>
+      <div class="container container--wide">
+        <div class="section__head section__head--center">
+          <p class="eyebrow">Voces de la mesa</p>
+          <h2>Tres comensales, tres noches distintas.</h2>
+        </div>
+
+        <div class="testimonios__grid">
+
+          <figure class="testimonio" data-reveal>
+            <div class="testimonio__stars" aria-label="Cinco estrellas">★ ★ ★ ★ ★</div>
+            <blockquote class="testimonio__quote">
+              "Reservé por WhatsApp un domingo a las 11 de la noche, el bot me confirmó al segundo y el sábado siguiente teníamos la mesa lista con vista al jardín. Cero estrés."
+            </blockquote>
+            <figcaption class="testimonio__author">
+              <span>Andrea V.</span>
+              Comensal habitual · 32 años
+            </figcaption>
+          </figure>
+
+          <figure class="testimonio" data-reveal>
+            <div class="testimonio__stars" aria-label="Cinco estrellas">★ ★ ★ ★ ★</div>
+            <blockquote class="testimonio__quote">
+              "La cabrilla a la leña es de las mejores cosas que he probado en Lima este año. El servicio sin prisa, los precios honestos. Volveremos."
+            </blockquote>
+            <figcaption class="testimonio__author">
+              <span>Diego M.</span>
+              Crítico gastronómico · Lima Gourmet
+            </figcaption>
+          </figure>
+
+          <figure class="testimonio" data-reveal>
+            <div class="testimonio__stars" aria-label="Cinco estrellas">★ ★ ★ ★ ★</div>
+            <blockquote class="testimonio__quote">
+              "Avisé al bot que mi pareja era celíaca. Cuando llegamos, el mesero ya sabía qué platos adaptar. Detalle pequeño, gesto enorme."
+            </blockquote>
+            <figcaption class="testimonio__author">
+              <span>Karina & Renzo</span>
+              Aniversario 5 años · Miraflores
+            </figcaption>
+          </figure>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container container--wide">
+      <div class="footer__inner">
+        <div>
+          <p class="footer__brand">Mesa <span>·</span> Norte</p>
+          <p class="footer__about">Bistró peruano contemporáneo en Barranco. Producto local, cocina lenta, sin pretensiones.</p>
+        </div>
+        <div class="footer__col">
+          <strong>Visítanos</strong>
+          <p>Av. Saenz Peña 234<br>Barranco · Lima 15063</p>
+          <p style="margin-top:0.75rem">Mar – Sáb · desde 19:00<br>Dom · brunch 12:30 – 17:00</p>
+        </div>
+        <div class="footer__col">
+          <strong>Reservas</strong>
+          <a href="https://wa.me/51978303358" target="_blank" rel="noopener">WhatsApp +51 978 303 358</a>
+          <a href="tel:+51978303358">Llamar al restaurante</a>
+          <a href="mailto:reservas@placeholder.pe">reservas@placeholder.pe</a>
+        </div>
+        <div class="footer__col">
+          <strong>Síguenos</strong>
+          <a href="#" rel="noopener">Instagram @mesanorte.pe</a>
+          <a href="#" rel="noopener">Facebook · Mesa Norte</a>
+          <a href="#" rel="noopener">TikTok @mesanortebarranco</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2026 Mesa Norte · plantilla demo · datos ficticios</p>
+        <p>Diseño y chatbot por <strong style="color:var(--color-cream)">Agencia Studio Gona Live</strong></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

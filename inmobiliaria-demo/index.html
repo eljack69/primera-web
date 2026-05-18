@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="es-PE">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b1626" />
+  <title>[Demo] Casa Lima · Corretaje boutique en Lima moderna</title>
+  <meta name="description" content="Plantilla demo de corretaje inmobiliario boutique en Lima. Casa Lima — curaduría, no catálogo. Propiedades, precios y datos son ficticios." />
+  <meta name="robots" content="noindex,nofollow" />
+  <link rel="canonical" href="https://eljack69.github.io/primera-web/inmobiliaria-demo/" />
+
+  <meta property="og:title" content="[Demo] Casa Lima · Corretaje boutique" />
+  <meta property="og:description" content="Plantilla demo · Corretaje inmobiliario boutique para Lima moderna. Curaduría en Miraflores, San Isidro, Barranco y Surco." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://eljack69.github.io/primera-web/inmobiliaria-demo/" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80" />
+  <meta property="og:locale" content="es_PE" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin />
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1800&q=80" fetchpriority="high" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "RealEstateAgent",
+    "name": "Casa Lima (DEMO — datos ficticios)",
+    "description": "Plantilla demo de corretaje inmobiliario boutique en Lima. Todos los datos son placeholder.",
+    "url": "https://eljack69.github.io/primera-web/inmobiliaria-demo/",
+    "telephone": "+51 978 303 358",
+    "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+    "areaServed": ["Miraflores","San Isidro","Barranco","Surco","San Borja","La Molina"],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. Pardo y Aliaga 480",
+      "addressLocality": "San Isidro",
+      "addressRegion": "Lima",
+      "postalCode": "15046",
+      "addressCountry": "PE"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "19:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "10:00", "closes": "14:00" }
+    ],
+    "priceRange": "$$$"
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <div class="demo-banner" role="note" aria-label="Aviso de plantilla demo">
+    <strong>Plantilla demo</strong> · propiedades, precios y datos son ficticios
+  </div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="container">
+      <div class="nav__inner">
+        <a href="#" class="nav__logo" aria-label="Inicio Casa Lima">
+          <span class="mark" aria-hidden="true"></span>
+          Casa <em>Lima</em>
+        </a>
+        <nav aria-label="Navegación principal">
+          <ul class="nav__links" id="menu">
+            <li><a class="nav__link" href="#propiedades">Propiedades</a></li>
+            <li><a class="nav__link" href="#proceso">Servicios</a></li>
+            <li><a class="nav__link" href="#equipo">Nosotros</a></li>
+            <li><a class="nav__link" href="#contacto">Contacto</a></li>
+            <li><a class="nav__cta" href="https://wa.me/51978303358?text=Hola%20Casa%20Lima%2C%20quiero%20una%20asesor%C3%ADa" target="_blank" rel="noopener">Hablar por WhatsApp</a></li>
+          </ul>
+        </nav>
+        <button class="nav__toggle" id="navToggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">
+          <span class="nav__toggle-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__bg" aria-hidden="true">
+        <img
+          src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1800&q=80"
+          alt=""
+          width="1800" height="1200"
+          loading="eager"
+          fetchpriority="high" />
+      </div>
+      <div class="container">
+        <div class="hero__inner" data-reveal>
+          <p class="eyebrow hero__eyebrow">Corretaje boutique · Lima</p>
+          <h1 class="hero__title" id="hero-title">
+            Encontramos casa para quienes <em>saben qué buscan</em>.
+          </h1>
+          <p class="hero__lede">
+            Corretaje boutique para Lima moderna. Curaduría, no catálogo: pocas propiedades, bien elegidas, en Miraflores, San Isidro, Barranco y Surco.
+          </p>
+          <div class="hero__cta">
+            <a href="#propiedades" class="btn btn--primary">Ver propiedades</a>
+            <a class="btn btn--outline btn--wa" href="https://wa.me/51978303358?text=Hola%20Casa%20Lima%2C%20busco%20asesor%C3%ADa%20para%20comprar%2Falquilar" target="_blank" rel="noopener">Hablar con un asesor</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROPIEDADES DESTACADAS ============ -->
+    <section class="section props" id="propiedades" aria-labelledby="propiedades-title">
+      <div class="container">
+        <div class="props__head" data-reveal>
+          <div class="section__head">
+            <span class="eyebrow">Propiedades destacadas</span>
+            <h2 id="propiedades-title">Seis casas, elegidas con criterio.</h2>
+            <p>No mostramos todo lo que tenemos. Mostramos lo que vale la pena visitar esta semana.</p>
+          </div>
+          <div class="filters" role="tablist" aria-label="Filtrar propiedades">
+            <button type="button" class="is-active" role="tab" aria-selected="true">Todas</button>
+            <button type="button" role="tab" aria-selected="false">Venta</button>
+            <button type="button" role="tab" aria-selected="false">Alquiler</button>
+          </div>
+        </div>
+
+        <div class="bento">
+
+          <article class="prop prop--lg" data-reveal>
+            <div class="prop__media">
+              <span class="prop__badge prop__badge--gold">Venta destacada</span>
+              <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=900&q=75" alt="Sala de departamento con vista al malecón de Miraflores" loading="lazy" width="900" height="600" />
+            </div>
+            <div class="prop__body">
+              <span class="prop__loc">Malecón Cisneros · Miraflores</span>
+              <h3 class="prop__title">Depa frente al malecón con vista al mar</h3>
+              <div class="prop__meta">
+                <span class="m2">142 m²</span>
+                <span class="d">3 dorms</span>
+                <span class="b">2.5 baños</span>
+              </div>
+              <div class="prop__foot">
+                <p class="prop__price">USD 385,000 <small>Venta</small></p>
+                <a href="#contacto" class="prop__link">Ver detalles</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="prop prop--lg" data-reveal>
+            <div class="prop__media">
+              <span class="prop__badge">Venta</span>
+              <img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=900&q=75" alt="Casa moderna de tres niveles en San Isidro con jardín" loading="lazy" width="900" height="600" />
+            </div>
+            <div class="prop__body">
+              <span class="prop__loc">Country Club · San Isidro</span>
+              <h3 class="prop__title">Casa de tres niveles con jardín propio</h3>
+              <div class="prop__meta">
+                <span class="m2">280 m²</span>
+                <span class="d">4 dorms</span>
+                <span class="b">4 baños</span>
+              </div>
+              <div class="prop__foot">
+                <p class="prop__price">USD 720,000 <small>Venta</small></p>
+                <a href="#contacto" class="prop__link">Ver detalles</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="prop" data-reveal>
+            <div class="prop__media">
+              <span class="prop__badge">Alquiler</span>
+              <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=700&q=75" alt="Loft con pared de ladrillo expuesto en Barranco" loading="lazy" width="700" height="525" />
+            </div>
+            <div class="prop__body">
+              <span class="prop__loc">Sáenz Peña · Barranco</span>
+              <h3 class="prop__title">Loft con ladrillo expuesto y techo doble</h3>
+              <div class="prop__meta">
+                <span class="m2">88 m²</span>
+                <span class="d">1 dorm</span>
+                <span class="b">1 baño</span>
+              </div>
+              <div class="prop__foot">
+                <p class="prop__price">USD 1,450 <small>/ mes</small></p>
+                <a href="#contacto" class="prop__link">Ver detalles</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="prop" data-reveal>
+            <div class="prop__media">
+              <span class="prop__badge">Venta</span>
+              <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=700&q=75" alt="Departamento luminoso con cocina abierta en Barranco" loading="lazy" width="700" height="525" />
+            </div>
+            <div class="prop__body">
+              <span class="prop__loc">Pedro de Osma · Barranco</span>
+              <h3 class="prop__title">Departamento con cocina abierta y balcón</h3>
+              <div class="prop__meta">
+                <span class="m2">96 m²</span>
+                <span class="d">2 dorms</span>
+                <span class="b">2 baños</span>
+              </div>
+              <div class="prop__foot">
+                <p class="prop__price">USD 245,000 <small>Venta</small></p>
+                <a href="#contacto" class="prop__link">Ver detalles</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="prop" data-reveal>
+            <div class="prop__media">
+              <span class="prop__badge">Alquiler</span>
+              <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=700&q=75" alt="Sala minimalista con muebles bajos y luz natural" loading="lazy" width="700" height="525" />
+            </div>
+            <div class="prop__body">
+              <span class="prop__loc">Camacho · Surco</span>
+              <h3 class="prop__title">Departamento familiar con terraza privada</h3>
+              <div class="prop__meta">
+                <span class="m2">160 m²</span>
+                <span class="d">3 dorms</span>
+                <span class="b">2 baños</span>
+              </div>
+              <div class="prop__foot">
+                <p class="prop__price">USD 2,100 <small>/ mes</small></p>
+                <a href="#contacto" class="prop__link">Ver detalles</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="prop" data-reveal>
+            <div class="prop__media">
+              <span class="prop__badge">Venta</span>
+              <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=700&q=75" alt="Dormitorio principal con cabecera de madera y luz natural" loading="lazy" width="700" height="525" />
+            </div>
+            <div class="prop__body">
+              <span class="prop__loc">28 de Julio · Miraflores</span>
+              <h3 class="prop__title">Estudio renovado a dos cuadras del parque</h3>
+              <div class="prop__meta">
+                <span class="m2">52 m²</span>
+                <span class="d">1 dorm</span>
+                <span class="b">1 baño</span>
+              </div>
+              <div class="prop__foot">
+                <p class="prop__price">USD 178,000 <small>Venta</small></p>
+                <a href="#contacto" class="prop__link">Ver detalles</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CÓMO TRABAJAMOS ============ -->
+    <section class="section proceso" id="proceso" aria-labelledby="proceso-title">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <span class="eyebrow">Cómo trabajamos</span>
+          <h2 id="proceso-title">Cuatro pasos. Una sola persona contigo.</h2>
+          <p>Nada de cadena de vendedores ni de mostrarte 40 propiedades para gastar tu fin de semana. Te asignamos un asesor de cabecera que te acompaña hasta la firma.</p>
+        </div>
+
+        <div class="proceso__grid">
+          <article class="paso" data-reveal>
+            <p class="paso__num">01</p>
+            <h3>Curaduría</h3>
+            <p>Una hora de conversación honesta sobre lo que necesitas, lo que puedes pagar y lo que estás dispuesto a ceder. Salimos con una lista corta — máximo 6 propiedades.</p>
+          </article>
+
+          <article class="paso" data-reveal>
+            <p class="paso__num">02</p>
+            <h3>Acompañamiento</h3>
+            <p>Visitas agendadas en tandas de dos o tres por día, no más. Tu asesor está presente en cada una y te dice también qué <em>no</em> comprarías ahí. La opinión cuesta lo mismo que el silencio.</p>
+          </article>
+
+          <article class="paso" data-reveal>
+            <p class="paso__num">03</p>
+            <h3>Negociación</h3>
+            <p>Hacemos la oferta y defendemos tu margen. Conocemos los precios reales por cuadra y por edificio — no por portal. Sabemos cuándo aceptar y cuándo retirarse.</p>
+          </article>
+
+          <article class="paso" data-reveal>
+            <p class="paso__num">04</p>
+            <h3>Cierre</h3>
+            <p>Coordinamos minuta, notaría, registros y entrega. Honesto sobre las cosas que pasan en una mudanza: traspaso de servicios, vicios ocultos, claves del edificio. Sin sorpresas.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ÁREAS / DISTRITOS ============ -->
+    <section class="section" aria-labelledby="areas-title">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <span class="eyebrow">Áreas que cubrimos</span>
+          <h2 id="areas-title">Conocemos seis distritos. Bien.</h2>
+          <p>Trabajamos solo en zonas donde podemos pisar la cuadra antes de mostrártela.</p>
+        </div>
+
+        <div class="areas__grid">
+          <a class="area" href="#contacto" data-reveal>
+            <img src="https://images.unsplash.com/photo-1576400883215-7083980b6193?auto=format&fit=crop&w=600&q=70" alt="Vista del Malecón de Miraflores" loading="lazy" width="600" height="450" />
+            <div class="area__body">
+              <p class="area__name">Miraflores</p>
+              <p class="area__range">USD 180k – 850k</p>
+            </div>
+          </a>
+          <a class="area" href="#contacto" data-reveal>
+            <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=600&q=70" alt="Edificio residencial moderno en San Isidro" loading="lazy" width="600" height="450" />
+            <div class="area__body">
+              <p class="area__name">San Isidro</p>
+              <p class="area__range">USD 280k – 1.2M</p>
+            </div>
+          </a>
+          <a class="area" href="#contacto" data-reveal>
+            <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=600&q=70" alt="Casa antigua restaurada en Barranco" loading="lazy" width="600" height="450" />
+            <div class="area__body">
+              <p class="area__name">Barranco</p>
+              <p class="area__range">USD 195k – 620k</p>
+            </div>
+          </a>
+          <a class="area" href="#contacto" data-reveal>
+            <img src="https://images.unsplash.com/photo-1572120360610-d971b9d7767c?auto=format&fit=crop&w=600&q=70" alt="Edificio residencial moderno en Surco" loading="lazy" width="600" height="450" />
+            <div class="area__body">
+              <p class="area__name">Surco</p>
+              <p class="area__range">USD 160k – 480k</p>
+            </div>
+          </a>
+          <a class="area" href="#contacto" data-reveal>
+            <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=600&q=70" alt="Departamento moderno con vista en San Borja" loading="lazy" width="600" height="450" />
+            <div class="area__body">
+              <p class="area__name">San Borja</p>
+              <p class="area__range">USD 140k – 420k</p>
+            </div>
+          </a>
+          <a class="area" href="#contacto" data-reveal>
+            <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=600&q=70" alt="Casa con jardín en La Molina" loading="lazy" width="600" height="450" />
+            <div class="area__body">
+              <p class="area__name">La Molina</p>
+              <p class="area__range">USD 230k – 750k</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EQUIPO ============ -->
+    <section class="section equipo" id="equipo" aria-labelledby="equipo-title">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <span class="eyebrow">El equipo</span>
+          <h2 id="equipo-title">Tres asesores. Ningún vendedor.</h2>
+          <p>No tenemos comisionistas ni gente nueva en prueba. Cada persona del equipo lleva al menos siete años haciendo esto y firma con su nombre.</p>
+        </div>
+
+        <div class="equipo__grid">
+          <article class="asesor" data-reveal>
+            <div class="asesor__photo">
+              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=500&q=75" alt="Retrato de Valeria Quiroga, fundadora de Casa Lima" loading="lazy" width="500" height="625" />
+            </div>
+            <h3 class="asesor__name">Valeria Quiroga</h3>
+            <p class="asesor__role">Fundadora · 14 años</p>
+            <p class="asesor__bio">Especialidad en residencias premium en San Isidro y Miraflores. Antes de Casa Lima trabajó seis años en banca privada. Negocia callada, lee contratos como si fueran novelas.</p>
+          </article>
+
+          <article class="asesor" data-reveal>
+            <div class="asesor__photo">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=500&q=75" alt="Retrato de Diego Lazcano, asesor senior" loading="lazy" width="500" height="625" />
+            </div>
+            <h3 class="asesor__name">Diego Lazcano</h3>
+            <p class="asesor__role">Asesor senior · 9 años</p>
+            <p class="asesor__bio">Especialidad en Barranco y propiedades con historia: casonas restauradas, lofts, propiedad horizontal antigua. Conoce a casi todos los dueños originales por nombre.</p>
+          </article>
+
+          <article class="asesor" data-reveal>
+            <div class="asesor__photo">
+              <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=500&q=75" alt="Retrato de Camila Reátegui, asesora de inversión" loading="lazy" width="500" height="625" />
+            </div>
+            <h3 class="asesor__name">Camila Reátegui</h3>
+            <p class="asesor__role">Asesora de inversión · 7 años</p>
+            <p class="asesor__bio">Especialidad en alquileres y renta. Si compras para arrendar, ella te dice cuánta plata realmente vas a ver por mes después de mantenimiento, vacancia y arbitrios.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CHATBOT WHATSAPP ============ -->
+    <section class="section chatbot" id="chatbot" aria-labelledby="chatbot-title">
+      <div class="container">
+        <div class="chat__inner">
+          <div class="chat__copy" data-reveal>
+            <span class="eyebrow">Asistente WhatsApp · 24/7</span>
+            <h2 id="chatbot-title">Cualifica leads <em>mientras duermes</em>.</h2>
+            <p class="hero__lede">Nuestro bot conversa con cada interesado, entiende su presupuesto y necesidad, propone propiedades del catálogo y agenda la visita. Tu equipo solo recibe leads listos para visitar — no curiosos.</p>
+            <ul class="chat__list">
+              <li>Filtra por presupuesto, distrito, dormitorios y operación.</li>
+              <li>Envía 3 propiedades reales del catálogo con foto y link.</li>
+              <li>Agenda visita en el calendario del asesor disponible.</li>
+              <li>Pasa al humano solo cuando el lead está cualificado.</li>
+              <li>Responde en menos de 30 segundos, las 24 horas.</li>
+            </ul>
+          </div>
+
+          <div class="phone" data-reveal aria-label="Simulación de conversación de WhatsApp con el bot">
+            <div class="phone__screen">
+              <div class="wa__head">
+                <div class="wa__avatar" aria-hidden="true">CL</div>
+                <div>
+                  <p class="wa__name">Casa Lima · Asistente</p>
+                  <p class="wa__status">en línea</p>
+                </div>
+              </div>
+              <div class="wa__body">
+                <div class="bubble bubble--out">
+                  Hola, busco depa en Barranco, 2 dorms, hasta 250k.
+                  <time>10:24</time>
+                </div>
+                <div class="bubble bubble--in">
+                  Hola 👋 Soy <strong>Casa Lima</strong>. Para mostrarte solo lo que vale tu tiempo: ¿el presupuesto de USD 250k es tope o tienes margen hasta 270k? ¿Necesitas cochera?
+                  <time>10:24</time>
+                </div>
+                <div class="bubble bubble--out">
+                  Tope 250k. Cochera sí, una. Y si tiene balcón mejor.
+                  <time>10:25</time>
+                </div>
+                <div class="bubble bubble--in">
+                  Perfecto. Tengo 3 que calzan exacto:<br>
+                  · <a href="#">Pedro de Osma 245k</a> · 96 m² · balcón<br>
+                  · <a href="#">Sáenz Peña 238k</a> · 88 m² · cochera<br>
+                  · <a href="#">28 de Julio 249k</a> · 102 m² · ambos<br><br>
+                  ¿Cuál te interesa visitar primero?
+                  <time>10:25</time>
+                </div>
+                <div class="bubble bubble--out">
+                  El de Pedro de Osma. ¿Sábado 11am?
+                  <time>10:26</time>
+                </div>
+                <div class="bubble bubble--in">
+                  Listo ✅ Agendado <strong>sábado 11:00 am</strong> con <strong>Diego Lazcano</strong>. Te llega confirmación por correo y un asesor humano te contacta antes para coordinar acceso al edificio.
+                  <time>10:26</time>
+                </div>
+              </div>
+              <div class="wa__input" aria-hidden="true">
+                <span>Escribe un mensaje…</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIOS ============ -->
+    <section class="section testis" id="testimonios" aria-labelledby="testis-title">
+      <div class="container">
+        <div class="section__head section__head--center" data-reveal>
+          <span class="eyebrow">Lo que dicen nuestros clientes</span>
+          <h2 id="testis-title">No vendemos propiedades. Vendemos tranquilidad.</h2>
+        </div>
+
+        <div class="testis__grid">
+          <figure class="testi" data-reveal>
+            <div class="testi__stars" aria-label="5 de 5 estrellas">★★★★★</div>
+            <blockquote class="testi__text">«Vimos solo cuatro depas y compramos el tercero. Diego nos dijo del primero ‘no compren ahí, hay humedad estructural’. Eso lo cambió todo.»</blockquote>
+            <figcaption class="testi__foot">
+              <span class="testi__name">Lucía y Joaquín · Miraflores</span>
+              <span class="testi__op">Compra</span>
+            </figcaption>
+          </figure>
+
+          <figure class="testi" data-reveal>
+            <div class="testi__stars" aria-label="5 de 5 estrellas">★★★★★</div>
+            <blockquote class="testi__text">«Buscaba alquilar en Barranco sin perderme un mes en visitas. El bot de WhatsApp me filtró tres y firmé contrato en una semana.»</blockquote>
+            <figcaption class="testi__foot">
+              <span class="testi__name">Renato Hidalgo · Barranco</span>
+              <span class="testi__op">Alquiler</span>
+            </figcaption>
+          </figure>
+
+          <figure class="testi" data-reveal>
+            <div class="testi__stars" aria-label="5 de 5 estrellas">★★★★★</div>
+            <blockquote class="testi__text">«Compré para alquilar y Camila me hizo el cálculo realista de renta neta. Tenía tres opciones, descartamos dos. La que quedó rinde lo que prometió.»</blockquote>
+            <figcaption class="testi__foot">
+              <span class="testi__name">Andrea Salgado · San Isidro</span>
+              <span class="testi__op">Inversión</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACTO ============ -->
+    <section class="section contacto" id="contacto" aria-labelledby="contacto-title">
+      <div class="container">
+        <div class="contacto__grid">
+          <div data-reveal>
+            <span class="eyebrow">Conversemos</span>
+            <h2 id="contacto-title">Cuéntanos qué buscas. <em>Sin compromiso.</em></h2>
+            <p class="contacto__lede">La primera conversación es gratuita y dura una hora. Te enviamos una lista corta de propiedades dentro de las 48 horas siguientes, escrita a mano por el asesor que te toque.</p>
+
+            <div class="contacto__ctas">
+              <a class="btn btn--primary btn--wa" href="https://wa.me/51978303358?text=Hola%20Casa%20Lima%2C%20quiero%20agendar%20una%20conversaci%C3%B3n%20inicial" target="_blank" rel="noopener">WhatsApp directo · +51 978 303 358</a>
+              <a class="btn btn--outline-dark" href="tel:+51978303358">Llamar al +51 978 303 358</a>
+            </div>
+
+            <div class="contacto__map" aria-label="Mapa de ubicación de la oficina en San Isidro">
+              <img
+                src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=900&q=70"
+                alt="Mapa estilizado de San Isidro mostrando la ubicación de la oficina"
+                loading="lazy" width="900" height="500" />
+            </div>
+          </div>
+
+          <form class="form" data-reveal aria-labelledby="form-title" onsubmit="event.preventDefault(); alert('Demo: el formulario no envía datos.');">
+            <h3 id="form-title" style="font-family: var(--font-display); font-size: 1.6rem; color: var(--navy-900); margin-bottom: var(--s-2);">Escríbenos</h3>
+            <label>
+              Nombre
+              <input type="text" name="nombre" placeholder="Tu nombre completo" required autocomplete="name" />
+            </label>
+            <label>
+              Tipo de operación
+              <select name="operacion" required>
+                <option value="">Selecciona una opción</option>
+                <option>Quiero comprar</option>
+                <option>Quiero alquilar</option>
+                <option>Quiero vender mi propiedad</option>
+                <option>Busco invertir en renta</option>
+              </select>
+            </label>
+            <label>
+              Presupuesto referencial
+              <select name="presupuesto" required>
+                <option value="">Selecciona un rango</option>
+                <option>Hasta USD 200,000</option>
+                <option>USD 200,000 – 400,000</option>
+                <option>USD 400,000 – 700,000</option>
+                <option>Más de USD 700,000</option>
+                <option>Alquiler · Hasta USD 1,500/mes</option>
+                <option>Alquiler · USD 1,500 – 3,000/mes</option>
+              </select>
+            </label>
+            <label>
+              Cuéntanos qué buscas
+              <textarea name="mensaje" placeholder="Distrito, dormitorios, características importantes para ti…" required></textarea>
+            </label>
+            <button type="submit" class="btn btn--dark">Enviar mensaje</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__col">
+          <p class="footer__brand">Casa <em>Lima</em></p>
+          <p>Corretaje boutique en Lima moderna. Curaduría, no catálogo.</p>
+          <p style="margin-top: var(--s-4); color: var(--ink-300); font-size: var(--fs-xs);">Av. Pardo y Aliaga 480, San Isidro · Lima 15046</p>
+        </div>
+        <div class="footer__col">
+          <h4>Contacto</h4>
+          <ul>
+            <li><a href="https://wa.me/51978303358" target="_blank" rel="noopener">WhatsApp · +51 978 303 358</a></li>
+            <li><a href="tel:+51978303358">+51 978 303 358</a></li>
+            <li><a href="mailto:hola@casalima.demo">hola@casalima.demo</a></li>
+            <li>Lun–Vie · 9:00 – 19:00</li>
+            <li>Sábado · 10:00 – 14:00</li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Distritos</h4>
+          <ul>
+            <li><a href="#propiedades">Miraflores</a></li>
+            <li><a href="#propiedades">San Isidro</a></li>
+            <li><a href="#propiedades">Barranco</a></li>
+            <li><a href="#propiedades">Surco</a></li>
+            <li><a href="#propiedades">San Borja</a></li>
+            <li><a href="#propiedades">La Molina</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Certificaciones</h4>
+          <ul>
+            <li>Inscrita en SUNARP · partida 12345678 (demo)</li>
+            <li>Miembro CCL · Cámara de Comercio (demo)</li>
+            <li>Asociada SUTRAN-AAII (demo)</li>
+            <li>Cumple Ley 29080 · Registro Inmobiliario</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2026 Casa Lima · Sitio demo · Datos ficticios</p>
+        <p>Diseñado por <strong style="color: var(--gold-400); font-weight: 500;">Studio Gona Live</strong></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // === Nav scroll state ===
+    const nav = document.getElementById('nav');
+    const onScroll = () => {
+      if (window.scrollY > 24) nav.classList.add('is-scrolled');
+      else nav.classList.remove('is-scrolled');
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+
+    // === Mobile menu toggle ===
+    const toggle = document.getElementById('navToggle');
+    const menu = document.getElementById('menu');
+    toggle.addEventListener('click', () => {
+      const open = nav.classList.toggle('is-open');
+      menu.classList.toggle('is-open', open);
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      toggle.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
+    });
+    menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      nav.classList.remove('is-open');
+      menu.classList.remove('is-open');
+      toggle.setAttribute('aria-expanded', 'false');
+    }));
+
+    // === Filters (visual only) ===
+    document.querySelectorAll('.filters button').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filters button').forEach(b => {
+          b.classList.remove('is-active');
+          b.setAttribute('aria-selected', 'false');
+        });
+        btn.classList.add('is-active');
+        btn.setAttribute('aria-selected', 'true');
+      });
+    });
+
+    // === Reveal on scroll ===
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            e.target.classList.add('is-visible');
+            io.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+      document.querySelectorAll('[data-reveal]').forEach(el => io.observe(el));
+    } else {
+      document.querySelectorAll('[data-reveal]').forEach(el => el.classList.add('is-visible'));
+    }
+  </script>
+</body>
+</html>

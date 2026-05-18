@@ -1,0 +1,74 @@
+/* =========================================================
+   Pulse — Design Tokens
+   Dark tech-minimal with neon cyan accent
+   ========================================================= */
+
+:root {
+  /* Color — base */
+  --bg:            #08090b;
+  --surface:       #0f1115;
+  --surface-2:     #13161c;
+  --border:        #1f242c;
+  --border-strong: #2a313b;
+
+  /* Color — text */
+  --text:          #f5f6f8;
+  --text-muted:    #7a8290;
+  --text-dim:      #565d68;
+
+  /* Color — accent */
+  --cyan:          #5eead4;
+  --cyan-dim:      #2dd4bf;
+  --cyan-glow:     rgba(94, 234, 212, 0.35);
+  --cyan-soft:     rgba(94, 234, 212, 0.10);
+  --lime:          #b5ff37;
+  --purple:        #7c5cff;
+  --yellow:        #ffe066;
+
+  /* Code tokens */
+  --tok-kw:        #5eead4;
+  --tok-str:       #ffe066;
+  --tok-com:       #565d68;
+  --tok-num:       #b5ff37;
+  --tok-pun:       #7a8290;
+
+  /* Typography */
+  --font-sans:  'Inter Tight', 'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --font-mono:  'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+  /* Radii */
+  --r-sm:  6px;
+  --r-md:  8px;
+  --r-lg:  12px;
+  --r-xl:  16px;
+  --r-full: 999px;
+
+  /* Spacing scale */
+  --s-1:  4px;
+  --s-2:  8px;
+  --s-3:  12px;
+  --s-4:  16px;
+  --s-5:  20px;
+  --s-6:  24px;
+  --s-8:  32px;
+  --s-10: 40px;
+  --s-12: 48px;
+  --s-16: 64px;
+  --s-20: 80px;
+  --s-24: 96px;
+
+  /* Layout */
+  --maxw: 1180px;
+  --maxw-narrow: 760px;
+
+  /* Motion */
+  --ease:       cubic-bezier(0.22, 0.61, 0.36, 1);
+  --t-fast:     140ms;
+  --t-base:     220ms;
+  --t-slow:     420ms;
+
+  /* Shadows / glow */
+  --shadow-card:   0 1px 0 rgba(255,255,255,0.03) inset, 0 8px 30px rgba(0,0,0,0.35);
+  --glow-cyan:     0 0 0 1px rgba(94,234,212,0.35), 0 8px 28px rgba(94,234,212,0.20);
+  --glow-cyan-sm:  0 0 0 1px rgba(94,234,212,0.25), 0 4px 16px rgba(94,234,212,0.15);
+}

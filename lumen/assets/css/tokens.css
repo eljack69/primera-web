@@ -1,0 +1,92 @@
+/* ============================================
+   LÚMEN · Design Tokens
+   Soft pastel orgánico + glassmorphism sutil
+   ============================================ */
+
+:root {
+  /* ---------- Color · Base ---------- */
+  --color-bg: #fef5ee;            /* crema rosado, fondo principal */
+  --color-bg-soft: #fbeadb;       /* crema un poco más cálido */
+  --color-bg-warm: #f8e3d1;       /* crema cálido para trust strip */
+  --color-surface: #ffffff;       /* superficies sólidas */
+  --color-text: #2a3a2a;          /* verde oscuro botánico, texto principal */
+  --color-muted: #6f7f6c;         /* texto secundario, oliva apagado */
+  --color-hairline: #e8dccc;      /* bordes finos, separadores */
+  --color-dark: #1f2820;          /* fondo footer / newsletter */
+
+  /* ---------- Color · Acentos ---------- */
+  --color-accent: #d9a78d;        /* rosa terracota apagado */
+  --color-accent-soft: #ecc6b1;   /* terracota muy suave */
+  --color-secondary: #9bb898;     /* verde sage */
+  --color-secondary-soft: #c8dac3;/* sage muy claro */
+  --color-rose: #e7b9b0;          /* rosa polvo (mascarilla, blush) */
+  --color-amber: #c89a6b;         /* ámbar (frasco serum) */
+
+  /* ---------- Glass ---------- */
+  --glass-bg: rgba(255, 255, 255, 0.55);
+  --glass-bg-strong: rgba(255, 255, 255, 0.72);
+  --glass-border: rgba(255, 255, 255, 0.6);
+  --glass-shadow: 0 12px 40px -12px rgba(74, 56, 40, 0.18);
+  --glass-blur: blur(20px);
+
+  /* ---------- Tipografía ---------- */
+  --font-display: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+
+  --fs-hero: clamp(3rem, 8vw, 7rem);
+  --fs-h2: clamp(2.25rem, 4.5vw, 4rem);
+  --fs-h3: clamp(1.5rem, 2.4vw, 2.25rem);
+  --fs-h4: clamp(1.125rem, 1.6vw, 1.375rem);
+  --fs-body: 1rem;
+  --fs-body-lg: 1.125rem;
+  --fs-small: 0.875rem;
+  --fs-eyebrow: 0.75rem;
+
+  --lh-tight: 1.04;
+  --lh-snug: 1.2;
+  --lh-normal: 1.55;
+  --lh-loose: 1.7;
+
+  --tracking-eyebrow: 0.22em;
+  --tracking-tight: -0.02em;
+
+  /* ---------- Espaciado ---------- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+  --space-9: 6rem;
+  --space-10: 8rem;
+
+  --section-y: clamp(4rem, 9vw, 8rem);
+  --container: 1240px;
+  --gutter: clamp(1.25rem, 4vw, 2.5rem);
+
+  /* ---------- Radios ---------- */
+  --radius-sm: 12px;
+  --radius-md: 20px;
+  --radius-lg: 28px;
+  --radius-xl: 36px;
+  --radius-full: 999px;
+
+  /* ---------- Sombras ---------- */
+  --shadow-sm: 0 2px 8px rgba(74, 56, 40, 0.06);
+  --shadow-md: 0 8px 24px -8px rgba(74, 56, 40, 0.12);
+  --shadow-lg: 0 20px 60px -20px rgba(74, 56, 40, 0.22);
+  --shadow-glow-rose: 0 30px 80px -30px rgba(217, 167, 141, 0.55);
+  --shadow-glow-sage: 0 30px 80px -30px rgba(155, 184, 152, 0.55);
+
+  /* ---------- Motion ---------- */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast: 180ms;
+  --dur-med: 360ms;
+  --dur-slow: 720ms;
+
+  /* ---------- Layout ---------- */
+  --navbar-h: 72px;
+}

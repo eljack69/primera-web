@@ -1,0 +1,117 @@
+/* ============================================================
+   Tokens — Forja Studio
+   Estética: estudio fitness boutique premium · oscuro energético
+   Reglas: contraste alto, motion sharp, density media-alta
+   ============================================================ */
+
+:root {
+  /* === Color — carbón profundo + lima eléctrico === */
+  --color-bg:           #0a0a0a;  /* casi-negro carbón */
+  --color-bg-deep:      #050505;  /* fondo más profundo */
+  --color-surface:      #141414;  /* superficie cards */
+  --color-surface-2:    #1c1c1c;  /* segundo nivel */
+  --color-elev:         #232323;  /* elevación máxima */
+  --color-text:         #f5f5f3;  /* casi-blanco tibio */
+  --color-text-soft:    #bcbcb8;  /* secundario */
+  --color-text-muted:   #7a7a76;  /* terciario */
+  --color-border:       #2a2a2a;
+  --color-border-soft:  #1d1d1d;
+  --color-accent:       #c8ff00;  /* lima eléctrico */
+  --color-accent-2:     #aee300;  /* lima hover */
+  --color-accent-soft:  rgba(200, 255, 0, 0.15);
+  --color-orange:       #ff5b1f;  /* secundario flúor */
+  --color-success:      #25d366;  /* whatsapp green */
+
+  /* === Tipografía === */
+  --font-display: 'Bebas Neue', 'Anton', 'Oswald', Impact, sans-serif;
+  --font-sans:    'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono:    ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* Escala dramática — saltos grandes en display */
+  --fs-xs:   0.75rem;
+  --fs-sm:   0.875rem;
+  --fs-base: 1rem;
+  --fs-lg:   1.125rem;
+  --fs-xl:   1.375rem;
+  --fs-2xl:  1.875rem;
+  --fs-3xl:  2.5rem;
+  --fs-4xl:  3.5rem;
+  --fs-5xl:  clamp(3rem, 9vw, 6.5rem);
+  --fs-6xl:  clamp(4rem, 14vw, 11rem);  /* hero gigante display */
+
+  --fw-regular: 400;
+  --fw-medium:  500;
+  --fw-semibold: 600;
+  --fw-bold:    700;
+  --fw-black:   900;
+
+  --lh-tight:    0.95;
+  --lh-snug:     1.15;
+  --lh-normal:   1.55;
+  --lh-relaxed:  1.7;
+
+  --tracking-tight:  -0.02em;
+  --tracking-normal:  0;
+  --tracking-wide:    0.12em;
+  --tracking-wider:   0.22em;
+
+  /* === Espacio === */
+  --space-1:  0.25rem;
+  --space-2:  0.5rem;
+  --space-3:  0.75rem;
+  --space-4:  1rem;
+  --space-5:  1.25rem;
+  --space-6:  1.5rem;
+  --space-8:  2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  --space-32: 8rem;
+
+  --section-y:        clamp(4rem, 9vw, 7.5rem);
+  --section-y-half:   clamp(2.5rem, 5vw, 4rem);
+
+  /* === Layout === */
+  --container-narrow: 640px;
+  --container-base:   1100px;
+  --container-wide:   1280px;
+  --gutter:           clamp(1.25rem, 4vw, 2.5rem);
+
+  /* === Radius === */
+  --radius-sm:    4px;
+  --radius-md:    8px;
+  --radius-lg:    16px;
+  --radius-xl:    24px;
+  --radius-full:  9999px;
+
+  /* === Shadow === */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.55);
+  --shadow-lg: 0 24px 60px rgba(0, 0, 0, 0.7);
+  --shadow-glow: 0 0 0 1px rgba(200, 255, 0, 0.25), 0 12px 40px rgba(200, 255, 0, 0.08);
+
+  /* === Motion — sharp y enérgico === */
+  --dur-fast:   150ms;
+  --dur-base:   280ms;
+  --dur-slow:   600ms;
+  --ease-out:   cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-snap:  cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* === Z-index === */
+  --z-nav:    50;
+  --z-banner: 60;
+  --z-modal:  70;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

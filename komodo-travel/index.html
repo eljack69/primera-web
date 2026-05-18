@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hatun Perú — Viajes de lujo curado en Perú</title>
+  <meta name="description" content="Hatun Perú diseña experiencias premium en Cusco, Lima, Valle Sagrado y Amazonas: itinerarios privados, Belmond Hiram Bingham, helicóptero a Machu Picchu y hoteles 5*." />
+
+  <meta property="og:title" content="Hatun Perú — Viajes de lujo curado en Perú" />
+  <meta property="og:description" content="Itinerarios privados, trenes Belmond, hoteles 5* y experiencias exclusivas en Cusco, Lima y Valle Sagrado." />
+  <meta property="og:image" content="https://eljack69.github.io/komodo-travel/assets/img/og.jpg" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="canonical" href="https://eljack69.github.io/komodo-travel/" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital@1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="nav" id="nav">
+    <a class="nav__logo" href="#inicio">
+      <span class="nav__logo-text">Hatun</span>
+      <span class="nav__logo-script">Perú</span>
+    </a>
+    <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav__menu" id="menu" aria-label="Menú principal">
+      <a href="#inicio" class="nav__link is-active">Inicio</a>
+      <a href="#paquetes" class="nav__link">Paquetes</a>
+      <a href="#visa" class="nav__link">Pasaporte y visa</a>
+      <a href="#promo" class="nav__link">Promociones</a>
+      <a href="#galeria" class="nav__link">Galería</a>
+      <a href="#faq" class="nav__link">Preguntas</a>
+      <a href="#contacto" class="nav__link">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="hero__media" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1526392060635-9d6019884377?auto=format&fit=crop&w=2400&q=80" alt="" fetchpriority="high" />
+        <div class="hero__overlay"></div>
+      </div>
+      <div class="hero__content">
+        <p class="hero__eyebrow">Cusco · Lima · Valle Sagrado</p>
+        <h1 class="hero__title">Perú a la <em>escala de lo extraordinario</em>.</h1>
+        <p class="hero__lede">Itinerarios privados, trenes Belmond y suites de altura para viajeros que prefieren tiempo y curaduría antes que catálogo.</p>
+      </div>
+
+      <!-- BOOKING BAR -->
+      <form class="booking" id="booking" onsubmit="event.preventDefault(); alert('Demo: la búsqueda real requiere integración con un motor de reservas.');">
+        <div class="booking__field">
+          <label for="destino">Destinos</label>
+          <input id="destino" type="text" placeholder="Cusco, Lima, Sacred Valley..." autocomplete="off" />
+        </div>
+        <div class="booking__field">
+          <label for="checkin">Fecha de entrada</label>
+          <input id="checkin" type="date" />
+        </div>
+        <div class="booking__field">
+          <label for="checkout">Fecha de salida</label>
+          <input id="checkout" type="date" />
+        </div>
+        <div class="booking__field">
+          <label for="huespedes">Huéspedes</label>
+          <select id="huespedes">
+            <option>1 viajero</option>
+            <option>2 viajeros</option>
+            <option>3 viajeros</option>
+            <option>4 o más</option>
+            <option>Grupo privado</option>
+          </select>
+        </div>
+        <button class="btn btn--primary booking__submit" type="submit">Reservar</button>
+      </form>
+    </section>
+
+    <!-- SERVICIOS 01-04 -->
+    <section class="services" aria-label="Servicios">
+      <div class="container">
+        <div class="services__grid">
+          <article class="service">
+            <span class="service__num">01</span>
+            <h3 class="service__title">Itinerarios privados</h3>
+            <p>Rutas Lima · Cusco · Valle Sagrado diseñadas a medida, con guías PhD en historia andina y conductor propio.</p>
+          </article>
+          <article class="service">
+            <span class="service__num">02</span>
+            <h3 class="service__title">Trenes y vuelos premium</h3>
+            <p>Belmond Hiram Bingham, Vistadome Observatory y helicóptero privado a Machu Picchu. Logística sin colas.</p>
+          </article>
+          <article class="service">
+            <span class="service__num">03</span>
+            <h3 class="service__title">Hoteles 5* y haciendas</h3>
+            <p>Belmond Palacio Nazarenas, Inkaterra Machu Picchu, haciendas restauradas en el Valle Sagrado. Acceso a suites privadas.</p>
+          </article>
+          <article class="service">
+            <span class="service__num">04</span>
+            <h3 class="service__title">Experiencias exclusivas</h3>
+            <p>Cena en Maido y Central, ceremonias andinas privadas con paqos, vuelos sobre Nazca y degustaciones de pisco vintage.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT US -->
+    <section class="about" aria-label="Sobre nosotros">
+      <div class="container about__inner">
+        <figure class="about__media about__media--left">
+          <img src="https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=900&q=80" alt="Calle empedrada del centro histórico de Cusco al atardecer" loading="lazy" />
+        </figure>
+
+        <div class="about__copy">
+          <h2 class="section-title">Sobre nosotros</h2>
+          <p>Hatun Perú es un estudio boutique de viajes con oficinas en Lima y Cusco. Llevamos doce años diseñando experiencias premium para viajeros que prefieren tiempo y curaduría antes que catálogo.</p>
+          <p>No vendemos paquetes en masa: estudiamos tu calendario, tu ritmo y tu apetito por la cultura andina, y devolvemos un viaje que sólo podría ser tuyo.</p>
+          <div class="about__actions">
+            <a href="#paquetes" class="btn btn--primary">Ver paquetes</a>
+            <a href="#valores" class="btn btn--ghost">¿Por qué nosotros?</a>
+          </div>
+        </div>
+
+        <figure class="about__media about__media--right">
+          <img src="https://images.unsplash.com/photo-1531065208531-4036c0dba3ca?auto=format&fit=crop&w=900&q=80" alt="Cumbres doradas del Ausangate al amanecer" loading="lazy" />
+        </figure>
+      </div>
+    </section>
+
+    <!-- TOUR PACKAGES -->
+    <section class="packages" id="paquetes" aria-label="Paquetes destacados">
+      <div class="container">
+        <h2 class="section-title">Paquetes destacados</h2>
+        <p class="section-sub">Selección curada de salidas privadas para los próximos tres meses.</p>
+
+        <div class="packages__grid" id="packagesGrid">
+          <article class="card">
+            <div class="card__media"><img src="https://images.unsplash.com/photo-1526392060635-9d6019884377?auto=format&fit=crop&w=700&q=80" alt="Machu Picchu al amanecer envuelto en neblina" loading="lazy" /></div>
+            <div class="card__body">
+              <h3 class="card__title">Cusco Imperial — 7 días</h3>
+              <p class="card__meta">Belmond + Hiram Bingham · privado</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__media"><img src="https://images.unsplash.com/photo-1538964173425-93884d739596?auto=format&fit=crop&w=700&q=80" alt="Skyline de Miraflores, Lima, al anochecer" loading="lazy" /></div>
+            <div class="card__body">
+              <h3 class="card__title">Lima Gastronómica — 4 días</h3>
+              <p class="card__meta">Maido · Central · Astrid&Gastón</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__media"><img src="https://images.unsplash.com/photo-1502786129293-79981df4e689?auto=format&fit=crop&w=700&q=80" alt="Sendero en la selva amazónica con luz filtrada" loading="lazy" /></div>
+            <div class="card__body">
+              <h3 class="card__title">Amazonas Premium — 5 días</h3>
+              <p class="card__meta">Inkaterra Reserva Amazónica</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__media"><img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=700&q=80" alt="Sendero de altura hacia un paso andino" loading="lazy" /></div>
+            <div class="card__body">
+              <h3 class="card__title">Cordillera Privada — 6 días</h3>
+              <p class="card__meta">Salkantay · porteadores propios</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="packages__dots" role="tablist" aria-label="Página de paquetes">
+          <button class="dot is-active" aria-label="Página 1" data-page="1"></button>
+          <button class="dot" aria-label="Página 2" data-page="2"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- BANNER PROMO -->
+    <section class="promo" id="promo" aria-label="Promoción destacada">
+      <div class="container">
+        <a class="promo__banner" href="#contacto">
+          <img src="https://images.unsplash.com/photo-1527525443983-6e60c75fff46?auto=format&fit=crop&w=1800&q=80" alt="Estación de tren de montaña al atardecer" loading="lazy" />
+          <div class="promo__overlay">
+            <p class="promo__eyebrow">Promoción de temporada</p>
+            <h3 class="promo__title">Belmond Hiram Bingham<br/>Cusco · Machu Picchu en clase observación</h3>
+            <span class="btn btn--primary btn--sm">Ver detalles</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- TESTIMONIOS -->
+    <section class="testimony" aria-label="Testimonios">
+      <div class="container testimony__inner">
+        <h2 class="section-title testimony__title">Testimonios</h2>
+        <p class="section-sub">Viajeros felices y lo que cuentan al volver.</p>
+
+        <div class="testimony__quote" id="testimonyQuote">
+          <span class="testimony__mark" aria-hidden="true">&ldquo;</span>
+          <blockquote>
+            <p id="testimonyText">El helicóptero a Machu Picchu y la suite en Palacio Nazarenas convirtieron una semana en Cusco en el viaje más memorable que hemos hecho. Cada detalle estaba resuelto antes de pedirlo.</p>
+            <footer>— <cite id="testimonyName">Mariana Vargas</cite></footer>
+          </blockquote>
+          <span class="testimony__mark testimony__mark--end" aria-hidden="true">&rdquo;</span>
+        </div>
+
+        <div class="testimony__avatars" role="tablist" aria-label="Cambiar testimonio">
+          <button class="avatar is-active" data-index="0" aria-label="Testimonio de Mariana Vargas">
+            <img src="https://i.pravatar.cc/120?img=45" alt="" />
+          </button>
+          <button class="avatar" data-index="1" aria-label="Testimonio de Andrés Rivero">
+            <img src="https://i.pravatar.cc/120?img=33" alt="" />
+          </button>
+          <button class="avatar" data-index="2" aria-label="Testimonio de Camila Salazar">
+            <img src="https://i.pravatar.cc/120?img=12" alt="" />
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERIA -->
+    <section class="gallery" id="galeria" aria-label="Galería">
+      <ul class="gallery__strip" role="list">
+        <li><img src="https://images.unsplash.com/photo-1526392060635-9d6019884377?auto=format&fit=crop&w=500&q=80" alt="Machu Picchu al amanecer" loading="lazy" /></li>
+        <li><img src="https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=500&q=80" alt="Calle empedrada del Cusco histórico" loading="lazy" /></li>
+        <li><img src="https://images.unsplash.com/photo-1531065208531-4036c0dba3ca?auto=format&fit=crop&w=500&q=80" alt="Cumbre andina dorada al amanecer" loading="lazy" /></li>
+        <li><img src="https://images.unsplash.com/photo-1538964173425-93884d739596?auto=format&fit=crop&w=500&q=80" alt="Skyline moderno de Lima" loading="lazy" /></li>
+        <li><img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=500&q=80" alt="Cordillera profunda del Valle Sagrado" loading="lazy" /></li>
+        <li><img src="https://images.unsplash.com/photo-1502786129293-79981df4e689?auto=format&fit=crop&w=500&q=80" alt="Sendero en la selva amazónica" loading="lazy" /></li>
+        <li><img src="https://images.unsplash.com/photo-1553697388-94e804e2f0f6?auto=format&fit=crop&w=500&q=80" alt="Mercado tradicional andino con tejidos" loading="lazy" /></li>
+        <li><img src="https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?auto=format&fit=crop&w=500&q=80" alt="Calle colonial empedrada al atardecer" loading="lazy" /></li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="contacto">
+    <div class="container footer__inner">
+      <div class="footer__col">
+        <h4 class="footer__title">¿Necesitas ayuda?</h4>
+        <p class="footer__row"><span class="footer__ico" aria-hidden="true">◐</span> Av. Pardo 1234, Miraflores — Lima, Perú</p>
+        <p class="footer__row"><span class="footer__ico" aria-hidden="true">☎</span> +51 1 555 0177</p>
+        <p class="footer__row"><span class="footer__ico" aria-hidden="true">✉</span> hola@hatunperu.demo</p>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__title">Sobre</h4>
+        <ul>
+          <li><a href="#inicio">Quiénes somos</a></li>
+          <li><a href="#faq">Preguntas frecuentes</a></li>
+          <li><a href="#contacto">Acceso clientes</a></li>
+          <li><a href="#contacto">Registro</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__title">Descubre</h4>
+        <ul>
+          <li><a href="#paquetes">Blog de comunidad</a></li>
+          <li><a href="#paquetes">Guías de viaje</a></li>
+          <li><a href="#paquetes">Lista de deseos</a></li>
+          <li><a href="#paquetes">Inspiración</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__title">Redes sociales</h4>
+        <a class="footer__social" href="#"><span aria-hidden="true">▣</span> Instagram · @hatunperu</a>
+        <a class="footer__social" href="#"><span aria-hidden="true">✕</span> X · @hatunperu</a>
+        <a class="footer__social" href="#"><span aria-hidden="true">f</span> Facebook · /hatunperu</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <small>© <span id="year"></span> Hatun Perú — Demostración estática. Todas las marcas mostradas son ficticias o referenciales.</small>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

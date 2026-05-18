@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chatbot con IA — Studio Gona Live</title>
+  <meta name="description" content="Tu vendedor virtual con inteligencia artificial. Atiende clientes 24/7 en WhatsApp y tu web, califica leads y agenda citas. Desde S/ 1.490." />
+  <meta name="theme-color" content="#0E0E10" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="../index.html" class="brand">
+        <span class="mark"></span>
+        Studio <span class="brand-it">Gona Live</span>
+      </a>
+      <nav class="nav-links">
+        <a href="web-3-dias.html">Web 3 días</a>
+        <a href="chatbot-ia.html">Chatbot IA</a>
+        <a href="fb-ads.html">FB Ads</a>
+        <a href="../index.html#pricing">Precios</a>
+        <a href="../index.html#faq">FAQ</a>
+        <a href="https://wa.me/51978303058?text=Quiero%20un%20chatbot%20IA" class="nav-cta" target="_blank" rel="noopener">Empezar →</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Menú" id="navToggle"><span></span></button>
+    </div>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="service-hero">
+    <div class="container">
+      <div class="crumbs reveal">
+        <a href="../index.html">Inicio</a><span class="sep">/</span><a href="../index.html#servicios">Servicios</a><span class="sep">/</span> Chatbot con IA
+      </div>
+      <h1 class="h-display reveal reveal-d2" style="margin-top: 1.5rem;">
+        Un vendedor que <span class="serif-it">nunca duerme,</span><br />
+        nunca pierde la <span class="serif-it">paciencia.</span>
+      </h1>
+      <p class="lead reveal reveal-d3" style="margin-top: 1.5rem;">
+        Chatbot con inteligencia artificial real (motor Claude Haiku 4.5) que conversa
+        con tus clientes 24/7 en WhatsApp y tu web. Califica leads, agenda citas,
+        responde precios y solo te transfiere los casos que valen la pena.
+      </p>
+      <div class="hero-ctas reveal reveal-d4">
+        <a href="https://wa.me/51978303058?text=Quiero%20mi%20chatbot%20IA" target="_blank" rel="noopener" class="btn btn-primary">
+          Quiero mi bot <span class="arrow">→</span>
+        </a>
+        <button class="btn btn-ghost" onclick="document.getElementById('botLauncher').click()">Probar demo aquí mismo</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Por qué tener un bot ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="image-split reverse">
+        <div class="reveal">
+          <span class="eyebrow">El problema</span>
+          <h2 class="h-1" style="margin-top: 1rem;">El <span class="serif-it">70%</span> de los mensajes llegan cuando estás durmiendo.</h2>
+          <p class="lead" style="margin-top: 1.5rem;">
+            Tus clientes deciden en los primeros 5 minutos. Si no respondes,
+            se van con tu competencia. No importa si es domingo a las 11 PM o
+            martes a las 3 AM — el bot responde, califica y te avisa solo
+            cuando hay una venta real esperando.
+          </p>
+          <p class="lead" style="margin-top: 1rem;">
+            Y no es un bot tonto que solo dice <span class="serif-it">"un agente te contactará"</span> —
+            es IA real que entiende el contexto, recuerda toda la conversación
+            y vende con tu tono de voz.
+          </p>
+        </div>
+
+        <div class="image-split-media reveal reveal-d2">
+          <span class="frame-tag">Demo · IA real</span>
+          <img src="../img/chatbot-phone.jpg"
+               alt="Chatbot IA en pantalla de móvil" loading="lazy" />
+        </div>
+      </div>
+
+      <div class="deliverables reveal" style="margin-top: 4rem; max-width: 760px; margin-left: auto; margin-right: auto;">
+        <h4>Qué puede hacer tu bot</h4>
+        <ul style="columns: 2; column-gap: 2rem;">
+          <li>Responder precios, horarios y servicios</li>
+          <li>Calificar leads antes de pasártelos</li>
+          <li>Agendar citas en tu calendario</li>
+          <li>Enviar catálogos y fotos automáticamente</li>
+          <li>Tomar pedidos básicos en e-commerce</li>
+          <li>Capturar nombre, teléfono y necesidad</li>
+          <li>Atender en español, inglés o quechua</li>
+          <li>Avisarte por WhatsApp cuando hay venta caliente</li>
+          <li>Aprender de cada conversación</li>
+          <li>Integrarse a Google Sheets o tu CRM</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Comparativa bots ===== -->
+  <section class="section process">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Comparativa honesta</span>
+        <h2 class="h-1">Bot tradicional <span class="serif-it">vs.</span> bot con IA real.</h2>
+      </div>
+
+      <div class="features reveal" style="grid-template-columns: 1fr 1fr;">
+        <div class="feature" style="border-right: 1px solid var(--border);">
+          <div class="ico" style="color: var(--fg-muted);">x</div>
+          <h4 style="color: var(--fg-soft);">Bot tradicional (ManyChat, Tidio básico)</h4>
+          <p>Solo responde lo que está pre-programado. Si el cliente pregunta algo distinto, se rompe o dice "un agente te contactará". Lento, robótico y aburrido.</p>
+          <p style="color: var(--fg-muted); font-size: 0.85rem;">Resultado: clientes frustrados, ventas perdidas.</p>
+        </div>
+        <div class="feature">
+          <div class="ico">✓</div>
+          <h4 class="text-accent">Bot Studio Gona Live (Claude Haiku 4.5)</h4>
+          <p>Entiende cualquier pregunta, mantiene conversaciones naturales, recuerda el contexto, vende con tu tono y aprende de tu negocio. Suena humano.</p>
+          <p style="color: var(--accent-soft); font-size: 0.85rem;">Resultado: clientes contentos, más ventas cerradas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Cómo lo entrenamos ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">El proceso</span>
+        <h2 class="h-1">Tu bot listo <span class="serif-it">en 48 horas.</span></h2>
+      </div>
+
+      <div class="process-grid reveal">
+        <div class="process-step">
+          <div class="process-day">paso 01</div>
+          <h4>Te entrevistamos</h4>
+          <p>30 min de llamada para entender qué vendes, tus precios, tu tono y las 20 preguntas más frecuentes de tus clientes.</p>
+        </div>
+        <div class="process-step">
+          <div class="process-day">paso 02</div>
+          <h4>Entrenamos al bot</h4>
+          <p>Cargamos toda tu info al motor de IA, le damos personalidad propia y lo conectamos a tu web y/o WhatsApp Business.</p>
+        </div>
+        <div class="process-step">
+          <div class="process-day">paso 03</div>
+          <h4>Probamos contigo</h4>
+          <p>Hacemos 50+ preguntas reales para validar respuestas. Ajustamos hasta que suene 100% como tu negocio. Lo activamos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Casos de uso por rubro ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Casos de uso</span>
+        <h2 class="h-1">¿Para qué rubros <span class="serif-it">funciona?</span></h2>
+        <p class="lead">Cualquier negocio que reciba mensajes repetitivos en WhatsApp. Estos son los que más nos contratan:</p>
+      </div>
+
+      <div class="cases-grid reveal">
+        <div class="case-card">
+          <img src="../img/case-clinic.jpg" alt="" loading="lazy" />
+          <div class="case-content">
+            <h5>Clínicas y consultorios</h5>
+            <p>Agenda citas, responde tarifas, filtra urgencias.</p>
+          </div>
+        </div>
+        <div class="case-card">
+          <img src="../img/case-restaurant.jpg" alt="" loading="lazy" />
+          <div class="case-content">
+            <h5>Restaurantes y delivery</h5>
+            <p>Toma pedidos, responde menú, calcula delivery.</p>
+          </div>
+        </div>
+        <div class="case-card">
+          <img src="../img/case-ecommerce.jpg" alt="" loading="lazy" />
+          <div class="case-content">
+            <h5>E-commerce y catálogos</h5>
+            <p>Recomienda productos, responde stock, cierra ventas.</p>
+          </div>
+        </div>
+        <div class="case-card">
+          <img src="../img/case-tours.jpg" alt="" loading="lazy" />
+          <div class="case-content">
+            <h5>Turismo y tours</h5>
+            <p>Cotiza paquetes, agenda fechas, filtra consultas.</p>
+          </div>
+        </div>
+        <div class="case-card">
+          <img src="../img/case-realestate.jpg" alt="" loading="lazy" />
+          <div class="case-content">
+            <h5>Inmobiliarias</h5>
+            <p>Filtra leads, envía fotos, agenda visitas.</p>
+          </div>
+        </div>
+        <div class="case-card">
+          <img src="../img/case-services.jpg" alt="" loading="lazy" />
+          <div class="case-content">
+            <h5>Servicios profesionales</h5>
+            <p>Abogados, coaches, contadores: agenda y filtra.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Precio ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="eyebrow">Inversión</span>
+        <h2 class="h-1">Un bot inteligente <span class="serif-it">cuesta menos</span><br />que un community manager.</h2>
+        <p class="lead">Pago único de instalación + costo bajo de operación mensual (lo que consume la IA).</p>
+      </div>
+
+      <div class="pricing-grid" style="grid-template-columns: repeat(2, 1fr); max-width: 760px; margin: 0 auto;">
+        <article class="price-card reveal">
+          <div class="price-name">Bot Solo</div>
+          <div class="price-tag"><span class="currency">S/</span><span class="amount">1.490</span></div>
+          <ul class="price-list">
+            <li>Bot IA en tu web actual</li>
+            <li>Entrenado con tu info</li>
+            <li>Diseño de personalidad propia</li>
+            <li>Captura de leads automática</li>
+            <li>Soporte 30 días</li>
+            <li>Operación: ~S/ 30-80/mes</li>
+          </ul>
+          <a href="https://wa.me/51978303058?text=Quiero%20solo%20el%20Bot%20IA%20S%2F%201490" target="_blank" rel="noopener" class="btn btn-ghost">Elegir <span class="arrow">→</span></a>
+        </article>
+
+        <article class="price-card featured reveal reveal-d2">
+          <div class="price-name">Web + Bot IA</div>
+          <div class="price-tag"><span class="currency">S/</span><span class="amount">2.490</span></div>
+          <ul class="price-list">
+            <li>Web Express incluida</li>
+            <li>Bot integrado a la web</li>
+            <li>WhatsApp Business conectado</li>
+            <li>Captura y filtra leads 24/7</li>
+            <li>Dominio + hosting año 1</li>
+            <li>Ahorras S/ 390 vs comprar separado</li>
+          </ul>
+          <a href="https://wa.me/51978303058?text=Quiero%20Web%20%2B%20Bot%20IA%20S%2F%202490" target="_blank" rel="noopener" class="btn btn-accent">Elegir <span class="arrow">→</span></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA Final con banner ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="banner-cta reveal">
+        <div class="banner-cta-bg">
+          <img src="../img/chatbot-ai-banner.jpg" alt="" loading="lazy" />
+        </div>
+        <div class="banner-cta-inner">
+          <span class="eyebrow center" style="margin-bottom: 1.5rem; display: inline-flex;">Pruébalo aquí mismo</span>
+          <h2 class="h-1">El bot que ves abajo<br /><span class="serif-it">puede ser el tuyo.</span></h2>
+          <p style="margin: 1.5rem auto 2.25rem; max-width: 540px; color: var(--fg-soft);">Abre el chat en la esquina inferior y haz cualquier pregunta. Si te gusta cómo responde, lo entrenamos con tu negocio en 48 horas.</p>
+          <div class="hero-ctas" style="justify-content: center;">
+            <button class="btn btn-primary" onclick="document.getElementById('botLauncher').click()">
+              Probar bot demo <span class="arrow">→</span>
+            </button>
+            <a href="https://wa.me/51978303058?text=Quiero%20un%20bot%20para%20mi%20negocio" target="_blank" rel="noopener" class="btn btn-ghost">Hablar por WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <a href="../index.html" class="brand"><span class="mark"></span> Studio <span class="brand-it">Gona Live</span></a>
+          <p>Agencia digital que lanza negocios completos en menos de una semana.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Servicios</h5>
+          <ul>
+            <li><a href="web-3-dias.html">Web Express 3 días</a></li>
+            <li><a href="chatbot-ia.html">Chatbot con IA</a></li>
+            <li><a href="fb-ads.html">Plan FB Ads</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Explorar</h5>
+          <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../index.html#pricing">Precios</a></li>
+            <li><a href="../index.html#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Contacto</h5>
+          <ul>
+            <li><a href="https://wa.me/51978303058" target="_blank" rel="noopener">WhatsApp +51 978 303 058</a></li>
+            <li><a href="mailto:todo07387@gmail.com">todo07387@gmail.com</a></li>
+            <li>Lima, Perú</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Agencia Studio Gona Live.</span>
+        <span>Hecho con <span class="text-accent">★</span> en Perú</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="bot-launcher" id="botLauncher" aria-label="Chat IA"><span class="badge">IA</span>g</button>
+  <div class="bot-panel" id="botPanel" role="dialog">
+    <div class="bot-header">
+      <div class="bot-avatar">g</div>
+      <div class="bot-meta"><h6>Asistente Gona</h6><span class="status">En línea</span></div>
+      <button class="bot-close" id="botClose">×</button>
+    </div>
+    <div class="bot-body" id="botBody"></div>
+    <div class="bot-quick" id="botQuick">
+      <button class="bot-chip" data-q="¿Cómo entrenan al bot?">¿Cómo lo entrenan?</button>
+      <button class="bot-chip" data-q="¿Cuánto cuesta el bot?">¿Cuánto cuesta?</button>
+      <button class="bot-chip" data-q="¿Funciona en WhatsApp?">¿WhatsApp?</button>
+    </div>
+    <form class="bot-form" id="botForm">
+      <input type="text" class="bot-input" id="botInput" placeholder="Pregúntame lo que quieras..." autocomplete="off" />
+      <button type="submit" class="bot-send">→</button>
+    </form>
+  </div>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/chatbot.js"></script>
+</body>
+</html>

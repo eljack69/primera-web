@@ -1,0 +1,105 @@
+:root {
+  /* === Paleta · Postal vintage andina ===
+     Papel antiguo + tinta verde botella + mostaza + brick.
+     Inspirada en guías de viaje impresas de los años 70 */
+  --color-bg:        #f3e9d2;   /* crema papel antiguo */
+  --color-bg-alt:    #ead8b5;   /* mostaza pálida */
+  --color-bg-soft:   #faf2dc;   /* papel suave */
+  --color-surface:   #fff8e5;
+  --color-text:      #2d2a20;   /* tinta sepia oscura */
+  --color-text-muted:#5c5443;   /* WCAG AA 7:1 sobre cremas */
+  --color-border:    #c8b48c;
+  --color-hairline:  #9c8761;
+
+  --color-accent:        #2d4a3a; /* tinta verde botella */
+  --color-accent-hover:  #1d362a;
+  --color-accent-soft:   #c5d1c2;
+  --color-accent-glow:   #6b9077;
+
+  --color-secondary:     #a44a3f; /* brick / sello rojo */
+  --color-secondary-soft:#f0d2cd;
+
+  --color-tertiary:      #c89c3d; /* mostaza profunda */
+
+  --color-dark:      #1e1c14;
+  --color-dark-text: #f3e9d2;
+
+  /* Tipografía · slab serif clásica + sans humanista */
+  --font-display: 'Playfair Display', 'Bodoni Moda', Georgia, serif;
+  --font-slab:    'DM Serif Display', 'Playfair Display', Georgia, serif;
+  --font-sans:    'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono:    'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --fs-2xs:  0.6875rem;
+  --fs-xs:   0.75rem;
+  --fs-sm:   0.875rem;
+  --fs-base: 1rem;
+  --fs-lg:   1.125rem;
+  --fs-xl:   1.375rem;
+  --fs-2xl:  1.75rem;
+  --fs-3xl:  2.25rem;
+  --fs-4xl:  3.25rem;
+  --fs-5xl:  clamp(3rem, 7.5vw, 6.5rem);
+  --fs-hero: clamp(3rem, 9vw, 7.5rem);
+
+  --fw-regular: 400;
+  --fw-medium:  500;
+  --fw-semibold:600;
+  --fw-bold:    700;
+
+  --lh-tight:   1.05;
+  --lh-snug:    1.2;
+  --lh-normal:  1.6;
+  --lh-relaxed: 1.75;
+
+  --tracking-tighter:-0.03em;
+  --tracking-tight:  -0.01em;
+  --tracking-normal:  0;
+  --tracking-wide:    0.12em;
+  --tracking-wider:   0.24em;
+
+  --space-1:  0.25rem;
+  --space-2:  0.5rem;
+  --space-3:  0.75rem;
+  --space-4:  1rem;
+  --space-6:  1.5rem;
+  --space-8:  2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-24: 6rem;
+  --space-32: 8rem;
+  --section-y: clamp(4rem, 9vw, 8rem);
+
+  --container-narrow: 640px;
+  --container-base:   1180px;
+  --container-wide:   1320px;
+  --gutter: clamp(1.25rem, 4vw, 2.5rem);
+
+  /* Bordes mínimos — el look postal usa bordes dobles, no radios */
+  --radius-sm: 2px;
+  --radius-md: 3px;
+  --radius-lg: 4px;
+  --radius-xl: 6px;
+  --radius-full: 9999px;
+
+  --shadow-xs: 0 1px 0 var(--color-hairline);
+  --shadow-sm: 2px 2px 0 var(--color-hairline);
+  --shadow-md: 4px 4px 0 var(--color-accent);
+  --shadow-lg: 8px 8px 0 var(--color-accent);
+
+  --ease-out:    cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast:    180ms;
+  --dur-base:    420ms;
+  --dur-slow:    820ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

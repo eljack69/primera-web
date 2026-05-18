@@ -1,0 +1,124 @@
+/* ============================================================
+   Tokens — Clínica Dental Japandi
+   Estética: fusión zen japonesa + hygge escandinavo
+   Reglas: paleta apagada, whitespace ikebana, motion ceremonial
+   ============================================================ */
+
+:root {
+  /* === Color — paleta lino + terracota mute + matcha + ocre === */
+  --color-bg:           #f5f1ea;  /* beige lino, no #fff puro */
+  --color-bg-deep:      #ece6da;  /* segundo plano cálido */
+  --color-surface:      #fbfaf6;  /* superficie casi-papel */
+  --color-paper:        #ebe5d8;  /* papel washi para divisores */
+  --color-text:         #2b2620;  /* casi-negro tibio, no #000 */
+  --color-text-soft:    #4a4339;  /* secundario, AAA sobre bg */
+  --color-text-muted:   #6e6358;  /* AA (5.6:1) sobre --color-bg */
+  --color-border:       #dcd4c2;
+  --color-border-soft:  #e5dfd0;
+  --color-accent:       #a85a3e;  /* terracota apagada */
+  --color-accent-soft:  #c47e63;  /* lavada — hover/badges */
+  --color-matcha:       #7a8a6d;  /* verde matcha tenue */
+  --color-ocre:         #b89968;  /* ocre arcilla */
+
+  /* === Tipografía === */
+  --font-display: 'Instrument Serif', 'Fraunces', Georgia, serif;
+  --font-sans:    'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono:    ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* Escala restringida — menos saltos = más zen */
+  --fs-xs:   0.75rem;
+  --fs-sm:   0.875rem;
+  --fs-base: 1rem;
+  --fs-lg:   1.125rem;
+  --fs-xl:   1.375rem;
+  --fs-2xl:  1.75rem;
+  --fs-3xl:  2.25rem;
+  --fs-4xl:  2.75rem;
+  --fs-5xl:  clamp(2.5rem, 6vw, 4.5rem);   /* hero — menos dramático */
+
+  --fw-regular: 400;
+  --fw-medium:  500;
+
+  --lh-tight:    1.15;
+  --lh-snug:     1.4;
+  --lh-normal:   1.75;   /* prosa muy aireada */
+  --lh-relaxed:  1.9;
+
+  --tracking-tight:   -0.02em;    /* menos apretado — respira */
+  --tracking-normal:   0;
+  --tracking-wide:     0.12em;    /* eyebrow muy expandido */
+
+  /* === Espacio — escala ceremonial === */
+  --space-1:  0.25rem;
+  --space-2:  0.5rem;
+  --space-3:  0.75rem;
+  --space-4:  1rem;
+  --space-6:  1.5rem;
+  --space-8:  2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-24: 6rem;
+  --space-32: 8rem;
+  --space-40: 10rem;
+  --space-48: 12rem;
+
+  --section-y:        clamp(6rem, 14vw, 12rem);   /* whitespace abrumador entre secciones */
+  --section-y-half:   clamp(3rem, 8vw, 6rem);
+
+  /* === Layout — containers estrechos === */
+  --container-narrow: 560px;
+  --container-base:   960px;
+  --container-wide:   1180px;
+  --gutter:           clamp(1.5rem, 5vw, 3rem);
+
+  /* === Radius — casi cuadrado, sin redondeces SaaS === */
+  --radius-sm:    2px;
+  --radius-md:    6px;
+  --radius-lg:    12px;
+  --radius-full:  9999px;
+
+  /* === Shadow — casi nula === */
+  --shadow-xs: 0 1px 2px rgba(43,38,32,0.04);
+  --shadow-sm: 0 2px 8px rgba(43,38,32,0.05);
+
+  /* === Motion — ceremonial, "tinta en papel de arroz" === */
+  --dur-fast:   200ms;
+  --dur-base:   500ms;
+  --dur-slow:   900ms;
+  --ease-shoji: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-ink:   cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* === Z-index === */
+  --z-nav:    50;
+  --z-banner: 60;
+}
+
+/* Modo oscuro — inversión sumio (tinta sumi-e) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg:           #1a1612;
+    --color-bg-deep:      #14110d;
+    --color-surface:      #221d18;
+    --color-paper:        #2a241e;
+    --color-text:         #f5f1ea;
+    --color-text-soft:    #d7cfc1;
+    --color-text-muted:   #9c9286;
+    --color-border:       #3a322a;
+    --color-border-soft:  #2c2620;
+    --color-accent:       #c8765a;
+    --color-accent-soft:  #d99076;
+    --color-matcha:       #95a486;
+    --color-ocre:         #c9aa7e;
+  }
+}
+
+/* Reduced motion — degradación grácil del scroll ceremonial */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

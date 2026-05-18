@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://eljack69.github.io/portafolio-viajes/sitemap.xml

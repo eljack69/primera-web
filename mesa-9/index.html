@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#1a1614">
+  <meta name="description" content="Mesa 9 — restaurante boutique de chef. Menú degustación de temporada para nueve comensales. Plantilla demo.">
+
+  <title>Mesa 9 — Una mesa, nueve asientos, una temporada</title>
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <!-- Open Graph (demo) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mesa 9 — Restaurante boutique de chef">
+  <meta property="og:description" content="Menú degustación que cambia con el ritmo de la huerta y el mar.">
+  <meta property="og:locale" content="es_ES">
+
+  <!-- Fuentes con display=swap -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@400;500&display=swap">
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <!-- ============================ BANNER DEMO ============================ -->
+  <div class="demo-banner" role="note">
+    &#9888; Plantilla demo &middot; contenido ficticio
+  </div>
+
+  <!-- ============================ NAVBAR ============================ -->
+  <header class="nav" id="top">
+    <div class="container nav__inner">
+      <a href="#top" class="brand" aria-label="Mesa 9 inicio">Mesa <span>9</span></a>
+
+      <nav id="primary-nav" aria-label="Principal">
+        <ul class="nav__links">
+          <li><a href="#menu">Menú</a></li>
+          <li><a href="#filosofia">Filosofía</a></li>
+          <li><a href="#reservar">Reservar</a></li>
+          <li><a href="#visitar">Visitar</a></li>
+        </ul>
+      </nav>
+
+      <a href="#reservar" class="btn btn--accent nav__cta">Reservar mesa</a>
+
+      <button class="nav__toggle" type="button"
+              aria-label="Abrir menú" aria-expanded="false"
+              aria-controls="primary-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============================ HERO ============================ -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero__media" aria-hidden="true">
+      <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=2000&q=80"
+           alt="" fetchpriority="high" loading="eager"
+           width="2000" height="1333">
+    </div>
+
+    <div class="hero__inner">
+      <span class="eyebrow hero__eyebrow">Restaurante · 2 estrellas · Desde 2014</span>
+      <h1 id="hero-title" class="hero__title">
+        <span>Una mesa,</span>
+        <span>nueve asientos,</span>
+        <span>una temporada.</span>
+      </h1>
+      <p class="hero__sub">
+        Menú degustación que cambia con el ritmo de la huerta y el mar.
+      </p>
+      <a href="#reservar" class="btn">Reservar mesa <span aria-hidden="true">&rarr;</span></a>
+    </div>
+
+    <span class="hero__scroll" aria-hidden="true">Desliza</span>
+  </section>
+
+  <!-- ============================ MENÚ ============================ -->
+  <section class="section section--lg" id="menu">
+    <div class="container container--narrow">
+
+      <header class="menu__head" data-reveal>
+        <span class="eyebrow">El menú &middot; Temporada otoño-invierno</span>
+        <h2 class="menu__title">Nueve pasos,<br>una sola lectura.</h2>
+      </header>
+
+      <div class="menu__chapters">
+
+        <!-- i. Para empezar -->
+        <article class="chapter" data-reveal>
+          <header class="chapter__head">
+            <span class="chapter__num">i.</span>
+            <span class="chapter__name">Para empezar</span>
+          </header>
+          <ol class="chapter__list">
+            <li class="dish">
+              <div class="dish__main">
+                <h3 class="dish__name">Ostra Belón, manzana ácida, eneldo</h3>
+                <p class="dish__desc">Ostras de cría artesanal, jugo de manzana reineta clarificado, brotes de eneldo del huerto.</p>
+              </div>
+              <span class="dish__price">24</span>
+            </li>
+            <li class="dish">
+              <div class="dish__main">
+                <h3 class="dish__name">Caldo de gallina vieja, anguila ahumada</h3>
+                <p class="dish__desc">Reducción de doce horas con aves de corral, anguila curada al humo de roble, hierbas amargas.</p>
+              </div>
+              <span class="dish__price">—</span>
+            </li>
+            <li class="dish">
+              <div class="dish__main">
+                <h3 class="dish__name">Pan negro de masa madre, mantequilla noisette</h3>
+                <p class="dish__desc">Cereal antiguo molido a piedra, mantequilla tostada de leche cruda, escamas de sal de Añana.</p>
+              </div>
+              <span class="dish__price">—</span>
+            </li>
+          </ol>
+        </article>
+
+        <!-- ii. Del mar -->
+        <article class="chapter" data-reveal>
+          <header class="chapter__head">
+            <span class="chapter__num">ii.</span>
+            <span class="chapter__name">Del mar</span>
+          </header>
+          <ol class="chapter__list">
+            <li class="dish">
+              <div class="dish__main">
+                <h3 class="dish__name">Vieira del Cantábrico, mantequilla de algas</h3>
+                <p class="dish__desc">Vieira viva abierta en sala, dashi de kombu local, aceite de codium y limón confitado.</p>
+              </div>
+              <span class="dish__price">38</span>
+            </li>
+            <li class="dish">
+              <div class="dish__main">
+                <h3 class="dish__name">Merluza de pincho, pil-pil reducido</h3>
+                <p class="dish__desc">Lomo de merluza de Burela curado en sal, emulsión templada de ajo, perejil y guindilla seca.</p>
+              </div>
+              <span class="dish__price">42</span>
+            </li>
+            <li class="dish">
+              <div class="dish__main">
+                <h3 class="dish__name">Lubina salvaje, hinojo, beurre blanc cítrico</h3>
+                <p class="dish__desc">Lubina de anzuelo, hinojo asado al rescoldo, mantequilla de bergamota y vino blanco de la tierra.</p>
+              </div>
+              <span class="dish__price">46</span>
+            </li>
+          </ol>
+        </article>
+
+        <!-- iii. Del campo -->
+        <article class="chapter" data-reveal>
+          <header class="chapter__head">
+            <span class="chapter__num">iii.</span>
+            <span class="chapter__name">Del campo</span>
+          </header>
+          <ol class="chapter__list">
+            <li class="dish">
+              <div class="dish__main">
+                <h3 class="dish__name">Calabaza de invierno, avellana, salvia frita</h3>
+                <p class="dish__desc">Calabaza tatemada con miel de brezo, avellanas tostadas a leña, hojas de salvia crujientes.</p>
+              </div>
+              <span class="dish__price">26</span>
+            </li>
+            <li class="dish">
+              <div class="dish__main">
+                <h3 class="dish__name">Pichón en dos servicios, remolacha, café</h3>
+                <p class="dish__desc">Pechuga madurada siete días, jugo corto con café etíope, remolacha asada en sal.</p>
+              </div>
+              <span class="dish__price">52</span>
+            </li>
+            <li class="dish">
+              <div class="dish__main">
+                <h3 class="dish__name">Vaca rubia gallega, médula, hierbas amargas</h3>
+                <p class="dish__desc">Solomillo de buey madurado en cámara propia, médula a la brasa, achicoria y diente de león.</p>
+              </div>
+              <span class="dish__price">58</span>
+            </li>
+          </ol>
+        </article>
+
+        <!-- iv. Dulces -->
+        <article class="chapter" data-reveal>
+          <header class="chapter__head">
+            <span class="chapter__num">iv.</span>
+            <span class="chapter__name">Dulces</span>
+          </header>
+          <ol class="chapter__list">
+            <li class="dish">
+              <div class="dish__main">
+                <h3 class="dish__name">Queso azul de Cabrales, pera al vino</h3>
+                <p class="dish__desc">Cabrales artesano de cueva, pera conferencia confitada en tinto joven, miga de avellana.</p>
+              </div>
+              <span class="dish__price">18</span>
+            </li>
+            <li class="dish">
+              <div class="dish__main">
+                <h3 class="dish__name">Chocolate 72%, miso, aceite de oliva</h3>
+                <p class="dish__desc">Ganache de cacao venezolano, miso blanco fermentado en casa, aceite arbequina temprano.</p>
+              </div>
+              <span class="dish__price">16</span>
+            </li>
+            <li class="dish">
+              <div class="dish__main">
+                <h3 class="dish__name">Manzana de la huerta, sidra, helado de laurel</h3>
+                <p class="dish__desc">Manzana reineta cocida lento en sidra natural, espuma fría, helado de hoja de laurel fresco.</p>
+              </div>
+              <span class="dish__price">14</span>
+            </li>
+          </ol>
+        </article>
+
+      </div>
+
+      <p class="menu__foot" data-reveal>
+        Menú único de nueve pasos &middot; 145 € por comensal &middot; maridaje opcional 65 €
+      </p>
+    </div>
+  </section>
+
+  <hr class="hairline">
+
+  <!-- ============================ FILOSOFÍA ============================ -->
+  <section class="section section--lg" id="filosofia">
+    <div class="container">
+      <div class="philo">
+        <div class="philo__media" data-reveal>
+          <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1200&q=80"
+               alt="Chef trabajando concentrado en cocina abierta de madera oscura"
+               loading="lazy" width="1200" height="1500">
+        </div>
+
+        <div class="philo__body" data-reveal>
+          <span class="eyebrow">Filosofía</span>
+          <h2 class="philo__title">Nueve platos,<br>nueve historias.</h2>
+
+          <p>
+            Mesa 9 nació de una convicción simple: <strong>cocinar lo que está cerca, cuando toca</strong>.
+            Trabajamos con dieciséis productores de la comarca y un único barco de bajura que entra al puerto al amanecer. Si el mar no da, el menú espera.
+          </p>
+
+          <p>
+            Cada temporada reescribimos la carta desde cero. El otoño llega con setas, caza menor y los últimos tomates de secano; el invierno trae raíces, pescados de roca y la matanza familiar. Nada viaja más de noventa kilómetros. Nada se desperdicia.
+          </p>
+
+          <p>
+            Nueve asientos. Un solo turno. El tiempo justo para que cada plato encuentre su lectura, y para conversar con quien lo cocina sin alzar la voz.
+          </p>
+
+          <p class="philo__sig">— Chef Lara Otero</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="hairline">
+
+  <!-- ============================ GALERÍA ============================ -->
+  <section class="section">
+    <div class="container">
+      <header class="gallery__head" data-reveal>
+        <span class="eyebrow">Pasajes</span>
+        <h2 class="gallery__title">La temporada,<br>en imágenes.</h2>
+      </header>
+
+      <div class="gallery__grid" data-reveal>
+        <figure class="gallery__item">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1400&q=80"
+               alt="Plato de alta cocina sobre cerámica negra, salsa y flores comestibles"
+               loading="lazy" width="1400" height="1750">
+          <figcaption class="gallery__caption">Vieira &middot; Cantábrico</figcaption>
+        </figure>
+        <figure class="gallery__item">
+          <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=80"
+               alt="Mesa puesta con vajilla de porcelana mate y copas finas"
+               loading="lazy" width="800" height="600">
+          <figcaption class="gallery__caption">Mise en place</figcaption>
+        </figure>
+        <figure class="gallery__item">
+          <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=800&q=80"
+               alt="Ingrediente fresco sobre tabla de madera oscura, luz lateral"
+               loading="lazy" width="800" height="600">
+          <figcaption class="gallery__caption">Ostra Belón &middot; Atlántico Norte</figcaption>
+        </figure>
+        <figure class="gallery__item">
+          <img src="https://images.unsplash.com/photo-1466637574441-749b8f19452f?auto=format&fit=crop&w=800&q=80"
+               alt="Cesto con verduras de raíz y hierbas del huerto recién cosechadas"
+               loading="lazy" width="800" height="600">
+          <figcaption class="gallery__caption">Huerto &middot; Km 9</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <hr class="hairline">
+
+  <!-- ============================ VISITAR ============================ -->
+  <section class="section section--lg" id="visitar">
+    <div class="container container--narrow">
+      <header class="visit__head" data-reveal>
+        <span class="eyebrow">Visitar</span>
+        <h2 class="visit__title">Cómo llegar,<br>cuándo venir.</h2>
+      </header>
+
+      <div class="visit__grid" data-reveal>
+        <div class="visit__block">
+          <h3>Dirección</h3>
+          <address>
+            Calle del Faro, 9<br>
+            33203 Gijón, Asturias
+          </address>
+          <p class="meta">Entrada por callejón posterior. Sin cartel.</p>
+        </div>
+
+        <div class="visit__block">
+          <h3>Horarios</h3>
+          <p>
+            Cena, mar &mdash; sáb<br>
+            Turno único: 20:30 h<br>
+            Mediodía: solo sábado, 13:30 h
+          </p>
+          <p class="meta">Cerrado dom y lun. Vacaciones agosto.</p>
+        </div>
+
+        <div class="visit__block">
+          <h3>Contacto</h3>
+          <p>
+            <a href="mailto:reservas@mesa9.demo">reservas@mesa9.demo</a><br>
+            <a href="tel:+34900000000">+34 900 000 000</a>
+          </p>
+          <p class="meta">Respuesta en 24 h hábiles.</p>
+        </div>
+      </div>
+
+      <p class="visit__coords" data-reveal>43.54&deg; N &middot; 5.66&deg; O</p>
+    </div>
+  </section>
+
+  <!-- ============================ CTA RESERVA ============================ -->
+  <section class="cta" id="reservar" aria-labelledby="cta-title">
+    <div class="container container--narrow">
+      <span class="eyebrow cta__eyebrow">Reserva</span>
+      <h2 id="cta-title" class="cta__title">
+        <span>Reserva con</span>
+        <span>al menos 14 días</span>
+        <span>de antelación.</span>
+      </h2>
+      <a href="mailto:reservas@mesa9.demo?subject=Reserva%20Mesa%209" class="btn btn--solid-dark">
+        Reservar <span aria-hidden="true">&rarr;</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============================ FOOTER ============================ -->
+  <footer class="foot">
+    <div class="container foot__inner">
+      <div class="foot__left">
+        <span class="foot__brand">Mesa <em>9</em></span>
+        <p style="margin-top:.5rem;">Nueve asientos, una temporada.</p>
+      </div>
+      <div class="foot__center">
+        <p>&copy; <span data-year>2026</span> Mesa 9 &middot; Demo</p>
+      </div>
+      <div class="foot__right">
+        <p>Diseño editorial &middot; plantilla ficticia</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

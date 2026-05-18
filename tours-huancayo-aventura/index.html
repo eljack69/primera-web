@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0d1411" />
+  <title>[Demo] Wanka Expedition — Aventura en los Andes centrales</title>
+  <meta name="description" content="Plantilla demo de operador de aventura en Huancayo: ascenso al Huaytapallana, trekking del Mantaro, valles, lagunas y comunidades wanka. Itinerarios para viajeros que buscan ir más allá. Contenido placeholder." />
+  <meta name="robots" content="noindex,nofollow" />
+  <link rel="canonical" href="https://eljack69.github.io/primera-web/tours-huancayo-aventura/" />
+
+  <meta property="og:title" content="[Demo] Wanka Expedition — Aventura en los Andes centrales" />
+  <meta property="og:description" content="Plantilla demo de tours de aventura en la sierra central del Perú — diseño expedition outdoor." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://eljack69.github.io/primera-web/tours-huancayo-aventura/" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1531065208531-4036c0dba3ca?auto=format&fit=crop&w=1200&q=80" />
+  <meta property="og:locale" content="es_PE" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="[Demo] Wanka Expedition — Aventura en los Andes" />
+  <meta name="twitter:description" content="Plantilla demo de tours de aventura en la sierra central del Perú." />
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1531065208531-4036c0dba3ca?auto=format&fit=crop&w=1200&q=80" />
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin />
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1531065208531-4036c0dba3ca?auto=format&fit=crop&w=1800&q=80" fetchpriority="high" />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/expedition.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TravelAgency",
+    "name": "Wanka Expedition (DEMO — datos ficticios)",
+    "description": "Plantilla demo de operador de aventura en Huancayo. Todos los datos son placeholder.",
+    "url": "https://eljack69.github.io/primera-web/tours-huancayo-aventura/",
+    "telephone": "+51 900 000 000",
+    "areaServed": { "@type": "City", "name": "Huancayo", "containedInPlace": { "@type": "AdministrativeArea", "name": "Junín, Perú" } },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. Giráldez 456",
+      "addressLocality": "Huancayo",
+      "addressRegion": "Junín",
+      "postalCode": "12001",
+      "addressCountry": "PE"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "07:00", "closes": "21:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "08:00", "closes": "16:00" }
+    ],
+    "priceRange": "S/",
+    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "412" }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "¿Qué nivel físico se requiere para el ascenso al Huaytapallana?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Nivel intermedio. Caminata de 6-8 horas a más de 5.000 msnm. Recomendamos 3 días previos de aclimatación en Huancayo." } },
+      { "@type": "Question", "name": "¿Incluyen equipo técnico de montaña?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Sí. Bastones, crampones y casco van incluidos en los tours de alta montaña. Recomendamos traer tu propia ropa térmica y zapatos de trekking." } },
+      { "@type": "Question", "name": "¿Cuál es la mejor época para ir?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Mayo a septiembre: cielos despejados, mejores vistas y menor riesgo de tormenta. Diciembre a marzo: temporada de lluvias, paisajes más verdes pero tours de altura restringidos." } },
+      { "@type": "Question", "name": "¿Trabajan con grupos pequeños?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Sí. Máximo 8 personas por guía en tours regulares y 4 en alta montaña. Salidas privadas disponibles bajo solicitud." } },
+      { "@type": "Question", "name": "¿Política de cancelación?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Cancelación gratuita hasta 48h antes. Reembolso 100%. Por mal clima reprogramamos sin costo." } }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <div class="demo-banner" role="note" aria-label="Aviso de plantilla demo">
+    ⚠ Plantilla demo · contenido (marca, fotos, precios, testimonios) es ficticio
+  </div>
+
+  <header class="nav" id="nav">
+    <a class="nav__logo" href="/">
+      <svg width="28" height="28" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <path d="M2 28L10 12l5 7 4-9 5 6 4-8v20H2z" fill="currentColor"/>
+      </svg>
+      <span>Wanka<strong>Expedition</strong></span>
+    </a>
+    <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav__menu" id="menu">
+      <a href="#expediciones">Expediciones</a>
+      <a href="#rutas">Rutas</a>
+      <a href="#proceso">Cómo va</a>
+      <a href="#equipo">Guías</a>
+      <a href="#opiniones">Reseñas</a>
+      <a href="#faq">FAQ</a>
+      <a href="tel:+51900000000" class="nav__phone" aria-label="Llamar al [900 000 000]"><span aria-hidden="true">📞</span> [900 000 000]</a>
+      <a href="#contacto" class="btn btn--primary">Reservar</a>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <!-- ============ HERO full-bleed ============ -->
+    <section class="hero">
+      <div class="hero__grid">
+        <div class="hero__text">
+          <span class="eyebrow">Huancayo · 3.250 — 5.557 msnm · Est. 2014</span>
+          <div class="hero__trustbar" aria-label="Prueba social">
+            <span class="hero__trustbar-google" aria-hidden="true">★</span>
+            <span><strong>4.9</strong> · 412 reseñas en TripAdvisor</span>
+            <span class="hero__trustbar-sep" aria-hidden="true">·</span>
+            <span>Salidas todo el año</span>
+          </div>
+          <h1>Donde la <em>aventura</em> empieza por la altura.</h1>
+          <p class="hero__sub">Ascensos, trekkings y expediciones por la sierra central del Perú. Guías locales colegiados, equipo técnico incluido y grupos máximo de 8. Para los que vienen a hacer cumbre.</p>
+          <div class="hero__ctas">
+            <a href="#contacto" class="btn btn--primary btn--lg">Reservar expedición <span class="btn__arrow">→</span></a>
+            <a href="#expediciones" class="btn btn--soft btn--lg">Ver rutas</a>
+          </div>
+          <ul class="hero__logos" aria-label="Acreditaciones">
+            <li>Registro Mincetur</li>
+            <li>Guías UIAGM</li>
+            <li>Cancelación 48h</li>
+            <li>Grupos ≤ 8</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="hero__stats">
+        <div data-reveal data-reveal-delay="1">
+          <strong>11<em>+</em></strong>
+          <span>Años en los Andes</span>
+        </div>
+        <div data-reveal data-reveal-delay="2">
+          <strong>5.557<em>m</em></strong>
+          <span>Cumbre más alta</span>
+        </div>
+        <div data-reveal data-reveal-delay="3">
+          <strong>0<em>·</em></strong>
+          <span>Accidentes graves</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TRUST STRIP ============ -->
+    <section class="trust" aria-label="Avales y certificaciones">
+      <div class="trust__inner">
+        <span class="trust__label">Certificados por</span>
+        <div class="trust__items">
+          <span class="trust__item">Mincetur</span>
+          <span class="trust__item">UIAGM</span>
+          <span class="trust__item">Promperú · CALTUR</span>
+          <span class="trust__item">Seguro RC incluido</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPEDICIONES · bento ============ -->
+    <section id="expediciones" class="section">
+      <div class="container container--wide">
+        <header class="section__head" data-reveal>
+          <span class="eyebrow">Qué hacemos</span>
+          <h2>Seis maneras de <em>ir más alto.</em></h2>
+          <p>Del nevado tutelar a las comunidades del Mantaro. Tú eliges el reto.</p>
+        </header>
+
+        <div class="services">
+          <article class="service-card service-card--feature" data-reveal>
+            <div class="service-card__head">
+              <span class="service-card__num">01 / EXPEDICIÓN</span>
+              <div class="service-card__icon">🏔️</div>
+            </div>
+            <div>
+              <h3>Huaytapallana 5.557 m</h3>
+              <p style="margin-top: var(--space-3);">Ascenso al nevado tutelar wanka. 4×4, guía de montaña UIAGM, equipo técnico, fotografía profesional. Para nivel físico intermedio-avanzado.</p>
+            </div>
+            <a href="#contacto" class="service-card__link">Reservar expedición <span class="btn__arrow">→</span></a>
+          </article>
+
+          <article class="service-card service-card--wide" data-reveal data-reveal-delay="1">
+            <div class="service-card__head">
+              <span class="service-card__num">02</span>
+              <div class="service-card__icon">🥾</div>
+            </div>
+            <div>
+              <h3>Trekking Laguna de Paca</h3>
+              <p style="margin-top: var(--space-3);">Sendero panorámico + bote + almuerzo de trucha. Medio día, todos los niveles.</p>
+            </div>
+          </article>
+
+          <article class="service-card service-card--wide" data-reveal data-reveal-delay="2">
+            <div class="service-card__head">
+              <span class="service-card__num">03</span>
+              <div class="service-card__icon">🌄</div>
+            </div>
+            <div>
+              <h3>Valle del Mantaro</h3>
+              <p style="margin-top: var(--space-3);">Día completo: San Jerónimo (plata), Hualhuas (textiles) y Cochas (mate burilado).</p>
+            </div>
+          </article>
+
+          <article class="service-card" data-reveal>
+            <div class="service-card__head">
+              <span class="service-card__num">04</span>
+              <div class="service-card__icon">🚵</div>
+            </div>
+            <div>
+              <h3>MTB · Bajada andina</h3>
+              <p style="margin-top: var(--space-3);">35 km de bajada técnica con vistas al valle. Bicis premium incluidas.</p>
+            </div>
+          </article>
+
+          <article class="service-card" data-reveal data-reveal-delay="1">
+            <div class="service-card__head">
+              <span class="service-card__num">05</span>
+              <div class="service-card__icon">🚂</div>
+            </div>
+            <div>
+              <h3>Tren Macho · Huancavelica</h3>
+              <p style="margin-top: var(--space-3);">Uno de los trenes más altos del mundo. Día completo, vagón privado.</p>
+            </div>
+          </article>
+
+          <article class="service-card" data-reveal data-reveal-delay="2">
+            <div class="service-card__head">
+              <span class="service-card__num">06</span>
+              <div class="service-card__icon">🔥</div>
+            </div>
+            <div>
+              <h3>Pachamanca + bivouac</h3>
+              <p style="margin-top: var(--space-3);">Cocina ancestral + noche bajo las estrellas en comunidad wanka.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PRECIOS Y RESERVA ============ -->
+    <section id="precios" class="section section--soft">
+      <div class="container container--wide">
+        <header class="section__head" data-reveal>
+          <span class="eyebrow">Tarifas</span>
+          <h2>Precios claros, <em>sin sorpresas.</em></h2>
+          <p>Por persona, con todo incluido. Cancelación gratuita hasta 48h antes.</p>
+        </header>
+        <div class="pricing">
+          <article class="pricing-card" data-reveal>
+            <span class="pricing-card__tag">Medio día</span>
+            <strong class="pricing-card__price">desde [XX]<em>S/</em></strong>
+            <p>Trekkings cortos, ruta de artesanos o Convento de Ocopa. 4-5 horas. Salidas mañana o tarde.</p>
+          </article>
+          <article class="pricing-card pricing-card--feature" data-reveal data-reveal-delay="1">
+            <span class="pricing-card__tag">Día completo</span>
+            <strong class="pricing-card__price">desde [XXX]<em>S/</em></strong>
+            <p>Mantaro completo, Tren Macho o ascenso al Huaytapallana. Almuerzo + transporte + guía bilingüe incluidos.</p>
+            <span class="pricing-card__note">[Precio orientativo · ajustado al grupo final]</span>
+          </article>
+          <article class="pricing-card" data-reveal data-reveal-delay="2">
+            <span class="pricing-card__tag">Expedición 2-3 días</span>
+            <strong class="pricing-card__price">desde [XXX]<em>S/</em></strong>
+            <p>Huaytapallana + valle + pachamanca con bivouac. Hospedaje y comidas incluidos. Cupo máximo 8.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROCESO · cómo va ============ -->
+    <section id="proceso" class="section">
+      <div class="container container--wide">
+        <header class="section__head" data-reveal>
+          <span class="eyebrow">Cómo va</span>
+          <h2>De la idea a <em>la cumbre.</em></h2>
+          <p>Respondemos por WhatsApp en menos de 2 horas (hora Perú).</p>
+        </header>
+
+        <div class="process">
+          <div class="process-step" data-reveal>
+            <div class="process-step__num">01</div>
+            <h3>Cuéntanos</h3>
+            <p>Días, nivel físico, intereses (cultura, aventura). Sin compromiso.</p>
+          </div>
+          <div class="process-step" data-reveal data-reveal-delay="1">
+            <div class="process-step__num">02</div>
+            <h3>Itinerario</h3>
+            <p>Te enviamos plan detallado, presupuesto y opciones alternativas en menos de 24h.</p>
+          </div>
+          <div class="process-step" data-reveal data-reveal-delay="2">
+            <div class="process-step__num">03</div>
+            <h3>Reserva</h3>
+            <p>Pago parcial seguro (Mercado Pago / Yape / wire). Voucher al instante.</p>
+          </div>
+          <div class="process-step" data-reveal data-reveal-delay="3">
+            <div class="process-step__num">04</div>
+            <h3>Vive</h3>
+            <p>Recogida en tu hospedaje. Equipo técnico, snacks y fotos garantizadas.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EQUIPO ============ -->
+    <section id="equipo" class="section section--alt">
+      <div class="container container--wide">
+        <header class="section__head" data-reveal>
+          <span class="eyebrow">Tus guías</span>
+          <h2>Wankas de nacimiento, <em>profesionales de oficio.</em></h2>
+          <p>Todos colegiados y certificados. La mayoría con experiencia internacional.</p>
+        </header>
+        <div class="team">
+          <article class="team-card" data-reveal>
+            <div class="team-card__media">
+              <img src="https://images.unsplash.com/photo-1542080681-b52d382432af?auto=format&fit=crop&w=600&q=80"
+                   alt="Guía de montaña con mochila técnica" loading="lazy" width="600" height="750" />
+            </div>
+            <div class="team-card__info">
+              <div>
+                <h3>[Nombre Apellido]</h3>
+                <span class="team-card__role">Guía UIAGM · Alta montaña</span>
+              </div>
+              <span class="team-card__cred">colegiado [XXX]</span>
+            </div>
+          </article>
+          <article class="team-card" data-reveal data-reveal-delay="1">
+            <div class="team-card__media">
+              <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=600&q=80"
+                   alt="Guía sonriendo en paisaje andino" loading="lazy" width="600" height="750" />
+            </div>
+            <div class="team-card__info">
+              <div>
+                <h3>[Nombre Apellido]</h3>
+                <span class="team-card__role">Guía cultural · ES/EN</span>
+              </div>
+              <span class="team-card__cred">colegiado [XXX]</span>
+            </div>
+          </article>
+          <article class="team-card" data-reveal data-reveal-delay="2">
+            <div class="team-card__media">
+              <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=600&q=80"
+                   alt="Guía wanka con poncho tradicional" loading="lazy" width="600" height="750" />
+            </div>
+            <div class="team-card__info">
+              <div>
+                <h3>[Nombre Apellido]</h3>
+                <span class="team-card__role">Guía wanka · Quechua, ES, EN</span>
+              </div>
+              <span class="team-card__cred">colegiado [XXX]</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GALERÍA MARQUEE ============ -->
+    <section class="gallery" aria-label="Galería">
+      <header class="gallery__head" data-reveal>
+        <div>
+          <span class="eyebrow">Postales</span>
+          <h2>Lo que verás <em>con tus propios ojos.</em></h2>
+        </div>
+        <p>Lagunas turquesa, nevados, valles verdes y pueblos textiles. Una postal por kilómetro.</p>
+      </header>
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <figure class="marquee__item"><img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=600&q=80" alt="" loading="lazy" width="600" height="750" /><figcaption>Mantaro</figcaption></figure>
+          <figure class="marquee__item"><img src="https://images.unsplash.com/photo-1493780474015-ba834fd0ce2f?auto=format&fit=crop&w=600&q=80" alt="" loading="lazy" width="600" height="750" /><figcaption>Paca</figcaption></figure>
+          <figure class="marquee__item"><img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=600&q=80" alt="" loading="lazy" width="600" height="750" /><figcaption>Huaytapallana</figcaption></figure>
+          <figure class="marquee__item"><img src="https://images.unsplash.com/photo-1518391846015-55a9cc003b25?auto=format&fit=crop&w=600&q=80" alt="" loading="lazy" width="600" height="750" /><figcaption>Tunán</figcaption></figure>
+          <figure class="marquee__item"><img src="https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=600&q=80" alt="" loading="lazy" width="600" height="750" /><figcaption>Ocopa</figcaption></figure>
+          <figure class="marquee__item"><img src="https://images.unsplash.com/photo-1500964757637-c85e8a162699?auto=format&fit=crop&w=600&q=80" alt="" loading="lazy" width="600" height="750" /><figcaption>Hualhuas</figcaption></figure>
+          <figure class="marquee__item" aria-hidden="true"><img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=600&q=80" alt="" loading="lazy" width="600" height="750" /><figcaption>Mantaro</figcaption></figure>
+          <figure class="marquee__item" aria-hidden="true"><img src="https://images.unsplash.com/photo-1493780474015-ba834fd0ce2f?auto=format&fit=crop&w=600&q=80" alt="" loading="lazy" width="600" height="750" /><figcaption>Paca</figcaption></figure>
+          <figure class="marquee__item" aria-hidden="true"><img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=600&q=80" alt="" loading="lazy" width="600" height="750" /><figcaption>Huaytapallana</figcaption></figure>
+          <figure class="marquee__item" aria-hidden="true"><img src="https://images.unsplash.com/photo-1518391846015-55a9cc003b25?auto=format&fit=crop&w=600&q=80" alt="" loading="lazy" width="600" height="750" /><figcaption>Tunán</figcaption></figure>
+          <figure class="marquee__item" aria-hidden="true"><img src="https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=600&q=80" alt="" loading="lazy" width="600" height="750" /><figcaption>Ocopa</figcaption></figure>
+          <figure class="marquee__item" aria-hidden="true"><img src="https://images.unsplash.com/photo-1500964757637-c85e8a162699?auto=format&fit=crop&w=600&q=80" alt="" loading="lazy" width="600" height="750" /><figcaption>Hualhuas</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RUTAS POPULARES ============ -->
+    <section id="rutas" class="section">
+      <div class="container container--wide">
+        <header class="section__head" data-reveal>
+          <span class="eyebrow">Rutas populares</span>
+          <h2>Tres expediciones <em>probadas.</em></h2>
+          <p>Combos diseñados con cientos de viajeros. Todos personalizables.</p>
+        </header>
+        <div class="results">
+          <article class="result-card" data-reveal>
+            <div class="result-card__pair">
+              <figure><img src="https://images.unsplash.com/photo-1500964757637-c85e8a162699?auto=format&fit=crop&w=500&q=80" alt="[Tunán · taller de plata — placeholder]" loading="lazy" width="500" height="500" /><figcaption>Día 1</figcaption></figure>
+              <figure><img src="https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=500&q=80" alt="[Convento de Ocopa — placeholder]" loading="lazy" width="500" height="500" /><figcaption>Día 1</figcaption></figure>
+            </div>
+            <div class="result-card__info">
+              <h3>Cultural · 1 día</h3>
+              <p>[Mantaro completo · artesanos + Ocopa · desde [XXX] S/]</p>
+            </div>
+          </article>
+          <article class="result-card" data-reveal data-reveal-delay="1">
+            <div class="result-card__pair">
+              <figure><img src="https://images.unsplash.com/photo-1493780474015-ba834fd0ce2f?auto=format&fit=crop&w=500&q=80" alt="[Laguna de Paca — placeholder]" loading="lazy" width="500" height="500" /><figcaption>Día 1</figcaption></figure>
+              <figure><img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=500&q=80" alt="[Nevado Huaytapallana — placeholder]" loading="lazy" width="500" height="500" /><figcaption>Día 2</figcaption></figure>
+            </div>
+            <div class="result-card__info">
+              <h3>Aventura · 2 días</h3>
+              <p>[Paca + Jauja + Huaytapallana · desde [XXX] S/ · grupo 4-8]</p>
+            </div>
+          </article>
+          <article class="result-card" data-reveal data-reveal-delay="2">
+            <div class="result-card__pair">
+              <figure><img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=500&q=80" alt="[Valle del Mantaro — placeholder]" loading="lazy" width="500" height="500" /><figcaption>Día 1-2</figcaption></figure>
+              <figure><img src="https://images.unsplash.com/photo-1518391846015-55a9cc003b25?auto=format&fit=crop&w=500&q=80" alt="[Tren Macho a Huancavelica — placeholder]" loading="lazy" width="500" height="500" /><figcaption>Día 3</figcaption></figure>
+            </div>
+            <div class="result-card__info">
+              <h3>Completo · 3 días</h3>
+              <p>[Mantaro + Huaytapallana + Tren Macho · desde [XXX] S/]</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ OPINIONES · magazine ============ -->
+    <section id="opiniones" class="section section--soft">
+      <div class="container container--wide">
+        <header class="section__head" data-reveal>
+          <span class="eyebrow">Reseñas</span>
+          <h2>Lo que dicen <em>quienes ya volvieron.</em></h2>
+        </header>
+
+        <div class="reviews">
+          <figure class="review--feature" data-reveal>
+            <div class="review__stars">★★★★★</div>
+            <blockquote>Hicimos el Huaytapallana con [Nombre del guía]. Aclimatación bien planificada, equipo técnico impecable, ritmo respetuoso con el grupo. Llegar a la cumbre al amanecer fue inolvidable.</blockquote>
+            <figcaption class="review__author">
+              <span class="review__avatar">M</span>
+              <div>
+                <div class="review__name">[Viajero A]</div>
+                <div class="review__role">Visitó en [mes/año] · TripAdvisor</div>
+              </div>
+            </figcaption>
+          </figure>
+
+          <div class="reviews__column">
+            <figure class="review--small" data-reveal data-reveal-delay="1">
+              <div class="review__stars">★★★★★</div>
+              <blockquote>«Bajada en MTB épica. 35 km y técnicos. Equipo top.»</blockquote>
+              <figcaption>— [Viajero B] · Google</figcaption>
+            </figure>
+            <figure class="review--small" data-reveal data-reveal-delay="2">
+              <div class="review__stars">★★★★★</div>
+              <blockquote>«Pachamanca con familia local + bivouac. Mucho más que un tour.»</blockquote>
+              <figcaption>— [Viajero C] · Booking</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section id="faq" class="section">
+      <div class="container">
+        <header class="section__head" data-reveal style="text-align: center; margin-inline: auto;">
+          <span class="eyebrow" style="margin-inline: auto;">Dudas frecuentes</span>
+          <h2 style="margin-inline: auto;">Antes de <em>reservar.</em></h2>
+        </header>
+        <div class="faq" data-reveal>
+          <details open>
+            <summary>¿Qué nivel físico se requiere para el ascenso al Huaytapallana?</summary>
+            <p>Nivel intermedio. Caminata de 6-8 horas a más de 5.000 msnm. Recomendamos 3 días previos de aclimatación en Huancayo.</p>
+          </details>
+          <details>
+            <summary>¿Incluyen equipo técnico de montaña?</summary>
+            <p>Sí. Bastones, crampones y casco van incluidos en los tours de alta montaña. Recomendamos traer ropa térmica y zapatos de trekking propios.</p>
+          </details>
+          <details>
+            <summary>¿Cuál es la mejor época para ir?</summary>
+            <p>Mayo a septiembre: cielos despejados, mejores vistas y menor riesgo de tormenta. Diciembre a marzo: temporada de lluvias, paisajes verdes pero tours de altura restringidos.</p>
+          </details>
+          <details>
+            <summary>¿Trabajan con grupos pequeños?</summary>
+            <p>Sí. Máximo 8 personas por guía en tours regulares y 4 en alta montaña. Salidas privadas disponibles bajo solicitud.</p>
+          </details>
+          <details>
+            <summary>¿Política de cancelación?</summary>
+            <p>Cancelación gratuita hasta 48h antes. Reembolso 100%. Por mal clima reprogramamos sin costo.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA / CONTACTO ============ -->
+    <section id="contacto" class="cta">
+      <div class="cta__card" data-reveal>
+        <div class="cta__intro">
+          <span class="eyebrow">Reserva tu expedición</span>
+          <h2>Tu próxima cumbre <em>empieza aquí.</em></h2>
+          <p>Cuéntanos qué te interesa y te enviamos itinerario y presupuesto en menos de 24h.</p>
+          <ul class="cta__bullets">
+            <li>Respuesta por WhatsApp en menos de 2 horas</li>
+            <li>Itinerario y presupuesto sin compromiso</li>
+            <li>Cancelación gratuita hasta 48h antes</li>
+          </ul>
+        </div>
+        <form class="cta__form" action="https://formspree.io/f/REEMPLAZAR" method="POST" aria-label="Formulario de reserva">
+          <label for="tour-nombre">
+            <span>Nombre</span>
+            <input id="tour-nombre" type="text" name="nombre" required placeholder="Tu nombre" autocomplete="name" />
+          </label>
+          <label for="tour-telefono">
+            <span>WhatsApp / Teléfono</span>
+            <input id="tour-telefono" type="tel" name="telefono" required placeholder="+51 900 000 000" autocomplete="tel" inputmode="tel" />
+          </label>
+          <label for="tour-interes">
+            <span>¿Qué expedición te interesa?</span>
+            <select id="tour-interes" name="interes" required>
+              <option value="">Selecciona…</option>
+              <option>Huaytapallana 5.557 m</option>
+              <option>Trekking laguna de Paca</option>
+              <option>Valle del Mantaro y artesanos</option>
+              <option>MTB · Bajada andina</option>
+              <option>Tren Macho a Huancavelica</option>
+              <option>Pachamanca + bivouac</option>
+              <option>Itinerario a medida (varios días)</option>
+              <option>No estoy seguro/a — quiero asesoría</option>
+            </select>
+          </label>
+          <label for="tour-nivel">
+            <span>Nivel físico</span>
+            <select id="tour-nivel" name="nivel">
+              <option value="">Indiferente</option>
+              <option>Principiante (caminatas suaves)</option>
+              <option>Intermedio (1-2 días seguidos)</option>
+              <option>Avanzado (alta montaña)</option>
+              <option>Prefiero asesoría</option>
+            </select>
+          </label>
+          <label class="full" for="tour-mensaje">
+            <span>Cuéntanos más (opcional)</span>
+            <textarea id="tour-mensaje" name="mensaje" rows="2" placeholder="Fechas tentativas, N° personas, alergias…"></textarea>
+          </label>
+          <button type="submit" class="btn btn--primary btn--lg full">Solicitar itinerario <span class="btn__arrow">→</span></button>
+          <p class="cta__legal full">Al enviar, aceptas nuestra política de privacidad. No compartimos tus datos.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__top" data-reveal>
+      <h3>Empieza tu <em>expedición</em> esta semana.</h3>
+      <p>Centro de Huancayo. Recogida desde tu hospedaje incluida en tours full day.</p>
+    </div>
+
+    <div class="footer__grid">
+      <div>
+        <div class="nav__logo">
+          <svg width="24" height="24" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <path d="M2 28L10 12l5 7 4-9 5 6 4-8v20H2z" fill="currentColor"/>
+          </svg>
+          <span>Wanka<strong>Expedition</strong></span>
+        </div>
+        <p style="color: var(--color-text-muted);">Aventura en la sierra central del Perú con guías locales y grupos pequeños.</p>
+      </div>
+      <div>
+        <h4>Visítanos</h4>
+        <p>Av. Giráldez 456<br/>Huancayo, Junín · Perú</p>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <p>+51 900 000 000<br/>hola@wankaexpedition.demo</p>
+      </div>
+      <div>
+        <h4>Horario</h4>
+        <p>L–S · 7:00 – 21:00<br/>D · 8:00 – 16:00<br/>WhatsApp 24/7</p>
+      </div>
+    </div>
+    <div class="footer__legal">
+      <p>© <span id="year"></span> WankaExpedition · Plantilla demo del skill <code>web-pages</code></p>
+      <p>Hecho con <em style="color: var(--color-accent);">altura</em> en Huancayo</p>
+    </div>
+  </footer>
+
+  <div class="cta-sticky" id="ctaSticky" aria-label="Acciones rápidas">
+    <a href="tel:+51900000000" class="cta-sticky__btn cta-sticky__btn--ghost">📞 Llamar</a>
+    <a href="#contacto" class="cta-sticky__btn cta-sticky__btn--primary">Reservar</a>
+  </div>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

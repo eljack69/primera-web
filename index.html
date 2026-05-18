@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0a0a0a" />
+  <title>Portafolio · Agencia Studio Gona Live</title>
+  <meta name="description" content="Web + chatbot WhatsApp para pymes peruanas. Portafolio de demos vivos por sector: dental, restaurante, gimnasio, inmobiliaria, turismo." />
+  <meta name="robots" content="noindex,nofollow" />
+
+  <meta property="og:title" content="Portafolio · Agencia Studio Gona Live" />
+  <meta property="og:description" content="Web + chatbot WhatsApp para pymes peruanas. Demos por sector." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1200&q=80" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ============ RESET ============ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+    img { display: block; max-width: 100%; height: auto; }
+    a { color: inherit; text-decoration: none; }
+    button { font: inherit; cursor: pointer; border: 0; background: none; color: inherit; }
+
+    /* ============ TOKENS ============ */
+    :root {
+      --bg: #0a0a0a;
+      --bg-soft: #131313;
+      --bg-card: #161616;
+      --line: #262626;
+      --line-soft: #1f1f1f;
+      --ink: #fafaf7;
+      --ink-soft: #b3b3b0;
+      --ink-dim: #6e6e6b;
+      --accent: #d9ff00;
+      --accent-soft: rgba(217, 255, 0, 0.12);
+      --serif: 'Instrument Serif', Georgia, serif;
+      --sans: 'Inter', system-ui, -apple-system, sans-serif;
+      --mono: 'JetBrains Mono', ui-monospace, monospace;
+      --max: 1240px;
+      --gutter: clamp(1.25rem, 4vw, 2.5rem);
+      --radius: 6px;
+    }
+
+    body {
+      font-family: var(--sans);
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    .wrap { max-width: var(--max); margin-inline: auto; padding-inline: var(--gutter); }
+
+    /* ============ NAV ============ */
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(10, 10, 10, 0.85);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--line-soft);
+    }
+    .nav__inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-block: 1rem;
+    }
+    .nav__brand {
+      font-family: var(--serif);
+      font-size: 1.4rem;
+      letter-spacing: -0.01em;
+      font-weight: 400;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .nav__brand span { color: var(--accent); font-style: italic; }
+    .nav__mark {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      background: var(--accent);
+      border-radius: 999px;
+      box-shadow: 0 0 16px var(--accent);
+    }
+    .nav__links {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      font-family: var(--mono);
+      font-size: 0.78rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    .nav__links a { color: var(--ink-soft); transition: color 0.2s; }
+    .nav__links a:hover { color: var(--ink); }
+    .nav__cta {
+      padding: 0.55rem 1rem;
+      background: var(--accent);
+      color: var(--bg);
+      border-radius: 999px;
+      font-weight: 600;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .nav__cta:hover { transform: translateY(-1px); box-shadow: 0 8px 24px var(--accent-soft); color: var(--bg); }
+    @media (max-width: 720px) {
+      .nav__links li:not(:last-child) { display: none; }
+    }
+
+    /* ============ HERO ============ */
+    .hero {
+      padding-block: clamp(4rem, 12vw, 8rem) clamp(3rem, 8vw, 6rem);
+      border-bottom: 1px solid var(--line-soft);
+    }
+    .hero__eyebrow {
+      font-family: var(--mono);
+      font-size: 0.78rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--ink-dim);
+      margin-bottom: 1.5rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+    .hero__eyebrow::before {
+      content: '';
+      width: 24px;
+      height: 1px;
+      background: var(--accent);
+    }
+    .hero__title {
+      font-family: var(--serif);
+      font-size: clamp(2.5rem, 8vw, 6.5rem);
+      line-height: 0.98;
+      letter-spacing: -0.025em;
+      font-weight: 400;
+      max-width: 18ch;
+      margin-bottom: 1.5rem;
+    }
+    .hero__title em { color: var(--accent); font-style: italic; }
+    .hero__lead {
+      font-size: clamp(1rem, 1.6vw, 1.25rem);
+      color: var(--ink-soft);
+      max-width: 56ch;
+      line-height: 1.6;
+      margin-bottom: 2.5rem;
+    }
+    .hero__meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      font-family: var(--mono);
+      font-size: 0.78rem;
+      color: var(--ink-dim);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    .hero__meta span strong { color: var(--ink); display: block; font-size: 1.5rem; font-family: var(--serif); font-weight: 400; text-transform: none; letter-spacing: -0.01em; margin-top: 0.25rem; }
+
+    /* ============ SECTIONS ============ */
+    .section { padding-block: clamp(3rem, 7vw, 6rem); }
+    .section + .section { border-top: 1px solid var(--line-soft); }
+
+    .section__head {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 2rem;
+      margin-bottom: 3rem;
+      flex-wrap: wrap;
+    }
+    .section__head-left { max-width: 60ch; }
+    .section__tag {
+      font-family: var(--mono);
+      font-size: 0.72rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.75rem;
+    }
+    .section__title {
+      font-family: var(--serif);
+      font-size: clamp(1.75rem, 4vw, 2.75rem);
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+      font-weight: 400;
+      margin-bottom: 0.75rem;
+    }
+    .section__title em { color: var(--accent); font-style: italic; }
+    .section__sub {
+      color: var(--ink-soft);
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+    .section__sub code {
+      font-family: var(--mono);
+      font-size: 0.85rem;
+      background: var(--bg-card);
+      border: 1px solid var(--line);
+      padding: 1px 7px;
+      border-radius: 4px;
+      color: var(--ink);
+    }
+    .section__count {
+      font-family: var(--mono);
+      font-size: 0.78rem;
+      color: var(--ink-dim);
+      letter-spacing: 0.06em;
+      white-space: nowrap;
+    }
+
+    /* ============ CARDS ============ */
+    .grid {
+      display: grid;
+      gap: 1.25rem;
+    }
+    .grid--featured { grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); }
+    .grid--medium   { grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
+    .grid--small    { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      background: var(--bg-card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      overflow: hidden;
+      transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1), border-color 0.25s, box-shadow 0.35s;
+      position: relative;
+      isolation: isolate;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: var(--accent);
+      box-shadow: 0 18px 40px -20px rgba(217, 255, 0, 0.25);
+    }
+    .card:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+    }
+
+    .card__media {
+      position: relative;
+      aspect-ratio: 16 / 10;
+      overflow: hidden;
+      background: var(--bg-soft);
+    }
+    .card__media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.55s cubic-bezier(0.2, 0.8, 0.2, 1), filter 0.45s;
+      filter: saturate(0.85);
+    }
+    .card:hover .card__media img {
+      transform: scale(1.06);
+      filter: saturate(1.05);
+    }
+    .card__media::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 60%, rgba(10, 10, 10, 0.55) 100%);
+      pointer-events: none;
+    }
+    .card__tag {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      z-index: 1;
+      font-family: var(--mono);
+      font-size: 0.68rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      background: rgba(10, 10, 10, 0.78);
+      backdrop-filter: blur(6px);
+      color: var(--ink);
+      border: 1px solid var(--line);
+      padding: 4px 9px;
+      border-radius: 999px;
+    }
+    .card__demo {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      z-index: 2;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-family: var(--mono);
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      background: var(--accent);
+      color: var(--bg);
+      padding: 7px 12px;
+      border-radius: 999px;
+      box-shadow: 0 6px 18px rgba(217, 255, 0, 0.32);
+      transition: transform 0.2s, box-shadow 0.25s;
+    }
+    .card__demo::after {
+      content: '';
+      width: 6px;
+      height: 6px;
+      background: var(--bg);
+      border-radius: 999px;
+      animation: pulse 1.8s ease-in-out infinite;
+    }
+    .card:hover .card__demo {
+      transform: scale(1.06);
+      box-shadow: 0 8px 24px rgba(217, 255, 0, 0.5);
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 0.4; }
+      50% { opacity: 1; }
+    }
+
+    .card__body {
+      padding: 1.25rem 1.25rem 1.4rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      flex: 1;
+    }
+    .card__title {
+      font-family: var(--serif);
+      font-size: 1.4rem;
+      letter-spacing: -0.01em;
+      line-height: 1.15;
+      font-weight: 400;
+    }
+    .card__brand {
+      font-family: var(--mono);
+      font-size: 0.72rem;
+      color: var(--ink-dim);
+      letter-spacing: 0.04em;
+    }
+    .card__desc {
+      font-size: 0.92rem;
+      color: var(--ink-soft);
+      line-height: 1.55;
+      margin-top: 0.25rem;
+    }
+    .card__cta {
+      margin-top: auto;
+      padding-top: 1rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      font-family: var(--mono);
+      font-size: 0.78rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 500;
+    }
+    .card__cta svg { transition: transform 0.25s; }
+    .card:hover .card__cta svg { transform: translateX(4px); }
+
+    /* ===== Small variant for utility demos ===== */
+    .card--mini {
+      padding: 1rem 1.1rem;
+      gap: 0.35rem;
+    }
+    .card--mini .card__title { font-size: 1.05rem; font-family: var(--sans); font-weight: 600; letter-spacing: -0.005em; }
+    .card--mini .card__url { font-family: var(--mono); font-size: 0.72rem; color: var(--ink-dim); }
+
+    /* ============ FOOTER ============ */
+    footer.foot {
+      border-top: 1px solid var(--line-soft);
+      padding-block: 3rem;
+      color: var(--ink-dim);
+      font-family: var(--mono);
+      font-size: 0.78rem;
+      letter-spacing: 0.04em;
+    }
+    .foot__inner {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .foot strong { color: var(--ink); font-weight: 500; }
+    .foot a:hover { color: var(--accent); }
+
+    /* ============ HELPERS ============ */
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav">
+    <div class="wrap nav__inner">
+      <a href="#" class="nav__brand">
+        <span class="nav__mark" aria-hidden="true"></span>
+        Studio Gona <span>Live</span>
+      </a>
+      <ul class="nav__links" aria-label="Secciones del portafolio">
+        <li><a href="#pymes">Pymes</a></li>
+        <li><a href="#turismo">Turismo</a></li>
+        <li><a href="#otros">Otros</a></li>
+        <li><a class="nav__cta" href="https://wa.me/51978303358?text=Hola%20Studio%20Gona%20Live,%20vi%20su%20portafolio%20y%20quiero%20cotizar." target="_blank" rel="noopener">Cotizar</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="wrap">
+      <p class="hero__eyebrow">Portafolio · 2026</p>
+      <h1 class="hero__title">Web + chatbot que <em>vende mientras duermes,</em> para pymes peruanas.</h1>
+      <p class="hero__lead">Diseñamos landings rápidas, agendamos visitas con bots de WhatsApp y dejamos todo medido en menos de 10 días. Cada caso de abajo es una demo viva — ábrela, escríbele al WhatsApp, prueba el flujo. La que te encaje la adaptamos a tu marca.</p>
+      <div class="hero__meta">
+        <span>Setup desde<strong>S/. 1,500</strong></span>
+        <span>Entrega en<strong>10 días</strong></span>
+        <span>Garantía<strong>5 leads o mes gratis</strong></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PYMES (FEATURED) ============ -->
+  <section class="section" id="pymes">
+    <div class="wrap">
+      <div class="section__head">
+        <div class="section__head-left">
+          <p class="section__tag">01 · Demos comerciales</p>
+          <h2 class="section__title">Plantillas <em>listas para vender</em> a pymes.</h2>
+          <p class="section__sub">Cuatro sectores, una misma promesa: web premium + chatbot WhatsApp que agenda, cualifica y deriva. Detalle de la oferta en <code>docs/SERVICIOS_WEB_CHATBOT.md</code>.</p>
+        </div>
+        <span class="section__count">04 demos</span>
+      </div>
+
+      <div class="grid grid--featured">
+
+        <a class="card" href="clinica-dental-japandi/">
+          <div class="card__media">
+            <span class="card__tag">Dental · Japandi</span>
+            <span class="card__demo">Ver demo</span>
+            <img src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=900&q=80" alt="Consulta dental con iluminación natural y estética minimalista" loading="lazy" width="900" height="563" />
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Hagi Dental Studio</h3>
+            <p class="card__brand">crema · sage · terracota — Instrument Serif</p>
+            <p class="card__desc">Clínica boutique en estética zen-hygge. Pitch ideal para odontólogos que quieren salirse del cliché rosa-pastel-bata-blanca.</p>
+            <span class="card__cta">
+              Ver demo
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </div>
+        </a>
+
+        <a class="card" href="restaurante-demo/">
+          <div class="card__media">
+            <span class="card__tag">Restaurante · Bistró</span>
+            <span class="card__demo">Ver demo</span>
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=900&q=80" alt="Plato de autor sobre mesa de madera con luz cálida" loading="lazy" width="900" height="563" />
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Mesa Norte</h3>
+            <p class="card__brand">verde nocturno · crema · cobre — Cormorant</p>
+            <p class="card__desc">Bistró peruano contemporáneo en Barranco. 18 platos en tabs, reservas por WhatsApp y bot que confirma mesa sin una sola llamada.</p>
+            <span class="card__cta">
+              Ver demo
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </div>
+        </a>
+
+        <a class="card" href="gimnasio-demo/">
+          <div class="card__media">
+            <span class="card__tag">Fitness · Estudio</span>
+            <span class="card__demo">Ver demo</span>
+            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=900&q=80" alt="Persona entrenando con pesas en estudio de luz dura" loading="lazy" width="900" height="563" />
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Forja Studio</h3>
+            <p class="card__brand">carbón · lima eléctrico — Bebas Neue</p>
+            <p class="card__desc">Estudio fitness boutique en San Isidro. Horario semanal, tres membresías y bot que agenda clase de prueba sin que toques el teléfono.</p>
+            <span class="card__cta">
+              Ver demo
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </div>
+        </a>
+
+        <a class="card" href="inmobiliaria-demo/">
+          <div class="card__media">
+            <span class="card__tag">Inmobiliaria · Corretaje</span>
+            <span class="card__demo">Ver demo</span>
+            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=900&q=80" alt="Interior moderno de departamento con ventanal y mobiliario premium" loading="lazy" width="900" height="563" />
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Casa Lima</h3>
+            <p class="card__brand">navy · champagne — Cormorant Garamond</p>
+            <p class="card__desc">Corretaje boutique para Lima moderna. Bento grid de propiedades y bot que cualifica leads por presupuesto antes de derivarlos.</p>
+            <span class="card__cta">
+              Ver demo
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TURISMO ============ -->
+  <section class="section" id="turismo">
+    <div class="wrap">
+      <div class="section__head">
+        <div class="section__head-left">
+          <p class="section__tag">02 · Turismo & travel</p>
+          <h2 class="section__title">Cinco lecturas del <em>mismo brief</em> de turismo andino.</h2>
+          <p class="section__sub">Variantes del mismo cliente de Huancayo, cada una con su propio universo gráfico: editorial wellness, expedición outdoor, postal vintage, cartográfico técnico, swiss brutalista.</p>
+        </div>
+        <span class="section__count">05 variantes</span>
+      </div>
+
+      <div class="grid grid--medium">
+
+        <a class="card" href="tours-huancayo/">
+          <div class="card__media">
+            <span class="card__tag">v1 · Editorial</span>
+            <span class="card__demo">Ver demo</span>
+            <img src="https://images.unsplash.com/photo-1531065208531-4036c0dba3ca?auto=format&fit=crop&w=900&q=80" alt="Paisaje andino con luz dorada" loading="lazy" width="900" height="563" />
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Andino Trails</h3>
+            <p class="card__brand">teal · cobre — Fraunces</p>
+            <p class="card__desc">Wellness boutique con paleta crema y sage. Tono cálido editorial para turismo cultural y familias.</p>
+            <span class="card__cta">Ver demo <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </div>
+        </a>
+
+        <a class="card" href="tours-huancayo-aventura/">
+          <div class="card__media">
+            <span class="card__tag">v2 · Expedition</span>
+            <span class="card__demo">Ver demo</span>
+            <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=900&q=80" alt="Montañista escalando con luz dramática" loading="lazy" width="900" height="563" />
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Wanka Expedition</h3>
+            <p class="card__brand">verde noche · naranja — Anton</p>
+            <p class="card__desc">Outdoor oscuro con hero full-bleed y tipografía brutal condensada. Para aventureros y montañistas.</p>
+            <span class="card__cta">Ver demo <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </div>
+        </a>
+
+        <a class="card" href="tours-huancayo-postal/">
+          <div class="card__media">
+            <span class="card__tag">v3 · Vintage</span>
+            <span class="card__demo">Ver demo</span>
+            <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=900&q=80" alt="Postales y mapas antiguos sobre escritorio" loading="lazy" width="900" height="563" />
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Sumaq Travel Co.</h3>
+            <p class="card__brand">papel antiguo — Playfair italic</p>
+            <p class="card__desc">Postal editorial estilo guía 1970s con bordes dobles, sellos y ornamentos tipográficos. Para slow travel.</p>
+            <span class="card__cta">Ver demo <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </div>
+        </a>
+
+        <a class="card" href="tours-huancayo-cartografico/">
+          <div class="card__media">
+            <span class="card__tag">v4 · Cartográfico</span>
+            <span class="card__demo">Ver demo</span>
+            <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=900&q=80" alt="Mapa topográfico con brújula y herramientas de cartografía" loading="lazy" width="900" height="563" />
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Cardinal Andes</h3>
+            <p class="card__brand">pergamino · verde militar — IBM Plex Mono</p>
+            <p class="card__desc">Estética mapa topográfico IGN con coordenadas, fichas técnicas msnm/km/D+ y nomenclatura UIAA.</p>
+            <span class="card__cta">Ver demo <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </div>
+        </a>
+
+        <a class="card" href="tours-huancayo-modern/">
+          <div class="card__media">
+            <span class="card__tag">v5 · Swiss</span>
+            <span class="card__demo">Ver demo</span>
+            <img src="https://images.unsplash.com/photo-1545558014-8692077e9b5c?auto=format&fit=crop&w=900&q=80" alt="Composición minimalista geométrica en blanco y negro" loading="lazy" width="900" height="563" />
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Wnk Tours</h3>
+            <p class="card__brand">blanco · negro · azul Klein — Space Grotesk</p>
+            <p class="card__desc">Minimalismo brutal: bordes negros 2px, ángulos rectos, números gigantes. Cero palabras de más.</p>
+            <span class="card__cta">Ver demo <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </div>
+        </a>
+
+        <a class="card" href="portafolio-viajes/">
+          <div class="card__media">
+            <span class="card__tag">+ Portafolio</span>
+            <span class="card__demo">Ver demo</span>
+            <img src="https://images.unsplash.com/photo-1551522435-a13afa10f103?auto=format&fit=crop&w=900&q=80" alt="Mosaico de imágenes de turismo en Perú" loading="lazy" width="900" height="563" />
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Agencias de viaje Perú</h3>
+            <p class="card__brand">7 marcas re-tematizadas — colección</p>
+            <p class="card__desc">Hatun Perú, Manu Selva, Cumbre Andina, Apu Glaciar, Costa Dorada, Pacífico Norte, Sierra Norte. Una marca por nicho.</p>
+            <span class="card__cta">Ver colección <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ OTROS ============ -->
+  <section class="section" id="otros">
+    <div class="wrap">
+      <div class="section__head">
+        <div class="section__head-left">
+          <p class="section__tag">03 · Experimentos & utilidades</p>
+          <h2 class="section__title">Otros demos del <em>banco de pruebas.</em></h2>
+          <p class="section__sub">Landings sueltas, variantes alternativas y experimentos visuales. Útiles como referencia, no destinados a venta directa.</p>
+        </div>
+        <span class="section__count">10 demos</span>
+      </div>
+
+      <div class="grid grid--small">
+        <a class="card card--mini" href="clinica-dental/">
+          <h3 class="card__title">Sonrisa Clara</h3>
+          <span class="card__url">/clinica-dental/</span>
+        </a>
+        <a class="card card--mini" href="mesa-9/">
+          <h3 class="card__title">Mesa 9</h3>
+          <span class="card__url">/mesa-9/</span>
+        </a>
+        <a class="card card--mini" href="pulse/">
+          <h3 class="card__title">Pulse</h3>
+          <span class="card__url">/pulse/</span>
+        </a>
+        <a class="card card--mini" href="lira-foto/">
+          <h3 class="card__title">Lira Foto</h3>
+          <span class="card__url">/lira-foto/</span>
+        </a>
+        <a class="card card--mini" href="lumen/">
+          <h3 class="card__title">Lumen</h3>
+          <span class="card__url">/lumen/</span>
+        </a>
+        <a class="card card--mini" href="norte-studio/">
+          <h3 class="card__title">Norte Studio</h3>
+          <span class="card__url">/norte-studio/</span>
+        </a>
+        <a class="card card--mini" href="wanka/">
+          <h3 class="card__title">Wanka</h3>
+          <span class="card__url">/wanka/</span>
+        </a>
+        <a class="card card--mini" href="komodo-travel/">
+          <h3 class="card__title">Komodo Travel</h3>
+          <span class="card__url">/komodo-travel/</span>
+        </a>
+        <a class="card card--mini" href="kalimantan-travel/">
+          <h3 class="card__title">Kalimantan Travel</h3>
+          <span class="card__url">/kalimantan-travel/</span>
+        </a>
+        <a class="card card--mini" href="territoriohuanca/">
+          <h3 class="card__title">Territorio Huanca</h3>
+          <span class="card__url">/territoriohuanca/</span>
+        </a>
+        <a class="card card--mini" href="studio-gona-live/">
+          <h3 class="card__title">Studio Gona Live</h3>
+          <span class="card__url">/studio-gona-live/</span>
+        </a>
+        <a class="card card--mini" href="demo-landing/">
+          <h3 class="card__title">Demo Landing</h3>
+          <span class="card__url">/demo-landing/</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="foot">
+    <div class="wrap foot__inner">
+      <span>© 2026 <strong>Agencia Studio Gona Live</strong> · Lima, Perú</span>
+      <span>WhatsApp <a href="https://wa.me/51978303358" target="_blank" rel="noopener"><strong>+51 978 303 358</strong></a></span>
+      <span>Construido con <strong>web-pages</strong> + <strong>agency-agents</strong></span>
+    </div>
+  </footer>
+
+</body>
+</html>

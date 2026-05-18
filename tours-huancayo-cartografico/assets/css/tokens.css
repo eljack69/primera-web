@@ -1,0 +1,104 @@
+:root {
+  /* === Paleta · Cartográfica andina ===
+     Pergamino + verde militar (curvas de nivel) + ocre (cota)
+     Inspirada en mapas topográficos del IGN peruano */
+  --color-bg:        #ece4d2;   /* pergamino base */
+  --color-bg-alt:    #e0d5bb;   /* pergamino oscuro */
+  --color-bg-soft:   #f4ecd9;   /* pergamino claro */
+  --color-surface:   #faf3df;
+  --color-text:      #1c1f17;   /* tinta oscura */
+  --color-text-muted:#525548;   /* WCAG AA 7:1 */
+  --color-border:    #b8aa84;
+  --color-hairline:  #8a7d5d;
+
+  --color-accent:        #3d5237; /* verde militar (curva de nivel) */
+  --color-accent-hover:  #2a3a26;
+  --color-accent-soft:   #cdd5c5;
+  --color-accent-glow:   #6a8a5e;
+
+  --color-secondary:     #b8782c; /* ocre cota altitudinal */
+  --color-secondary-soft:#ecd9b7;
+
+  --color-tertiary:      #962b1f; /* rojo cinabrio (rosa de los vientos) */
+
+  --color-dark:      #14160e;
+  --color-dark-text: #ece4d2;
+
+  /* Tipografía · mono prominente + serif técnica */
+  --font-display: 'IBM Plex Serif', 'Source Serif Pro', Georgia, serif;
+  --font-sans:    'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono:    'IBM Plex Mono', 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --fs-2xs:  0.6875rem;
+  --fs-xs:   0.75rem;
+  --fs-sm:   0.875rem;
+  --fs-base: 1rem;
+  --fs-lg:   1.125rem;
+  --fs-xl:   1.375rem;
+  --fs-2xl:  1.75rem;
+  --fs-3xl:  2.25rem;
+  --fs-4xl:  3rem;
+  --fs-5xl:  clamp(3rem, 7.5vw, 6.5rem);
+  --fs-hero: clamp(2.75rem, 8.5vw, 7rem);
+
+  --fw-regular: 400;
+  --fw-medium:  500;
+  --fw-semibold:600;
+  --fw-bold:    700;
+
+  --lh-tight:   1.05;
+  --lh-snug:    1.2;
+  --lh-normal:  1.6;
+  --lh-relaxed: 1.7;
+
+  --tracking-tighter:-0.025em;
+  --tracking-tight:  -0.01em;
+  --tracking-normal:  0;
+  --tracking-wide:    0.08em;
+  --tracking-wider:   0.18em;
+
+  --space-1:  0.25rem;
+  --space-2:  0.5rem;
+  --space-3:  0.75rem;
+  --space-4:  1rem;
+  --space-6:  1.5rem;
+  --space-8:  2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-24: 6rem;
+  --space-32: 8rem;
+  --section-y: clamp(4rem, 9vw, 8rem);
+
+  --container-narrow: 640px;
+  --container-base:   1200px;
+  --container-wide:   1400px;
+  --gutter: clamp(1.25rem, 4vw, 2.5rem);
+
+  /* Sin radios — todo en ángulo recto, como un mapa */
+  --radius-sm: 0;
+  --radius-md: 0;
+  --radius-lg: 0;
+  --radius-xl: 0;
+  --radius-full: 9999px;
+
+  --shadow-xs: 0 0 0 1px var(--color-hairline);
+  --shadow-sm: 0 2px 8px rgba(28,31,23,0.10);
+  --shadow-md: 0 10px 30px -8px rgba(28,31,23,0.20);
+  --shadow-lg: 0 28px 60px -16px rgba(28,31,23,0.30);
+
+  --ease-out:    cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast:    180ms;
+  --dur-base:    420ms;
+  --dur-slow:    820ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

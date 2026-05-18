@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#2d4a3a" />
+  <title>[Demo] Sumaq Travel Co. — Guía ilustrada de Huancayo</title>
+  <meta name="description" content="Plantilla demo de agencia de viajes a Huancayo con estética postal vintage: valle del Mantaro, laguna de Paca, nevado Huaytapallana y comunidades wanka. Itinerarios artesanales con guías locales. Contenido placeholder." />
+  <meta name="robots" content="noindex,nofollow" />
+  <link rel="canonical" href="https://eljack69.github.io/primera-web/tours-huancayo-postal/" />
+
+  <meta property="og:title" content="[Demo] Sumaq Travel Co. — Guía ilustrada de Huancayo" />
+  <meta property="og:description" content="Plantilla demo de tours en la sierra central del Perú — estética postal vintage." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://eljack69.github.io/primera-web/tours-huancayo-postal/" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=1200&q=80" />
+  <meta property="og:locale" content="es_PE" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="[Demo] Sumaq Travel Co. — Guía ilustrada de Huancayo" />
+  <meta name="twitter:description" content="Plantilla demo de tours en la sierra central del Perú." />
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=1200&q=80" />
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin />
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=900&q=80" fetchpriority="high" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/postal.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TravelAgency",
+    "name": "Sumaq Travel Co. (DEMO — datos ficticios)",
+    "description": "Plantilla demo de agencia artesanal de viajes a Huancayo. Todos los datos son placeholder.",
+    "url": "https://eljack69.github.io/primera-web/tours-huancayo-postal/",
+    "telephone": "+51 900 000 000",
+    "areaServed": { "@type": "City", "name": "Huancayo", "containedInPlace": { "@type": "AdministrativeArea", "name": "Junín, Perú" } },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Calle Real 789",
+      "addressLocality": "Huancayo",
+      "addressRegion": "Junín",
+      "postalCode": "12001",
+      "addressCountry": "PE"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "09:00", "closes": "19:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "10:00", "closes": "13:00" }
+    ],
+    "priceRange": "S/",
+    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "245" }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "¿Cómo diseñan los itinerarios?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Cada itinerario se diseña a mano según tus intereses (cultura, artesanía, paisaje), días disponibles y nivel físico. Te lo enviamos en formato PDF con mapa, horarios y datos prácticos." } },
+      { "@type": "Question", "name": "¿Qué incluye el precio?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Transporte privado, guía colegiado, ingresos a sitios, almuerzo en restaurantes seleccionados y refrigerio. No incluye gastos personales ni propinas." } },
+      { "@type": "Question", "name": "¿Trabajan con grupos pequeños?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Sí. Máximo 8 personas por guía en tours regulares. Hay opciones privadas para parejas, familias o grupos cerrados." } },
+      { "@type": "Question", "name": "¿Aceptan tarjeta y métodos electrónicos?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Sí. Mercado Pago, Yape, Plin, transferencia interbancaria y tarjeta. Recibes voucher digital inmediatamente." } },
+      { "@type": "Question", "name": "¿Política de cancelación?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Cancelación gratuita hasta 48 horas antes del tour. Reprogramaciones sin costo sujetas a disponibilidad." } }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <div class="demo-banner" role="note" aria-label="Aviso de plantilla demo">
+    ⚠ Plantilla demo · contenido (marca, fotos, precios, testimonios) es ficticio
+  </div>
+
+  <header class="nav" id="nav">
+    <a class="nav__logo" href="/">
+      <svg width="28" height="28" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="1.5"/>
+        <path d="M16 4v24M4 16h24M9 9l14 14M23 9L9 23" stroke="currentColor" stroke-width="0.8" opacity="0.5"/>
+      </svg>
+      <span>Sumaq<strong>Travel Co.</strong></span>
+    </a>
+    <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav__menu" id="menu">
+      <a href="#capitulos">Capítulos</a>
+      <a href="#itinerarios">Itinerarios</a>
+      <a href="#proceso">El plan</a>
+      <a href="#equipo">El equipo</a>
+      <a href="#opiniones">Cartas</a>
+      <a href="#faq">FAQ</a>
+      <a href="tel:+51900000000" class="nav__phone" aria-label="Llamar al [900 000 000]"><span aria-hidden="true">📞</span> [900 000 000]</a>
+      <a href="#contacto" class="btn btn--primary">Reservar</a>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="hero__grid">
+        <div class="hero__text">
+          <span class="eyebrow">Vol. I · Sierra Central · 2014</span>
+          <div class="hero__trustbar" aria-label="Prueba social">
+            <span class="hero__trustbar-google" aria-hidden="true">★</span>
+            <span><strong>4.9</strong> · 245 cartas de viajeros</span>
+            <span class="hero__trustbar-sep" aria-hidden="true">·</span>
+            <span>Itinerarios a la medida</span>
+          </div>
+          <h1>Una guía <em>ilustrada</em> de Huancayo, escrita a mano.</h1>
+          <p class="hero__sub">Cinco valles, doce pueblos, un nevado. Tours artesanales para viajeros pacientes, con guías que cuentan historias y rincones que aún no salen en internet.</p>
+          <div class="hero__ctas">
+            <a href="#contacto" class="btn btn--primary btn--lg">Pedir guía a medida <span class="btn__arrow">→</span></a>
+            <a href="#capitulos" class="btn btn--soft btn--lg">Hojear capítulos</a>
+          </div>
+          <ul class="hero__logos" aria-label="Acreditaciones">
+            <li>Reg. Mincetur</li>
+            <li>Cám. Turismo Junín</li>
+            <li>Guías colegiados</li>
+            <li>Pago seguro</li>
+          </ul>
+        </div>
+        <div class="hero__visual" data-reveal>
+          <div class="hero__photo">
+            <img src="https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=900&q=80"
+                 alt="Paisaje andino con cielo dramático"
+                 loading="eager" width="900" height="1100" />
+          </div>
+          <div class="hero__chip hero__chip--top">
+            <span class="dot"></span>
+            Salida próxima · <strong>09 mayo</strong>
+          </div>
+          <div class="hero__chip hero__chip--bot">
+            <strong>+2.500</strong>
+            <span style="opacity:.75; font-size: var(--fs-2xs); letter-spacing: var(--tracking-wide); text-transform: uppercase;">viajeros guiados</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__stats">
+        <div data-reveal data-reveal-delay="1">
+          <strong>11<em>+</em></strong>
+          <span>Volúmenes editados</span>
+        </div>
+        <div data-reveal data-reveal-delay="2">
+          <strong>4.9<em>★</em></strong>
+          <span>Cartas de lectores</span>
+        </div>
+        <div data-reveal data-reveal-delay="3">
+          <strong>30<em>+</em></strong>
+          <span>Rutas catalogadas</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TRUST STRIP ============ -->
+    <section class="trust" aria-label="Acreditaciones">
+      <div class="trust__inner">
+        <span class="trust__label">Editorial avalada por</span>
+        <div class="trust__items">
+          <span class="trust__item">Mincetur</span>
+          <span class="trust__item">Promperú</span>
+          <span class="trust__item">Cámara Regional Junín</span>
+          <span class="trust__item">Cancelación gratuita 48h</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CAPÍTULOS · bento ============ -->
+    <section id="capitulos" class="section">
+      <div class="container container--wide">
+        <header class="section__head" data-reveal>
+          <span class="eyebrow">Índice</span>
+          <h2>Seis <em>capítulos</em> para conocer la sierra wanka.</h2>
+          <p>Cada capítulo es un itinerario completo. Escoge el que más te llame, o combinemos varios.</p>
+        </header>
+
+        <div class="services">
+          <article class="service-card service-card--feature" data-reveal>
+            <div class="service-card__head">
+              <span class="service-card__num">CAP. 01 · estrella</span>
+              <div class="service-card__icon">🏔️</div>
+            </div>
+            <div>
+              <h3>Nevado Huaytapallana</h3>
+              <p style="margin-top: var(--space-3);">El apu tutelar de los wankas (5.557 msnm). Día completo, 4×4 hasta el campamento, guía de montaña certificado y desayuno a la sombra del glaciar.</p>
+            </div>
+            <a href="#contacto" class="service-card__link">Reservar este capítulo <span class="btn__arrow">→</span></a>
+          </article>
+
+          <article class="service-card service-card--wide" data-reveal data-reveal-delay="1">
+            <div class="service-card__head">
+              <span class="service-card__num">CAP. 02</span>
+              <div class="service-card__icon">🛶</div>
+            </div>
+            <div>
+              <h3>Laguna de Paca + Jauja</h3>
+              <p style="margin-top: var(--space-3);">Paseo en bote, almuerzo de trucha y la primera capital del Perú. Medio día, salidas diarias.</p>
+            </div>
+          </article>
+
+          <article class="service-card service-card--wide" data-reveal data-reveal-delay="2">
+            <div class="service-card__head">
+              <span class="service-card__num">CAP. 03</span>
+              <div class="service-card__icon">🧵</div>
+            </div>
+            <div>
+              <h3>Valle del Mantaro</h3>
+              <p style="margin-top: var(--space-3);">San Jerónimo (plata), Hualhuas (textiles), Cochas Chico (mate burilado). Compras directas al artesano.</p>
+            </div>
+          </article>
+
+          <article class="service-card" data-reveal>
+            <div class="service-card__head">
+              <span class="service-card__num">CAP. 04</span>
+              <div class="service-card__icon">⛪</div>
+            </div>
+            <div>
+              <h3>Convento de Ocopa</h3>
+              <p style="margin-top: var(--space-3);">Joya barroca + biblioteca colonial con 25.000 volúmenes.</p>
+            </div>
+          </article>
+
+          <article class="service-card" data-reveal data-reveal-delay="1">
+            <div class="service-card__head">
+              <span class="service-card__num">CAP. 05</span>
+              <div class="service-card__icon">🍲</div>
+            </div>
+            <div>
+              <h3>Pachamanca con familia</h3>
+              <p style="margin-top: var(--space-3);">Cocina ancestral en piedra caliente. Una experiencia que no aparece en TripAdvisor.</p>
+            </div>
+          </article>
+
+          <article class="service-card" data-reveal data-reveal-delay="2">
+            <div class="service-card__head">
+              <span class="service-card__num">CAP. 06</span>
+              <div class="service-card__icon">🚂</div>
+            </div>
+            <div>
+              <h3>Tren Macho · Huancavelica</h3>
+              <p style="margin-top: var(--space-3);">Día completo en uno de los trenes más altos del mundo.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PRECIOS Y RESERVA ============ -->
+    <section id="precios" class="section section--soft">
+      <div class="container container--wide">
+        <header class="section__head" data-reveal>
+          <span class="eyebrow">Tarifas</span>
+          <h2>Precios <em>como en imprenta antigua</em>: claros y sin ediciones ocultas.</h2>
+          <p>Por persona, con todo incluido. Cancelación gratuita hasta 48h antes.</p>
+        </header>
+        <div class="pricing">
+          <article class="pricing-card" data-reveal>
+            <span class="pricing-card__tag">Medio día</span>
+            <strong class="pricing-card__price">desde [XX]<em>S/</em></strong>
+            <p>Capítulos cortos: laguna de Paca, ruta de artesanos o Convento de Ocopa. 4-5 horas.</p>
+          </article>
+          <article class="pricing-card pricing-card--feature" data-reveal data-reveal-delay="1">
+            <span class="pricing-card__tag">Día completo</span>
+            <strong class="pricing-card__price">desde [XXX]<em>S/</em></strong>
+            <p>Mantaro completo, Tren Macho o Huaytapallana. Incluye almuerzo, transporte y guía bilingüe.</p>
+            <span class="pricing-card__note">Precio orientativo · ajustado al grupo final</span>
+          </article>
+          <article class="pricing-card" data-reveal data-reveal-delay="2">
+            <span class="pricing-card__tag">Encuadernado 2-3 días</span>
+            <strong class="pricing-card__price">desde [XXX]<em>S/</em></strong>
+            <p>Combos de varios capítulos. Hospedaje y comidas incluidas. Grupos pequeños.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROCESO · el plan ============ -->
+    <section id="proceso" class="section">
+      <div class="container container--wide">
+        <header class="section__head" data-reveal>
+          <span class="eyebrow">El plan</span>
+          <h2>Cuatro pasos, <em>cero burocracia.</em></h2>
+          <p>Te respondemos por WhatsApp en menos de 2 horas en horario de oficina.</p>
+        </header>
+
+        <div class="process">
+          <div class="process-step" data-reveal>
+            <div class="process-step__num">i</div>
+            <h3>Cuéntanos</h3>
+            <p>Días disponibles, intereses (cultura, aventura, gastronomía) y nivel físico. Sin compromiso.</p>
+          </div>
+          <div class="process-step" data-reveal data-reveal-delay="1">
+            <div class="process-step__num">ii</div>
+            <h3>Itinerario a mano</h3>
+            <p>Te enviamos un PDF ilustrado con horarios, mapa, recomendaciones y presupuesto desglosado.</p>
+          </div>
+          <div class="process-step" data-reveal data-reveal-delay="2">
+            <div class="process-step__num">iii</div>
+            <h3>Reserva</h3>
+            <p>Pago seguro (Mercado Pago / Yape / transferencia). Recibes el voucher al instante.</p>
+          </div>
+          <div class="process-step" data-reveal data-reveal-delay="3">
+            <div class="process-step__num">iv</div>
+            <h3>Vive el capítulo</h3>
+            <p>Te recogemos en tu hospedaje. Te entregamos un diario impreso al terminar.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EQUIPO ============ -->
+    <section id="equipo" class="section section--alt">
+      <div class="container container--wide">
+        <header class="section__head" data-reveal>
+          <span class="eyebrow">Los autores</span>
+          <h2>Tres locales, <em>tres historias</em> que querrás escuchar.</h2>
+          <p>Nuestros guías son de la sierra central y están registrados en Mincetur.</p>
+        </header>
+        <div class="team">
+          <article class="team-card" data-reveal>
+            <div class="team-card__media">
+              <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=600&q=80"
+                   alt="Guía sonriendo en paisaje andino" loading="lazy" width="600" height="750" />
+            </div>
+            <div class="team-card__info">
+              <div>
+                <h3>[Nombre Apellido]</h3>
+                <span class="team-card__role">Guía · Capítulos culturales</span>
+              </div>
+              <span class="team-card__cred">Coleg. [XXX]</span>
+            </div>
+          </article>
+          <article class="team-card" data-reveal data-reveal-delay="1">
+            <div class="team-card__media">
+              <img src="https://images.unsplash.com/photo-1542080681-b52d382432af?auto=format&fit=crop&w=600&q=80"
+                   alt="Guía de montaña con mochila" loading="lazy" width="600" height="750" />
+            </div>
+            <div class="team-card__info">
+              <div>
+                <h3>[Nombre Apellido]</h3>
+                <span class="team-card__role">Guía · Montaña y trekking</span>
+              </div>
+              <span class="team-card__cred">Coleg. [XXX]</span>
+            </div>
+          </article>
+          <article class="team-card" data-reveal data-reveal-delay="2">
+            <div class="team-card__media">
+              <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=600&q=80"
+                   alt="Guía con poncho tradicional" loading="lazy" width="600" height="750" />
+            </div>
+            <div class="team-card__info">
+              <div>
+                <h3>[Nombre Apellido]</h3>
+                <span class="team-card__role">Guía wanka · ES, EN, Quechua</span>
+              </div>
+              <span class="team-card__cred">Coleg. [XXX]</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GALERÍA · ilustraciones ============ -->
+    <section class="gallery" aria-label="Galería de paisajes">
+      <header class="gallery__head" data-reveal>
+        <div>
+          <span class="eyebrow">Estampas</span>
+          <h2>Postales <em>impresas</em> en alta montaña.</h2>
+        </div>
+        <p>Lagunas turquesa, valles verdes y pueblos textiles. Una postal por kilómetro.</p>
+      </header>
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <figure class="marquee__item"><img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=600&q=80" alt="" loading="lazy" width="600" height="750" /><figcaption>Mantaro</figcaption></figure>
+          <figure class="marquee__item"><img src="https://images.unsplash.com/photo-1493780474015-ba834fd0ce2f?auto=format&fit=crop&w=600&q=80" alt="" loading="lazy" width="600" height="750" /><figcaption>Paca</figcaption></figure>
+          <figure class="marquee__item"><img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=600&q=80" alt="" loading="lazy" width="600" height="750" /><figcaption>Huaytapallana</figcaption></figure>
+          <figure class="marquee__item"><img src="https://images.unsplash.com/photo-1518391846015-55a9cc003b25?auto=format&fit=crop&w=600&q=80" alt="" loading="lazy" width="600" height="750" /><figcaption>Tunán</figcaption></figure>
+          <figure class="marquee__item"><img src="https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=600&q=80" alt="" loading="lazy" width="600" height="750" /><figcaption>Ocopa</figcaption></figure>
+          <figure class="marquee__item"><img src="https://images.unsplash.com/photo-1500964757637-c85e8a162699?auto=format&fit=crop&w=600&q=80" alt="" loading="lazy" width="600" height="750" /><figcaption>Hualhuas</figcaption></figure>
+          <figure class="marquee__item" aria-hidden="true"><img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=600&q=80" alt="" loading="lazy" width="600" height="750" /><figcaption>Mantaro</figcaption></figure>
+          <figure class="marquee__item" aria-hidden="true"><img src="https://images.unsplash.com/photo-1493780474015-ba834fd0ce2f?auto=format&fit=crop&w=600&q=80" alt="" loading="lazy" width="600" height="750" /><figcaption>Paca</figcaption></figure>
+          <figure class="marquee__item" aria-hidden="true"><img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=600&q=80" alt="" loading="lazy" width="600" height="750" /><figcaption>Huaytapallana</figcaption></figure>
+          <figure class="marquee__item" aria-hidden="true"><img src="https://images.unsplash.com/photo-1518391846015-55a9cc003b25?auto=format&fit=crop&w=600&q=80" alt="" loading="lazy" width="600" height="750" /><figcaption>Tunán</figcaption></figure>
+          <figure class="marquee__item" aria-hidden="true"><img src="https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=600&q=80" alt="" loading="lazy" width="600" height="750" /><figcaption>Ocopa</figcaption></figure>
+          <figure class="marquee__item" aria-hidden="true"><img src="https://images.unsplash.com/photo-1500964757637-c85e8a162699?auto=format&fit=crop&w=600&q=80" alt="" loading="lazy" width="600" height="750" /><figcaption>Hualhuas</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ITINERARIOS POPULARES ============ -->
+    <section id="itinerarios" class="section">
+      <div class="container container--wide">
+        <header class="section__head" data-reveal>
+          <span class="eyebrow">Encuadernados clásicos</span>
+          <h2>Tres <em>itinerarios</em> ya probados.</h2>
+          <p>Combos diseñados con cientos de viajeros. Todos personalizables.</p>
+        </header>
+        <div class="results">
+          <article class="result-card" data-reveal>
+            <div class="result-card__pair">
+              <figure><img src="https://images.unsplash.com/photo-1500964757637-c85e8a162699?auto=format&fit=crop&w=500&q=80" alt="[Tunán · taller de plata — placeholder]" loading="lazy" width="500" height="500" /><figcaption>Día 1</figcaption></figure>
+              <figure><img src="https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=500&q=80" alt="[Convento de Ocopa — placeholder]" loading="lazy" width="500" height="500" /><figcaption>Día 1 · tarde</figcaption></figure>
+            </div>
+            <div class="result-card__info">
+              <h3>Capítulo cultural · 1 día</h3>
+              <p>[Mantaro completo · artesanos + Ocopa · desde [XXX] S/]</p>
+            </div>
+          </article>
+          <article class="result-card" data-reveal data-reveal-delay="1">
+            <div class="result-card__pair">
+              <figure><img src="https://images.unsplash.com/photo-1493780474015-ba834fd0ce2f?auto=format&fit=crop&w=500&q=80" alt="[Laguna de Paca — placeholder]" loading="lazy" width="500" height="500" /><figcaption>Día 1</figcaption></figure>
+              <figure><img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=500&q=80" alt="[Nevado Huaytapallana — placeholder]" loading="lazy" width="500" height="500" /><figcaption>Día 2</figcaption></figure>
+            </div>
+            <div class="result-card__info">
+              <h3>Volumen aventura · 2 días</h3>
+              <p>[Paca + Jauja + Huaytapallana · desde [XXX] S/ · grupo 4-8]</p>
+            </div>
+          </article>
+          <article class="result-card" data-reveal data-reveal-delay="2">
+            <div class="result-card__pair">
+              <figure><img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=500&q=80" alt="[Valle del Mantaro — placeholder]" loading="lazy" width="500" height="500" /><figcaption>Día 1-2</figcaption></figure>
+              <figure><img src="https://images.unsplash.com/photo-1518391846015-55a9cc003b25?auto=format&fit=crop&w=500&q=80" alt="[Tren Macho a Huancavelica — placeholder]" loading="lazy" width="500" height="500" /><figcaption>Día 3</figcaption></figure>
+            </div>
+            <div class="result-card__info">
+              <h3>Edición completa · 3 días</h3>
+              <p>[Mantaro + Huaytapallana + Tren Macho · desde [XXX] S/]</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ OPINIONES · cartas ============ -->
+    <section id="opiniones" class="section section--soft">
+      <div class="container container--wide">
+        <header class="section__head" data-reveal>
+          <span class="eyebrow">Cartas de lectores</span>
+          <h2>Lo que escribieron <em>quienes ya viajaron.</em></h2>
+        </header>
+
+        <div class="reviews">
+          <figure class="review--feature" data-reveal>
+            <div class="review__stars">★★★★★</div>
+            <blockquote>«Volví con un diario de viaje impreso y la sensación de haber leído un buen libro. El detalle del PDF ilustrado antes del tour es oro. Volveremos por el Capítulo de Huaytapallana.»</blockquote>
+            <figcaption class="review__author">
+              <span class="review__avatar">M</span>
+              <div>
+                <div class="review__name">[Viajero A]</div>
+                <div class="review__role">Visitó en [mes/año] · Carta vía TripAdvisor</div>
+              </div>
+            </figcaption>
+          </figure>
+
+          <div class="reviews__column">
+            <figure class="review--small" data-reveal data-reveal-delay="1">
+              <div class="review__stars">★★★★★</div>
+              <blockquote>«Hicimos el capítulo del Mantaro y aprendimos a hacer mate burilado. Muy bien guiado.»</blockquote>
+              <figcaption>— [Viajero B] · Google</figcaption>
+            </figure>
+            <figure class="review--small" data-reveal data-reveal-delay="2">
+              <div class="review__stars">★★★★★</div>
+              <blockquote>«Una pachamanca con familia local que nos cambió el viaje. Como leer un cuento desde adentro.»</blockquote>
+              <figcaption>— [Viajero C] · Booking</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section id="faq" class="section">
+      <div class="container">
+        <header class="section__head" data-reveal style="text-align: center; margin-inline: auto;">
+          <span class="eyebrow" style="margin-inline: auto;">Notas al margen</span>
+          <h2 style="margin-inline: auto;">Antes de <em>reservar.</em></h2>
+        </header>
+        <div class="faq" data-reveal>
+          <details open>
+            <summary>¿Cómo diseñan los itinerarios?</summary>
+            <p>Cada itinerario se diseña a mano según tus intereses (cultura, artesanía, paisaje), días disponibles y nivel físico. Te lo enviamos en formato PDF con mapa, horarios y datos prácticos.</p>
+          </details>
+          <details>
+            <summary>¿Qué incluye el precio?</summary>
+            <p>Transporte privado, guía colegiado, ingresos a sitios, almuerzo en restaurantes seleccionados y refrigerio. No incluye gastos personales ni propinas.</p>
+          </details>
+          <details>
+            <summary>¿Trabajan con grupos pequeños?</summary>
+            <p>Sí. Máximo 8 personas por guía en tours regulares. Hay opciones privadas para parejas, familias o grupos cerrados.</p>
+          </details>
+          <details>
+            <summary>¿Aceptan tarjeta y métodos electrónicos?</summary>
+            <p>Sí. Mercado Pago, Yape, Plin, transferencia interbancaria y tarjeta. Recibes voucher digital inmediatamente.</p>
+          </details>
+          <details>
+            <summary>¿Política de cancelación?</summary>
+            <p>Cancelación gratuita hasta 48 horas antes del tour. Reprogramaciones sin costo sujetas a disponibilidad.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA / CONTACTO ============ -->
+    <section id="contacto" class="cta">
+      <div class="cta__card" data-reveal>
+        <div class="cta__intro">
+          <span class="eyebrow">Última página</span>
+          <h2>Pídenos tu <em>guía a medida.</em></h2>
+          <p>Cuéntanos qué te interesa y te enviamos itinerario ilustrado y presupuesto en menos de 24h.</p>
+          <ul class="cta__bullets">
+            <li>Respuesta por WhatsApp en menos de 2 horas</li>
+            <li>PDF ilustrado del itinerario antes del tour</li>
+            <li>Cancelación gratuita hasta 48h antes</li>
+          </ul>
+        </div>
+        <form class="cta__form" action="https://formspree.io/f/REEMPLAZAR" method="POST" aria-label="Formulario de reserva">
+          <label for="tour-nombre">
+            <span>Nombre</span>
+            <input id="tour-nombre" type="text" name="nombre" required placeholder="Tu nombre" autocomplete="name" />
+          </label>
+          <label for="tour-telefono">
+            <span>WhatsApp / Teléfono</span>
+            <input id="tour-telefono" type="tel" name="telefono" required placeholder="+51 900 000 000" autocomplete="tel" inputmode="tel" />
+          </label>
+          <label for="tour-interes">
+            <span>¿Qué capítulo te interesa?</span>
+            <select id="tour-interes" name="interes" required>
+              <option value="">Selecciona…</option>
+              <option>Cap. 01 · Huaytapallana</option>
+              <option>Cap. 02 · Laguna de Paca + Jauja</option>
+              <option>Cap. 03 · Valle del Mantaro</option>
+              <option>Cap. 04 · Convento de Ocopa</option>
+              <option>Cap. 05 · Pachamanca con familia</option>
+              <option>Cap. 06 · Tren Macho a Huancavelica</option>
+              <option>Itinerario encuadernado (varios capítulos)</option>
+              <option>No estoy seguro/a — quiero asesoría</option>
+            </select>
+          </label>
+          <label for="tour-fecha">
+            <span>Fecha tentativa</span>
+            <select id="tour-fecha" name="fecha">
+              <option value="">Indiferente</option>
+              <option>Esta semana</option>
+              <option>Próximos 15 días</option>
+              <option>Próximo mes</option>
+              <option>En 2-3 meses</option>
+              <option>Flexible</option>
+            </select>
+          </label>
+          <label class="full" for="tour-mensaje">
+            <span>Cuéntanos más (opcional)</span>
+            <textarea id="tour-mensaje" name="mensaje" rows="2" placeholder="N° de personas, intereses, restricciones alimentarias…"></textarea>
+          </label>
+          <button type="submit" class="btn btn--primary btn--lg full">Pedir guía a medida <span class="btn__arrow">→</span></button>
+          <p class="cta__legal full">Al enviar, aceptas nuestra política de privacidad. No compartimos tus datos.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__top" data-reveal>
+      <h3>Empieza tu <em>capítulo andino</em> esta semana.</h3>
+      <p>Editorial en pleno centro de Huancayo. Recogida desde tu hospedaje incluida.</p>
+    </div>
+
+    <div class="footer__grid">
+      <div>
+        <div class="nav__logo">
+          <svg width="24" height="24" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M16 4v24M4 16h24M9 9l14 14M23 9L9 23" stroke="currentColor" stroke-width="0.8" opacity="0.5"/>
+          </svg>
+          <span>Sumaq<strong>Travel Co.</strong></span>
+        </div>
+        <p style="color: var(--color-text-muted);">Editorial de viajes artesanal en la sierra central del Perú. Itinerarios a mano, guías locales.</p>
+      </div>
+      <div>
+        <h4>Editorial</h4>
+        <p>Calle Real 789<br/>Huancayo, Junín · Perú</p>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <p>+51 900 000 000<br/>hola@sumaqtravel.demo</p>
+      </div>
+      <div>
+        <h4>Horario</h4>
+        <p>L–S · 9:00 – 19:00<br/>D · 10:00 – 13:00<br/>WhatsApp 24/7</p>
+      </div>
+    </div>
+    <div class="footer__legal">
+      <p>© <span id="year"></span> SumaqTravel Co. · Plantilla demo del skill <code>web-pages</code></p>
+      <p>Hecho con <em style="color: var(--color-secondary);">tinta</em> en Huancayo</p>
+    </div>
+  </footer>
+
+  <div class="cta-sticky" id="ctaSticky" aria-label="Acciones rápidas">
+    <a href="tel:+51900000000" class="cta-sticky__btn cta-sticky__btn--ghost">📞 Llamar</a>
+    <a href="#contacto" class="cta-sticky__btn cta-sticky__btn--primary">Reservar</a>
+  </div>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

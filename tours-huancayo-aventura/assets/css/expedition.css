@@ -1,0 +1,263 @@
+/* === Expedition look · overrides sobre styles.css base ===
+   Sobreescribe selectores clave para conseguir aspecto outdoor/aventura.
+   Carga DESPUÉS de styles.css. */
+
+/* ── Tipografía display: sans condensada en bloque ── */
+h1, h2 {
+  font-family: var(--font-display);
+  font-weight: var(--fw-regular);
+  letter-spacing: var(--tracking-tight);
+  text-transform: uppercase;
+  font-variation-settings: normal;
+  line-height: var(--lh-tight);
+}
+h1 { font-size: var(--fs-hero); letter-spacing: -0.02em; }
+h2 { font-size: var(--fs-4xl); }
+h3, h4 {
+  font-family: var(--font-sans);
+  font-weight: var(--fw-bold);
+  letter-spacing: var(--tracking-tight);
+  text-transform: none;
+  font-variation-settings: normal;
+}
+em {
+  font-family: var(--font-display);
+  font-style: italic;
+  color: var(--color-accent);
+  font-variation-settings: normal;
+}
+.eyebrow { color: var(--color-accent); letter-spacing: var(--tracking-wider); }
+.eyebrow::before { background: var(--color-accent); opacity: 1; width: 32px; height: 2px; }
+
+/* ── Botones cuadrados y contundentes ── */
+.btn {
+  border-radius: var(--radius-md);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: var(--fw-semibold);
+  padding: 1.1rem 1.85rem;
+}
+.btn--lg { padding: 1.35rem 2.25rem; }
+.btn--primary { background: var(--color-accent); color: var(--color-bg); }
+.btn--primary:hover { background: var(--color-accent-hover); color: var(--color-bg); }
+.btn--soft {
+  background: transparent;
+  color: var(--color-text);
+  border-color: var(--color-text);
+}
+.btn--soft:hover {
+  background: var(--color-text);
+  color: var(--color-bg);
+  border-color: var(--color-text);
+}
+
+/* ── Banner demo más sobrio sobre fondo oscuro ── */
+.demo-banner {
+  background: var(--color-accent-soft);
+  color: var(--color-accent);
+  border-bottom: 1px solid var(--color-border);
+  font-weight: var(--fw-semibold);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: var(--fs-2xs);
+}
+
+/* ── Navbar oscura ── */
+.nav.is-scrolled {
+  background-color: color-mix(in srgb, var(--color-bg) 92%, transparent);
+  border-bottom-color: var(--color-border);
+}
+.nav__menu a { color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 0.08em; font-size: var(--fs-xs); font-weight: var(--fw-semibold); }
+.nav__menu a:not(.btn):hover { color: var(--color-accent); }
+.nav__menu a:not(.btn)::after { background: var(--color-accent); }
+.nav__menu a.btn { color: var(--color-bg); }
+.nav__phone { color: var(--color-accent) !important; }
+.nav__toggle span { background: var(--color-text); }
+.nav__logo strong { color: var(--color-accent); font-style: normal; font-weight: var(--fw-bold); }
+.nav__logo { font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.04em; font-variation-settings: normal; }
+
+/* ── Hero full-bleed con foto inmersiva ── */
+.hero { position: relative; overflow: hidden; min-height: 92vh; display: flex; align-items: end; padding-block: var(--space-16) var(--space-12); }
+.hero::before {
+  content: '';
+  position: absolute; inset: 0;
+  background-image: linear-gradient(180deg, rgba(13,20,17,0.4) 0%, rgba(13,20,17,0.55) 50%, rgba(13,20,17,0.92) 100%),
+                    url('https://images.unsplash.com/photo-1531065208531-4036c0dba3ca?auto=format&fit=crop&w=1800&q=80');
+  background-size: cover; background-position: center;
+  z-index: 0;
+}
+.hero__grid { position: relative; z-index: 1; grid-template-columns: 1fr; gap: var(--space-8); align-items: end; }
+.hero__visual { display: none; } /* el visual lo da el background del .hero */
+.hero__text { max-width: 920px; }
+.hero h1 { color: var(--color-text); }
+.hero__sub { color: var(--color-text-muted); max-width: 56ch; font-size: var(--fs-lg); }
+.hero__stats {
+  position: relative; z-index: 1;
+  margin-top: var(--space-12);
+  padding-top: var(--space-8);
+  border-top: 1px solid var(--color-border);
+  grid-template-columns: repeat(3, 1fr);
+}
+.hero__stats strong { font-family: var(--font-display); color: var(--color-accent); }
+.hero__stats span { color: var(--color-text-muted); }
+
+/* Trustbar dark */
+.hero__trustbar {
+  background: rgba(244,237,224,0.08);
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+.hero__trustbar-google {
+  background: var(--color-accent);
+  color: var(--color-bg);
+}
+.hero__logos { color: var(--color-text-muted); }
+.hero__logos li { letter-spacing: 0.08em; }
+
+/* ── Trust strip oscuro ── */
+.trust { background: var(--color-bg-alt); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border); }
+.trust__label { color: var(--color-text-muted); }
+.trust__item { color: var(--color-text); }
+
+/* ── Secciones · fondos oscuros ── */
+.section { background: var(--color-bg); }
+.section--alt { background: var(--color-bg-alt); }
+.section--soft { background: var(--color-bg-soft); }
+.section__head p { color: var(--color-text-muted); }
+
+/* ── Service cards · foto protagonista ── */
+.service-card {
+  background: var(--color-bg-soft);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: transform var(--dur-base) var(--ease-out), border-color var(--dur-base);
+}
+.service-card:hover { transform: translateY(-4px); border-color: var(--color-accent); }
+.service-card h3 { color: var(--color-text); }
+.service-card p { color: var(--color-text-muted); }
+.service-card__num { color: var(--color-accent); font-family: var(--font-mono); letter-spacing: 0.1em; }
+.service-card__icon { background: var(--color-accent-soft); color: var(--color-accent); }
+.service-card--feature { background: linear-gradient(160deg, var(--color-accent-soft) 0%, var(--color-bg-soft) 70%); border-color: var(--color-accent); }
+.service-card__link { color: var(--color-accent); border-top: 1px solid var(--color-border); }
+.service-card__link:hover { color: var(--color-accent-hover); }
+
+/* ── Process steps ── */
+.process-step__num {
+  color: var(--color-accent);
+  font-family: var(--font-display);
+  font-weight: var(--fw-regular);
+}
+.process-step h3 { color: var(--color-text); }
+.process-step p { color: var(--color-text-muted); }
+
+/* ── Team cards ── */
+.team-card { background: var(--color-bg-soft); border: 1px solid var(--color-border); border-radius: var(--radius-lg); }
+.team-card__info { border-top: 1px solid var(--color-border); }
+.team-card h3 { color: var(--color-text); }
+.team-card__role, .team-card__cred { color: var(--color-text-muted); }
+
+/* ── Galería marquee ── */
+.marquee__item { background: var(--color-bg-soft); border: 1px solid var(--color-border); }
+.marquee__item figcaption { background: rgba(13,20,17,0.85); color: var(--color-text); border: none; }
+
+/* ── Pricing cards ── */
+.pricing-card {
+  background: var(--color-bg-soft);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+}
+.pricing-card h3, .pricing-card p { color: var(--color-text); }
+.pricing-card p { color: var(--color-text-muted); }
+.pricing-card__tag { color: var(--color-accent); }
+.pricing-card__price { color: var(--color-text); font-family: var(--font-display); }
+.pricing-card__price em { color: var(--color-accent); }
+.pricing-card__note { color: var(--color-text-muted); }
+.pricing-card--feature {
+  background: linear-gradient(160deg, var(--color-accent-soft) 0%, var(--color-bg-soft) 70%);
+  border-color: var(--color-accent);
+}
+
+/* ── Result cards (itinerarios) ── */
+.result-card { background: var(--color-bg-soft); border: 1px solid var(--color-border); border-radius: var(--radius-lg); }
+.result-card__info { color: var(--color-text); }
+.result-card__info p { color: var(--color-text-muted); }
+.result-card figcaption {
+  background: var(--color-accent);
+  color: var(--color-bg);
+  font-weight: var(--fw-bold);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* ── Reviews ── */
+.review--feature, .review--small { background: var(--color-bg-soft); border: 1px solid var(--color-border); border-radius: var(--radius-lg); color: var(--color-text); }
+.review__stars { color: var(--color-accent); }
+.review__avatar { background: var(--color-accent); color: var(--color-bg); }
+.review__name { color: var(--color-text); }
+.review__role { color: var(--color-text-muted); }
+.review__author figcaption { color: var(--color-text-muted); }
+
+/* ── FAQ ── */
+.faq details {
+  background: var(--color-bg-soft);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+.faq summary { color: var(--color-text); }
+.faq p { color: var(--color-text-muted); }
+
+/* ── CTA card ── */
+.cta { background: var(--color-bg-alt); }
+.cta__card {
+  background: linear-gradient(160deg, var(--color-bg-soft) 0%, var(--color-bg-alt) 100%);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+}
+.cta__form input,
+.cta__form select,
+.cta__form textarea {
+  background: var(--color-bg);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+.cta__form input:focus,
+.cta__form select:focus,
+.cta__form textarea:focus {
+  outline: none;
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-accent) 25%, transparent);
+}
+.cta__form label > span { color: var(--color-text-muted); }
+.cta__legal { color: var(--color-text-muted); }
+
+/* ── Footer ── */
+.footer { background: var(--color-dark); color: var(--color-text); border-top: 1px solid var(--color-border); }
+.footer__top h3, .footer__top em { color: var(--color-text); }
+.footer h4 { color: var(--color-accent); text-transform: uppercase; letter-spacing: 0.1em; font-size: var(--fs-2xs); }
+.footer__legal { border-top-color: var(--color-border); color: var(--color-text-muted); }
+.footer code { background: var(--color-bg-soft); color: var(--color-accent); border-radius: var(--radius-sm); padding: 2px 6px; }
+
+/* ── CTA sticky móvil ── */
+.cta-sticky {
+  background: var(--color-bg-soft);
+  border-top: 1px solid var(--color-border);
+  box-shadow: 0 -16px 40px rgba(0,0,0,.5);
+}
+.cta-sticky__btn--ghost { color: var(--color-text); border-color: var(--color-border); }
+.cta-sticky__btn--primary { background: var(--color-accent); color: var(--color-bg); }
+
+/* ── Selection ── */
+::selection { background: var(--color-accent); color: var(--color-bg); }
+
+/* ── Skip link adapter ── */
+.skip-link { background: var(--color-accent); color: var(--color-bg); }
+
+/* ── Mejora del focus-visible para fondos oscuros ── */
+:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 3px; }
+
+/* ── Foto del hero NO usada (la usa el ::before del hero) ── */
+.hero__photo, .hero__chip { display: none; }

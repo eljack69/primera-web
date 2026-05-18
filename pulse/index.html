@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#08090b">
+  <title>Pulse — Observability that actually scales · Demo</title>
+  <meta name="description" content="Demo template for Pulse, a developer-first observability platform. Placeholder content for design preview only.">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       DEMO BANNER
+       ============================================================ -->
+  <div class="demo-banner" role="note">
+    &#9888; Demo template &middot; placeholder content
+  </div>
+
+  <!-- ============================================================
+       NAV
+       ============================================================ -->
+  <header class="nav" role="banner">
+    <div class="container nav__inner">
+      <a class="brand" href="#top" aria-label="Pulse home">
+        <span class="brand__dot" aria-hidden="true"></span>
+        <span>Pulse</span>
+      </a>
+
+      <nav aria-label="Primary">
+        <ul class="nav__links">
+          <li><a href="#product">Product</a></li>
+          <li><a href="#docs">Docs</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#changelog">Changelog</a></li>
+          <li><a href="#blog">Blog</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav__cta">
+        <a href="#signin" class="btn btn--ghost">Sign in</a>
+        <a href="#start" class="btn btn--primary">Get started</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ============================================================
+         HERO
+         ============================================================ -->
+    <section class="hero">
+      <div class="hero__grid" aria-hidden="true"></div>
+      <div class="hero__orb" aria-hidden="true"></div>
+
+      <div class="container hero__inner">
+        <a href="#beta" class="pill hero-enter" style="--enter-delay: 0ms">
+          <span aria-hidden="true">&#10038;</span>
+          <span>Now in private beta</span>
+          <span class="pill__sep">&middot;</span>
+          <span class="pill__link">Join waitlist &rarr;</span>
+        </a>
+
+        <h1 class="hero-enter" style="--enter-delay: 80ms">
+          Observability that<br>
+          <span class="accent">actually scales.</span>
+        </h1>
+
+        <p class="hero__sub hero-enter" style="--enter-delay: 160ms">
+          Pulse is the developer-first monitoring platform for modern infra.
+          Sub-second queries, zero config, $0 to start.
+        </p>
+
+        <div class="hero__cta hero-enter" style="--enter-delay: 240ms">
+          <a href="#start" class="btn btn--primary btn--lg">Start free &rarr;</a>
+          <a href="#docs" class="btn btn--outline btn--lg">Read docs</a>
+        </div>
+
+        <div class="terminal hero-enter" role="presentation" style="--enter-delay: 320ms">
+          <span class="terminal__prompt">$</span>
+          <span>npx pulse@latest init</span>
+          <span class="terminal__cursor" aria-hidden="true"></span>
+        </div>
+      </div>
+
+      <!-- ============================================================
+           PRODUCT PREVIEW MOCK
+           ============================================================ -->
+      <div class="container preview reveal" id="product">
+        <div class="preview__card">
+          <div class="mock__bar">
+            <span class="mock__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="mock__url">pulse.dev/dashboard/prod</span>
+            <span class="mock__tag">live</span>
+          </div>
+
+          <div class="mock__body">
+            <div class="mock__stats">
+              <div class="stat">
+                <div class="stat__label">Uptime</div>
+                <div class="stat__value">99.98<span style="color:var(--text-muted);font-size:14px">%</span></div>
+                <div class="stat__delta">&uarr; 0.04% 7d</div>
+              </div>
+              <div class="stat">
+                <div class="stat__label">Latency p99</div>
+                <div class="stat__value">142<span style="color:var(--text-muted);font-size:14px">ms</span></div>
+                <div class="stat__delta">&darr; 12ms 7d</div>
+              </div>
+              <div class="stat">
+                <div class="stat__label">Errors</div>
+                <div class="stat__value">0.02<span style="color:var(--text-muted);font-size:14px">%</span></div>
+                <div class="stat__delta">&darr; 0.01% 7d</div>
+              </div>
+              <div class="stat">
+                <div class="stat__label">Requests</div>
+                <div class="stat__value">4.2<span style="color:var(--text-muted);font-size:14px">M/min</span></div>
+                <div class="stat__delta">&uarr; 8.1% 7d</div>
+              </div>
+            </div>
+
+            <div class="chart">
+              <div class="chart__head">
+                <div class="chart__title">Request volume</div>
+                <div class="chart__legend"><b>&#9632;</b> req/s &middot; last 24h</div>
+              </div>
+              <svg viewBox="0 0 800 160" preserveAspectRatio="none" aria-hidden="true">
+                <defs>
+                  <linearGradient id="areaCyan" x1="0" x2="0" y1="0" y2="1">
+                    <stop offset="0%"   stop-color="#5eead4" stop-opacity="0.45"/>
+                    <stop offset="100%" stop-color="#5eead4" stop-opacity="0"/>
+                  </linearGradient>
+                  <pattern id="grid" width="80" height="40" patternUnits="userSpaceOnUse">
+                    <path d="M 80 0 L 0 0 0 40" fill="none" stroke="#1f242c" stroke-width="1"/>
+                  </pattern>
+                </defs>
+                <rect width="800" height="160" fill="url(#grid)"/>
+                <path d="M0,120 L40,108 L80,118 L120,96 L160,104 L200,82 L240,90 L280,72 L320,84 L360,62 L400,70 L440,54 L480,66 L520,42 L560,58 L600,38 L640,52 L680,30 L720,46 L760,28 L800,40 L800,160 L0,160 Z"
+                      fill="url(#areaCyan)"/>
+                <path class="chart__line" d="M0,120 L40,108 L80,118 L120,96 L160,104 L200,82 L240,90 L280,72 L320,84 L360,62 L400,70 L440,54 L480,66 L520,42 L560,58 L600,38 L640,52 L680,30 L720,46 L760,28 L800,40"
+                      fill="none" stroke="#5eead4" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         MARQUEE
+         ============================================================ -->
+    <section class="marquee" aria-label="Trusted by">
+      <div class="container">
+        <div class="marquee__label">Trusted by teams at</div>
+      </div>
+      <div class="marquee__track" aria-hidden="true">
+        <span class="marquee__item">vercel</span>
+        <span class="marquee__item">supabase</span>
+        <span class="marquee__item">raycast</span>
+        <span class="marquee__item">planetscale</span>
+        <span class="marquee__item">neon</span>
+        <span class="marquee__item">modal</span>
+        <span class="marquee__item">axiom</span>
+        <span class="marquee__item">baseten</span>
+        <!-- Duplicate for seamless loop -->
+        <span class="marquee__item">vercel</span>
+        <span class="marquee__item">supabase</span>
+        <span class="marquee__item">raycast</span>
+        <span class="marquee__item">planetscale</span>
+        <span class="marquee__item">neon</span>
+        <span class="marquee__item">modal</span>
+        <span class="marquee__item">axiom</span>
+        <span class="marquee__item">baseten</span>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         FEATURES
+         ============================================================ -->
+    <section class="section" id="features">
+      <div class="container">
+        <div class="features__head reveal">
+          <span class="eyebrow">Features</span>
+          <h2>Built for the way you actually debug.</h2>
+          <p>Drop in our SDK once and get traces, logs, metrics, and alerts &mdash; all queryable in one place, in milliseconds.</p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature reveal">
+            <svg class="feature__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M13 2 3 14h9l-1 8 10-12h-9l1-8Z"/>
+            </svg>
+            <h3>Sub-second queries</h3>
+            <p>Columnar storage and adaptive indexing return results in under 300ms across billions of rows.</p>
+          </article>
+
+          <article class="feature reveal">
+            <svg class="feature__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="9"/>
+              <path d="M12 7v5l3 2"/>
+            </svg>
+            <h3>Zero-config tracing</h3>
+            <p>Auto-instrument Node, Go, Python, and Rust. No vendor lock-in, no manual spans, no YAML.</p>
+          </article>
+
+          <article class="feature reveal">
+            <svg class="feature__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+            </svg>
+            <h3>AI-powered alerts</h3>
+            <p>Anomaly detection that learns your baselines. Get paged only when it actually matters &mdash; not every spike.</p>
+          </article>
+
+          <article class="feature reveal">
+            <svg class="feature__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 6h16M4 12h10M4 18h16"/>
+              <circle cx="18" cy="12" r="1.5" fill="currentColor"/>
+            </svg>
+            <h3>Live tail with regex</h3>
+            <p>Stream production logs in real time. Filter with regex, jump to traces, no terminal gymnastics required.</p>
+          </article>
+
+          <article class="feature reveal">
+            <svg class="feature__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M3 12h4l3-8 4 16 3-8h4"/>
+            </svg>
+            <h3>OpenTelemetry native</h3>
+            <p>Speaks OTLP, Prometheus, and StatsD out of the box. Bring your existing pipeline, switch in minutes.</p>
+          </article>
+
+          <article class="feature reveal">
+            <svg class="feature__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="9"/>
+              <path d="M12 7v10M9.5 10.5h4a1.5 1.5 0 0 1 0 3h-3a1.5 1.5 0 0 0 0 3h4"/>
+            </svg>
+            <h3>Pay only for what you use</h3>
+            <p>Volume-based pricing, no per-host or per-seat fees. Spend caps and forecasts keep bills predictable.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         HOW IT WORKS
+         ============================================================ -->
+    <section class="section" id="how">
+      <div class="container">
+        <div class="features__head reveal">
+          <span class="eyebrow">How it works</span>
+          <h2>From install to insight in three steps.</h2>
+        </div>
+
+        <div class="steps">
+          <article class="step reveal">
+            <div class="step__num">01 &mdash; Install</div>
+            <h3>Add the SDK</h3>
+<pre class="code"><code><span class="tok-pun">$</span> <span class="tok-fn">npm install</span> <span class="tok-str">@pulse/sdk</span></code></pre>
+            <p>One package. Works with any framework &mdash; Next.js, Express, Fastify, Hono, NestJS.</p>
+          </article>
+
+          <article class="step reveal">
+            <div class="step__num">02 &mdash; Initialize</div>
+            <h3>Call init once</h3>
+<pre class="code"><code><span class="tok-com">// app entry</span>
+<span class="tok-kw">import</span> { pulse } <span class="tok-kw">from</span> <span class="tok-str">'@pulse/sdk'</span><span class="tok-pun">;</span>
+
+<span class="tok-fn">pulse</span><span class="tok-pun">.</span><span class="tok-fn">init</span><span class="tok-pun">({</span> key<span class="tok-pun">:</span> <span class="tok-str">'pk_live_xxx'</span> <span class="tok-pun">});</span></code></pre>
+            <p>Auto-instruments HTTP, DB, cache, and queue calls. No manual spans to wire up.</p>
+          </article>
+
+          <article class="step reveal">
+            <div class="step__num">03 &mdash; Observe</div>
+            <h3>See metrics flow in</h3>
+<pre class="code"><code><span class="tok-com"># first traces in seconds</span>
+<span class="tok-kw">GET</span> /api/checkout      <span class="tok-num">142</span><span class="tok-pun">ms</span>  <span class="tok-num">200</span>
+<span class="tok-kw">GET</span> /api/products      <span class="tok-num">28</span><span class="tok-pun">ms</span>   <span class="tok-num">200</span>
+<span class="tok-kw">POST</span> /api/webhook      <span class="tok-num">91</span><span class="tok-pun">ms</span>   <span class="tok-num">200</span></code></pre>
+            <p>Open the dashboard. Latency, errors, and traces stream live with sub-second freshness.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PRICING
+         ============================================================ -->
+    <section class="section" id="pricing">
+      <div class="container">
+        <div class="features__head reveal">
+          <span class="eyebrow">Pricing</span>
+          <h2>Simple, usage-based pricing.</h2>
+          <p>Generous free tier. No credit card to start. Upgrade only when you outgrow it.</p>
+        </div>
+
+        <div class="pricing-grid">
+          <!-- Free -->
+          <article class="price reveal">
+            <div>
+              <div class="price__name">Free</div>
+              <div class="price__amount">$0<span> / forever</span></div>
+              <p class="price__desc">For solo devs and side projects.</p>
+            </div>
+            <ul class="price__list">
+              <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 8 3.5 3.5L13 5"/></svg>50M events / month</li>
+              <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 8 3.5 3.5L13 5"/></svg>3 day retention</li>
+              <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 8 3.5 3.5L13 5"/></svg>2 projects, 1 seat</li>
+              <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 8 3.5 3.5L13 5"/></svg>Community support</li>
+            </ul>
+            <a href="#start" class="btn btn--outline price__cta">Start free</a>
+          </article>
+
+          <!-- Pro (featured) -->
+          <article class="price price--featured reveal">
+            <span class="price__tag">Most popular</span>
+            <div>
+              <div class="price__name">Pro</div>
+              <div class="price__amount">$29<span> / mo</span></div>
+              <p class="price__desc">For growing teams shipping daily.</p>
+            </div>
+            <ul class="price__list">
+              <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 8 3.5 3.5L13 5"/></svg>2B events / month included</li>
+              <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 8 3.5 3.5L13 5"/></svg>30 day retention</li>
+              <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 8 3.5 3.5L13 5"/></svg>Unlimited projects &amp; seats</li>
+              <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 8 3.5 3.5L13 5"/></svg>AI alerts &amp; live tail</li>
+              <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 8 3.5 3.5L13 5"/></svg>Email + Slack support</li>
+            </ul>
+            <a href="#start" class="btn btn--primary price__cta">Start 14-day trial</a>
+          </article>
+
+          <!-- Enterprise -->
+          <article class="price reveal">
+            <div>
+              <div class="price__name">Enterprise</div>
+              <div class="price__amount">Custom</div>
+              <p class="price__desc">For high-volume, regulated workloads.</p>
+            </div>
+            <ul class="price__list">
+              <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 8 3.5 3.5L13 5"/></svg>Unlimited events</li>
+              <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 8 3.5 3.5L13 5"/></svg>13 month retention</li>
+              <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 8 3.5 3.5L13 5"/></svg>SSO, SCIM, audit logs</li>
+              <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 8 3.5 3.5L13 5"/></svg>SOC 2, HIPAA, BYO-cloud</li>
+              <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 8 3.5 3.5L13 5"/></svg>Dedicated engineer</li>
+            </ul>
+            <a href="#contact" class="btn btn--outline price__cta">Talk to sales</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CTA FINAL
+         ============================================================ -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-final reveal">
+          <h2>Ship faster.<br><span style="color:var(--text-muted)">Sleep better.</span></h2>
+          <a href="#start" class="btn btn--primary btn--lg">Start your trial &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a class="brand" href="#top" aria-label="Pulse home">
+            <span class="brand__dot" aria-hidden="true"></span>
+            <span>Pulse</span>
+          </a>
+          <p>Developer-first observability for modern infrastructure. Built by engineers, for engineers.</p>
+        </div>
+
+        <div class="footer__col">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#changelog">Changelog</a></li>
+            <li><a href="#integrations">Integrations</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#docs">Docs</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#guides">Guides</a></li>
+            <li><a href="#status">Status</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#press">Press</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#privacy">Privacy</a></li>
+            <li><a href="#terms">Terms</a></li>
+            <li><a href="#security">Security</a></li>
+            <li><a href="#dpa">DPA</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>&copy; <span data-year>2026</span> Pulse Labs &middot; Demo template &middot; not a real product</span>
+        <div class="footer__social" aria-label="Social links">
+          <a href="#github" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.27-1.69-1.27-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.58.23 2.75.11 3.04.74.81 1.18 1.84 1.18 3.1 0 4.44-2.7 5.41-5.27 5.69.41.36.78 1.05.78 2.13v3.15c0 .31.21.67.8.55A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/>
+            </svg>
+          </a>
+          <a href="#twitter" aria-label="X / Twitter">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M18.244 2H21l-6.52 7.45L22 22h-6.84l-4.78-6.25L4.7 22H2l7-8L1.6 2h6.99l4.32 5.71L18.24 2Zm-2.4 18h1.5L7.24 4H5.66l10.18 16Z"/>
+            </svg>
+          </a>
+          <a href="#discord" aria-label="Discord">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M20.32 4.37A19.5 19.5 0 0 0 15.45 3a14 14 0 0 0-.62 1.27 18.3 18.3 0 0 0-5.66 0A14 14 0 0 0 8.54 3a19.7 19.7 0 0 0-4.87 1.37C.7 8.74-.1 13 .3 17.2a19.6 19.6 0 0 0 6 3.04c.49-.66.92-1.36 1.3-2.1-.71-.27-1.4-.6-2.04-.99.17-.13.34-.26.5-.4 3.94 1.82 8.2 1.82 12.1 0 .17.14.33.27.5.4-.65.39-1.34.72-2.05.99.37.74.81 1.44 1.3 2.1a19.5 19.5 0 0 0 6-3.04c.46-4.86-.83-9.08-3.59-12.83ZM8.02 14.7c-1.18 0-2.16-1.1-2.16-2.43 0-1.34.95-2.44 2.16-2.44 1.2 0 2.18 1.1 2.16 2.44 0 1.33-.95 2.43-2.16 2.43Zm7.96 0c-1.18 0-2.16-1.1-2.16-2.43 0-1.34.95-2.44 2.16-2.44 1.2 0 2.18 1.1 2.16 2.44 0 1.33-.95 2.43-2.16 2.43Z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

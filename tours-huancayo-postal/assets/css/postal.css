@@ -1,0 +1,486 @@
+/* === Postal vintage look · overrides sobre styles.css base ===
+   Inspirado en guías de viajes impresas: bordes dobles, sellos,
+   ornamentos tipográficos, paleta sepia.
+   Carga DESPUÉS de styles.css. */
+
+/* ── Body con textura sutil de papel ── */
+body {
+  background-image:
+    radial-gradient(circle at 25% 30%, rgba(156,135,97,0.04) 1px, transparent 1px),
+    radial-gradient(circle at 75% 80%, rgba(156,135,97,0.04) 1px, transparent 1px);
+  background-size: 24px 24px, 18px 18px;
+}
+
+/* ── Tipografía display: slab serif clásica ── */
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: var(--fw-regular);
+  font-variation-settings: normal;
+  letter-spacing: var(--tracking-tight);
+}
+h1 { font-size: var(--fs-hero); line-height: 1.02; font-weight: 500; }
+h2 { font-size: var(--fs-4xl); font-style: italic; font-weight: 500; }
+h3 { font-size: var(--fs-2xl); font-weight: 600; font-style: normal; }
+em { font-style: italic; color: var(--color-secondary); font-family: var(--font-display); font-variation-settings: normal; }
+
+/* ── Eyebrow estilo "encabezado de columna" ── */
+.eyebrow {
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wider);
+  color: var(--color-accent);
+  font-weight: var(--fw-medium);
+  font-size: var(--fs-2xs);
+}
+.eyebrow::before { background: var(--color-accent); width: 28px; height: 1px; opacity: 1; }
+
+/* ── Botones con borde doble (estilo sello postal) ── */
+.btn {
+  border-radius: 0;
+  padding: 0.95rem 1.85rem;
+  font-family: var(--font-sans);
+  font-weight: var(--fw-semibold);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: var(--fs-xs);
+  border: 1px solid var(--color-accent);
+  box-shadow: 4px 4px 0 var(--color-accent);
+  transition: transform var(--dur-fast) var(--ease-out),
+              box-shadow var(--dur-fast) var(--ease-out),
+              background var(--dur-base);
+}
+.btn--lg { padding: 1.1rem 2.1rem; font-size: var(--fs-sm); }
+.btn--primary { background: var(--color-accent); color: var(--color-bg); }
+.btn--primary:hover {
+  background: var(--color-accent-hover);
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 var(--color-accent);
+}
+.btn--soft {
+  background: var(--color-bg);
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+.btn--soft:hover {
+  background: var(--color-accent);
+  color: var(--color-bg);
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 var(--color-accent);
+}
+
+/* ── Banner demo · estilo sello ── */
+.demo-banner {
+  background: var(--color-secondary);
+  color: var(--color-bg-soft);
+  border-bottom: 2px solid var(--color-secondary);
+  font-family: var(--font-mono);
+  font-weight: var(--fw-medium);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: var(--fs-2xs);
+}
+
+/* ── Navbar editorial ── */
+.nav { border-bottom: 1px solid transparent; }
+.nav.is-scrolled {
+  background-color: color-mix(in srgb, var(--color-bg) 92%, transparent);
+  border-bottom-color: var(--color-hairline);
+  backdrop-filter: blur(8px) saturate(110%);
+  -webkit-backdrop-filter: blur(8px) saturate(110%);
+}
+.nav__logo {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-style: italic;
+  letter-spacing: -0.01em;
+  font-variation-settings: normal;
+}
+.nav__logo strong { color: var(--color-secondary); font-weight: 700; font-style: normal; }
+.nav__logo svg { color: var(--color-secondary); }
+.nav__menu a {
+  color: var(--color-text);
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: var(--fs-2xs);
+  font-weight: var(--fw-medium);
+}
+.nav__menu a:not(.btn):hover { color: var(--color-secondary); }
+.nav__menu a:not(.btn)::after { background: var(--color-secondary); }
+.nav__menu a.btn { color: var(--color-bg); }
+.nav__phone { color: var(--color-secondary) !important; }
+
+/* ── Hero estilo portada de revista ── */
+.hero {
+  padding-block: var(--space-16) var(--space-24);
+  position: relative;
+}
+.hero::before {
+  /* Marco doble decorativo del lado izquierdo */
+  content: '';
+  position: absolute;
+  top: var(--space-12); bottom: var(--space-12);
+  left: 16px; width: 8px;
+  border-left: 1px solid var(--color-hairline);
+  border-right: 1px solid var(--color-hairline);
+  display: none;
+}
+@media (min-width: 1024px) {
+  .hero::before { display: block; }
+}
+.hero__grid {
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: var(--space-12);
+  align-items: center;
+}
+.hero h1 em { font-weight: 400; }
+.hero__sub {
+  color: var(--color-text);
+  font-size: var(--fs-lg);
+  line-height: 1.6;
+  border-left: 3px double var(--color-accent);
+  padding-left: var(--space-4);
+  font-style: italic;
+  max-width: 48ch;
+}
+.hero__photo {
+  border: 1px solid var(--color-hairline);
+  padding: 12px;
+  background: var(--color-bg-soft);
+  position: relative;
+}
+.hero__photo::after {
+  /* Sello tipo "Visto bueno" */
+  content: 'Huancayo · Perú';
+  position: absolute;
+  top: -14px; right: 20px;
+  background: var(--color-bg);
+  font-family: var(--font-mono);
+  font-size: var(--fs-2xs);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  padding: 4px 10px;
+  border: 1px solid var(--color-accent);
+}
+.hero__chip {
+  background: var(--color-bg-soft);
+  border: 1px solid var(--color-hairline);
+  font-family: var(--font-mono);
+  font-size: var(--fs-2xs);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+.hero__chip strong { font-family: var(--font-display); font-style: italic; font-weight: 600; }
+.hero__stats {
+  margin-top: var(--space-16);
+  padding-block: var(--space-8);
+  border-top: 1px solid var(--color-hairline);
+  border-bottom: 1px solid var(--color-hairline);
+  position: relative;
+}
+.hero__stats::before,
+.hero__stats::after {
+  content: '';
+  position: absolute; left: 0; right: 0; height: 1px;
+  background: var(--color-hairline);
+}
+.hero__stats::before { top: 4px; }
+.hero__stats::after { bottom: 4px; }
+.hero__stats strong { font-family: var(--font-display); color: var(--color-secondary); font-style: italic; }
+.hero__stats span { font-family: var(--font-mono); text-transform: uppercase; letter-spacing: 0.1em; font-size: var(--fs-2xs); }
+
+.hero__trustbar {
+  background: var(--color-bg-soft);
+  border: 1px solid var(--color-hairline);
+  border-radius: 0;
+  font-family: var(--font-mono);
+  letter-spacing: 0.06em;
+  font-size: var(--fs-xs);
+  text-transform: uppercase;
+}
+.hero__trustbar-google {
+  background: var(--color-secondary);
+  color: var(--color-bg);
+  font-family: var(--font-display);
+  font-style: italic;
+}
+.hero__logos {
+  color: var(--color-text-muted);
+  font-family: var(--font-mono);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: var(--fs-2xs);
+}
+
+/* ── Trust strip estilo periódico ── */
+.trust {
+  background: var(--color-bg-alt);
+  border-top: 2px double var(--color-accent);
+  border-bottom: 2px double var(--color-accent);
+}
+.trust__label { font-family: var(--font-mono); color: var(--color-accent); text-transform: uppercase; letter-spacing: 0.15em; }
+.trust__item { font-family: var(--font-display); font-style: italic; color: var(--color-text); }
+
+/* ── Cards con bordes dobles ── */
+.service-card {
+  background: var(--color-bg-soft);
+  border: 1px solid var(--color-hairline);
+  border-radius: 0;
+  padding: var(--space-8);
+  position: relative;
+  transition: transform var(--dur-fast), box-shadow var(--dur-fast);
+}
+.service-card::before {
+  content: '';
+  position: absolute;
+  inset: 6px;
+  border: 1px solid var(--color-hairline);
+  pointer-events: none;
+}
+.service-card:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 var(--color-accent);
+}
+.service-card__num {
+  color: var(--color-secondary);
+  font-family: var(--font-mono);
+  font-style: normal;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+.service-card__icon {
+  background: var(--color-bg);
+  border: 1px solid var(--color-hairline);
+  border-radius: 0;
+}
+.service-card h3 { font-family: var(--font-display); font-weight: 600; }
+.service-card--feature {
+  background: var(--color-bg-soft);
+  border: 2px solid var(--color-accent);
+}
+.service-card--feature::before { border-color: var(--color-accent); }
+.service-card__link {
+  color: var(--color-accent);
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: var(--fs-2xs);
+  border-top: 1px solid var(--color-hairline);
+}
+
+/* ── Process steps ── */
+.process-step__num {
+  color: var(--color-secondary);
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 500;
+}
+
+/* ── Team cards ── */
+.team-card {
+  background: var(--color-bg-soft);
+  border: 1px solid var(--color-hairline);
+  border-radius: 0;
+  padding: 8px;
+}
+.team-card__media { border: 1px solid var(--color-hairline); }
+.team-card__info { border-top: 1px dashed var(--color-hairline); padding-top: var(--space-3); }
+.team-card h3 { font-family: var(--font-display); font-weight: 600; }
+.team-card__role { font-family: var(--font-mono); text-transform: uppercase; letter-spacing: 0.1em; font-size: var(--fs-2xs); }
+.team-card__cred { font-family: var(--font-mono); font-size: var(--fs-2xs); letter-spacing: 0.1em; color: var(--color-text-muted); }
+
+/* ── Marquee ── */
+.marquee__item {
+  background: var(--color-bg-soft);
+  border: 1px solid var(--color-hairline);
+  border-radius: 0;
+  padding: 8px;
+}
+.marquee__item img { border: 1px solid var(--color-hairline); }
+.marquee__item figcaption {
+  background: var(--color-bg);
+  color: var(--color-accent);
+  font-family: var(--font-mono);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-size: var(--fs-2xs);
+  border: 1px solid var(--color-hairline);
+}
+
+/* ── Pricing cards (estilo ticket) ── */
+.pricing-card {
+  background: var(--color-bg-soft);
+  border: 1px solid var(--color-hairline);
+  border-radius: 0;
+  padding: var(--space-8);
+  position: relative;
+}
+.pricing-card::before {
+  content: '';
+  position: absolute;
+  inset: 6px;
+  border: 1px dashed var(--color-hairline);
+  pointer-events: none;
+}
+.pricing-card__tag {
+  color: var(--color-secondary);
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: var(--fs-2xs);
+}
+.pricing-card__price { font-family: var(--font-display); font-weight: 500; color: var(--color-accent); }
+.pricing-card__price em { color: var(--color-secondary); font-style: italic; }
+.pricing-card__note { font-family: var(--font-mono); font-size: var(--fs-2xs); text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-text-muted); }
+.pricing-card--feature {
+  background: var(--color-bg-soft);
+  border: 2px solid var(--color-accent);
+}
+.pricing-card--feature::before { border-color: var(--color-accent); }
+
+/* ── Result cards (itinerarios) ── */
+.result-card { background: var(--color-bg-soft); border: 1px solid var(--color-hairline); border-radius: 0; padding: 12px; }
+.result-card__pair figure { border: 1px solid var(--color-hairline); }
+.result-card figcaption {
+  background: var(--color-accent);
+  color: var(--color-bg);
+  font-family: var(--font-mono);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-size: var(--fs-2xs);
+  border-radius: 0;
+}
+.result-card__info h3 { font-family: var(--font-display); }
+.result-card__info p { font-family: var(--font-mono); text-transform: uppercase; letter-spacing: 0.08em; font-size: var(--fs-xs); }
+
+/* ── Reviews · estilo carta ── */
+.review--feature, .review--small {
+  background: var(--color-bg-soft);
+  border: 1px solid var(--color-hairline);
+  border-radius: 0;
+  position: relative;
+  padding: var(--space-8);
+}
+.review--feature::before, .review--small::before {
+  content: '';
+  position: absolute;
+  inset: 6px;
+  border: 1px solid var(--color-hairline);
+  pointer-events: none;
+}
+.review__stars { color: var(--color-secondary); font-family: var(--font-display); }
+.review__avatar {
+  background: var(--color-secondary);
+  color: var(--color-bg);
+  border-radius: 0;
+  font-family: var(--font-display);
+  font-style: italic;
+}
+.review__name { font-family: var(--font-display); font-weight: 600; }
+.review__role { font-family: var(--font-mono); text-transform: uppercase; letter-spacing: 0.1em; font-size: var(--fs-2xs); }
+
+/* ── FAQ ── */
+.faq details {
+  background: var(--color-bg-soft);
+  border: 1px solid var(--color-hairline);
+  border-radius: 0;
+}
+.faq summary { font-family: var(--font-display); font-weight: 600; font-size: var(--fs-lg); }
+.faq p { font-family: var(--font-sans); }
+
+/* ── CTA card ── */
+.cta { background: var(--color-bg-alt); }
+.cta__card {
+  background: var(--color-bg-soft);
+  border: 2px solid var(--color-accent);
+  border-radius: 0;
+  box-shadow: 8px 8px 0 var(--color-accent);
+}
+.cta__form input,
+.cta__form select,
+.cta__form textarea {
+  background: var(--color-bg);
+  border: 1px solid var(--color-hairline);
+  border-radius: 0;
+  color: var(--color-text);
+  font-family: var(--font-sans);
+}
+.cta__form input:focus,
+.cta__form select:focus,
+.cta__form textarea:focus {
+  outline: none;
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-accent) 18%, transparent);
+}
+.cta__form label > span {
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: var(--fs-2xs);
+  color: var(--color-accent);
+}
+
+/* ── Footer ── */
+.footer { background: var(--color-bg-soft); border-top: 2px double var(--color-accent); color: var(--color-text); }
+.footer h4 {
+  font-family: var(--font-mono);
+  color: var(--color-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: var(--fs-2xs);
+}
+.footer__legal { border-top-color: var(--color-hairline); }
+.footer__legal p { font-family: var(--font-mono); text-transform: uppercase; letter-spacing: 0.08em; font-size: var(--fs-2xs); }
+.footer code {
+  background: var(--color-bg);
+  color: var(--color-secondary);
+  font-family: var(--font-mono);
+  border: 1px solid var(--color-hairline);
+  border-radius: 0;
+  padding: 2px 6px;
+}
+
+/* ── CTA sticky móvil ── */
+.cta-sticky {
+  background: var(--color-bg-soft);
+  border-top: 2px double var(--color-accent);
+  box-shadow: 0 -8px 24px rgba(45,42,32,0.15);
+}
+.cta-sticky__btn {
+  border-radius: 0;
+  font-family: var(--font-sans);
+  font-weight: var(--fw-semibold);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: var(--fs-xs);
+  border: 1px solid var(--color-accent);
+}
+.cta-sticky__btn--ghost { color: var(--color-accent); }
+.cta-sticky__btn--primary { background: var(--color-accent); color: var(--color-bg); }
+
+/* ── Selection y focus ── */
+::selection { background: var(--color-secondary); color: var(--color-bg); }
+:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 3px; }
+.skip-link { background: var(--color-accent); color: var(--color-bg); border-radius: 0; }
+
+/* ── Divider tipográfico decorativo ── */
+.divider-ornament {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  color: var(--color-secondary);
+  font-family: var(--font-display);
+  font-size: var(--fs-2xl);
+  font-style: italic;
+  margin-block: var(--space-8);
+}
+.divider-ornament::before,
+.divider-ornament::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--color-hairline);
+  max-width: 120px;
+}

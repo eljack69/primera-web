@@ -1,0 +1,68 @@
+/* ============================================
+   Lira · Design tokens
+   Estética: Swiss / grid puro · Sin color de acento
+   ============================================ */
+
+:root {
+  /* --- Color · paleta restringida B&W --- */
+  --color-bg: #f4f4f2;          /* off-white */
+  --color-ink: #0a0a0a;         /* casi-negro */
+  --color-mute: #7a7a78;        /* gris medio · captions, meta */
+  --color-hairline: #d8d8d6;    /* 1px separators */
+  --color-paper: #ffffff;       /* card neutro raro */
+
+  /* --- Tipografía --- */
+  --font-display: 'Sora', 'Inter', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-serif: 'EB Garamond', 'Times New Roman', serif;
+
+  /* --- Tracking --- */
+  --tracking-tight: -0.025em;
+  --tracking-base: 0;
+  --tracking-wide: 0.12em;
+  --tracking-xwide: 0.18em;
+
+  /* --- Tamaños · escala modular --- */
+  --fs-12: 0.75rem;
+  --fs-13: 0.8125rem;
+  --fs-14: 0.875rem;
+  --fs-15: 0.9375rem;
+  --fs-16: 1rem;
+  --fs-18: 1.125rem;
+  --fs-20: 1.25rem;
+  --fs-24: 1.5rem;
+  --fs-32: 2rem;
+  --fs-40: 2.5rem;
+  --fs-56: 3.5rem;
+  --fs-72: 4.5rem;
+  --fs-96: 6rem;
+  --fs-128: 8rem;
+
+  /* --- Spacing · ritmo vertical en 8px --- */
+  --s-1: 0.25rem;
+  --s-2: 0.5rem;
+  --s-3: 0.75rem;
+  --s-4: 1rem;
+  --s-6: 1.5rem;
+  --s-8: 2rem;
+  --s-12: 3rem;
+  --s-16: 4rem;
+  --s-24: 6rem;
+  --s-32: 8rem;
+  --s-48: 12rem;
+
+  /* --- Grid --- */
+  --col-gap: 1.25rem;
+  --row-gap: 1.5rem;
+  --page-pad: clamp(1.25rem, 4vw, 3rem);
+
+  /* --- Radios --- */
+  --r-0: 0;
+  --r-btn: 4px;
+
+  /* --- Motion --- */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --t-fast: 180ms;
+  --t-med: 380ms;
+  --t-slow: 700ms;
+}

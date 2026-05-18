@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0a0a0a" />
+  <title>[Demo] Forja Studio · Estudio fitness boutique en San Isidro</title>
+  <meta name="description" content="Plantilla demo de estudio fitness boutique en San Isidro, Lima. Clases grupales de HIIT, fuerza y movilidad. 45 min, máximo 12 personas. Sitio demo con web + chatbot WhatsApp." />
+  <meta name="robots" content="noindex,nofollow" />
+  <link rel="canonical" href="https://eljack69.github.io/primera-web/gimnasio-demo/" />
+
+  <meta property="og:title" content="[Demo] Forja Studio · Estudio fitness boutique" />
+  <meta property="og:description" content="Plantilla demo de gimnasio boutique en Lima. Web + chatbot WhatsApp por S/. 1,500." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://eljack69.github.io/primera-web/gimnasio-demo/" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=80" />
+  <meta property="og:locale" content="es_PE" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin />
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1600&q=80" fetchpriority="high" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HealthClub",
+    "name": "Forja Studio (DEMO — datos ficticios)",
+    "description": "Estudio fitness boutique con clases grupales de HIIT, fuerza y movilidad. Plantilla demo, todos los datos son placeholder.",
+    "url": "https://eljack69.github.io/primera-web/gimnasio-demo/",
+    "telephone": "+51 978 303 358",
+    "image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=80",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. Pardo y Aliaga 640",
+      "addressLocality": "San Isidro",
+      "addressRegion": "Lima",
+      "postalCode": "15073",
+      "addressCountry": "PE"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "06:00", "closes": "21:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "14:00" }
+    ],
+    "priceRange": "S/. 45 – S/. 380",
+    "amenityFeature": [
+      { "@type": "LocationFeatureSpecification", "name": "Clases grupales HIIT" },
+      { "@type": "LocationFeatureSpecification", "name": "Clases de fuerza" },
+      { "@type": "LocationFeatureSpecification", "name": "Clases de movilidad" },
+      { "@type": "LocationFeatureSpecification", "name": "Cupo máximo 12 personas" }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <div class="demo-banner" role="note" aria-label="Aviso de plantilla demo">
+    Plantilla demo · clases, precios y horarios son ficticios
+  </div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav">
+    <div class="container--wide">
+      <div class="nav__inner">
+        <a href="#" class="nav__logo" aria-label="Forja Studio · Inicio">
+          Forja<span>/</span>Studio
+        </a>
+        <nav aria-label="Navegación principal">
+          <ul class="nav__links" id="menu">
+            <li><a class="nav__link" href="#clases">Clases</a></li>
+            <li><a class="nav__link" href="#horario">Horario</a></li>
+            <li><a class="nav__link" href="#membresias">Membresías</a></li>
+            <li><a class="nav__link" href="#visit">Reserva</a></li>
+          </ul>
+        </nav>
+        <a href="https://wa.me/51978303358?text=Hola%20Forja%20Studio%2C%20quiero%20reservar%20una%20clase%20de%20prueba%20gratis." class="btn btn--primary nav__cta" target="_blank" rel="noopener">
+          Prueba gratis
+        </a>
+        <button class="nav__toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">
+          <span class="nav__toggle-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="hero__bg" aria-hidden="true">
+        <img
+          src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1600&q=80"
+          alt=""
+          width="1600" height="1067"
+          loading="eager"
+          fetchpriority="high" />
+      </div>
+      <div class="container--wide hero__inner">
+        <div>
+          <p class="eyebrow hero__eyebrow">Estudio boutique · San Isidro</p>
+          <h1 class="hero__title">
+            Entrena duro.<br>
+            Entrena corto.<br>
+            Entrena <span>bien.</span>
+          </h1>
+          <p class="hero__lede">
+            Sesiones de 45 minutos, máximo 12 personas, todos los días desde las 6 am.
+            Sin máquinas. Sin clichés. Sin excusas.
+          </p>
+          <div class="hero__cta">
+            <a href="https://wa.me/51978303358?text=Hola%20Forja%20Studio%2C%20quiero%20reservar%20una%20clase%20de%20prueba%20gratis." class="btn btn--whatsapp btn--lg" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm0 18.15h-.01c-1.48 0-2.93-.4-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.247 8.247 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.16.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.42-.14 0-.31-.02-.48-.02s-.43.06-.66.31c-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29z"/></svg>
+              Reservar clase de prueba gratis
+            </a>
+            <a href="#horario" class="btn btn--ghost btn--lg">Ver horario</a>
+          </div>
+        </div>
+      </div>
+      <div class="hero__meta" aria-hidden="true">
+        <div><strong>45'</strong>por sesión</div>
+        <div><strong>12</strong>personas máx.</div>
+        <div><strong>6am</strong>primera clase</div>
+      </div>
+    </section>
+
+    <!-- ============ CLASES ============ -->
+    <section class="section clases" id="clases" data-reveal>
+      <div class="container--wide">
+        <div class="section__head">
+          <p class="eyebrow">Las clases</p>
+          <h2>Cuatro formatos. Una intensidad.</h2>
+          <p>Programación rotativa cada semana. Cada clase está diseñada para 45 minutos de trabajo real, sin relleno ni tiempo muerto.</p>
+        </div>
+
+        <div class="clases__grid">
+
+          <article class="clase" data-reveal>
+            <div class="clase__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg>
+            </div>
+            <h3 class="clase__name">Forja <em>Power</em></h3>
+            <p class="clase__desc">HIIT puro. Circuitos cortos, descansos breves, frecuencia cardiaca alta de principio a fin.</p>
+            <div class="clase__meta">
+              <span><strong>45'</strong></span>
+              <span>Intensidad <strong>Alta</strong></span>
+            </div>
+          </article>
+
+          <article class="clase" data-reveal>
+            <div class="clase__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 6.5L17.5 17.5M3 9l3-3M21 15l-3 3M6 21l3-3M18 6l-3-3M9 9l6 6"/></svg>
+            </div>
+            <h3 class="clase__name">Forja <em>Strength</em></h3>
+            <p class="clase__desc">Fuerza con barras, mancuernas y kettlebells. Técnica primero, carga después. Patrón clásico.</p>
+            <div class="clase__meta">
+              <span><strong>45'</strong></span>
+              <span>Intensidad <strong>Media-Alta</strong></span>
+            </div>
+          </article>
+
+          <article class="clase" data-reveal>
+            <div class="clase__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12c4-6 14-6 18 0M3 12c4 6 14 6 18 0M12 4v16"/></svg>
+            </div>
+            <h3 class="clase__name">Forja <em>Flow</em></h3>
+            <p class="clase__desc">Movilidad, control y respiración. Recuperación activa para las semanas de mucha carga.</p>
+            <div class="clase__meta">
+              <span><strong>45'</strong></span>
+              <span>Intensidad <strong>Baja</strong></span>
+            </div>
+          </article>
+
+          <article class="clase" data-reveal>
+            <div class="clase__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3v18M3 12h18M5.5 5.5l13 13M18.5 5.5l-13 13"/></svg>
+            </div>
+            <h3 class="clase__name">Forja <em>Mix</em></h3>
+            <p class="clase__desc">Bloques de fuerza + cardio en la misma sesión. La clase favorita de quienes ya entrenan hace tiempo.</p>
+            <div class="clase__meta">
+              <span><strong>45'</strong></span>
+              <span>Intensidad <strong>Alta</strong></span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HORARIO ============ -->
+    <section class="section horario" id="horario" data-reveal>
+      <div class="container--wide">
+        <div class="section__head">
+          <p class="eyebrow">Horario semanal</p>
+          <h2>Reserva tu hora.</h2>
+          <p>Hasta 30 clases a la semana. Reserva con el chatbot de WhatsApp o entra a tu cuenta. Cupos limitados — el bot te avisa si se libera un slot.</p>
+        </div>
+
+        <div class="horario__wrap">
+          <div class="horario__table" role="table" aria-label="Horario semanal de clases">
+            <div class="horario__cell horario__head"></div>
+            <div class="horario__cell horario__head" role="columnheader">Lun</div>
+            <div class="horario__cell horario__head" role="columnheader">Mar</div>
+            <div class="horario__cell horario__head" role="columnheader">Mié</div>
+            <div class="horario__cell horario__head" role="columnheader">Jue</div>
+            <div class="horario__cell horario__head" role="columnheader">Vie</div>
+            <div class="horario__cell horario__head" role="columnheader">Sáb</div>
+
+            <div class="horario__cell horario__hour">06:00</div>
+            <div class="horario__cell"><span class="horario__class">Power</span><span class="horario__coach">Mateo</span></div>
+            <div class="horario__cell"><span class="horario__class">Strength</span><span class="horario__coach">Camila</span></div>
+            <div class="horario__cell"><span class="horario__class">Power</span><span class="horario__coach">Mateo</span></div>
+            <div class="horario__cell"><span class="horario__class">Strength</span><span class="horario__coach">Camila</span></div>
+            <div class="horario__cell"><span class="horario__class">Mix</span><span class="horario__coach">Diego</span></div>
+            <div class="horario__cell horario__cell--empty"></div>
+
+            <div class="horario__cell horario__hour">07:00</div>
+            <div class="horario__cell"><span class="horario__class">Strength</span><span class="horario__coach">Camila</span></div>
+            <div class="horario__cell"><span class="horario__class">Power</span><span class="horario__coach">Mateo</span></div>
+            <div class="horario__cell"><span class="horario__class">Mix</span><span class="horario__coach">Diego</span></div>
+            <div class="horario__cell"><span class="horario__class">Power</span><span class="horario__coach">Mateo</span></div>
+            <div class="horario__cell"><span class="horario__class">Strength</span><span class="horario__coach">Camila</span></div>
+            <div class="horario__cell"><span class="horario__class">Power</span><span class="horario__coach">Mateo</span></div>
+
+            <div class="horario__cell horario__hour">12:30</div>
+            <div class="horario__cell"><span class="horario__class">Mix</span><span class="horario__coach">Diego</span></div>
+            <div class="horario__cell"><span class="horario__class">Mix</span><span class="horario__coach">Diego</span></div>
+            <div class="horario__cell"><span class="horario__class">Power</span><span class="horario__coach">Mateo</span></div>
+            <div class="horario__cell"><span class="horario__class">Mix</span><span class="horario__coach">Diego</span></div>
+            <div class="horario__cell"><span class="horario__class">Mix</span><span class="horario__coach">Diego</span></div>
+            <div class="horario__cell"><span class="horario__class">Mix</span><span class="horario__coach">Diego</span></div>
+
+            <div class="horario__cell horario__hour">18:00</div>
+            <div class="horario__cell"><span class="horario__class">Power</span><span class="horario__coach">Mateo</span></div>
+            <div class="horario__cell"><span class="horario__class">Strength</span><span class="horario__coach">Camila</span></div>
+            <div class="horario__cell"><span class="horario__class">Power</span><span class="horario__coach">Mateo</span></div>
+            <div class="horario__cell"><span class="horario__class">Strength</span><span class="horario__coach">Camila</span></div>
+            <div class="horario__cell"><span class="horario__class">Flow</span><span class="horario__coach">Camila</span></div>
+            <div class="horario__cell horario__cell--empty"></div>
+
+            <div class="horario__cell horario__hour">19:15</div>
+            <div class="horario__cell"><span class="horario__class">Strength</span><span class="horario__coach">Camila</span></div>
+            <div class="horario__cell"><span class="horario__class">Mix</span><span class="horario__coach">Diego</span></div>
+            <div class="horario__cell"><span class="horario__class">Strength</span><span class="horario__coach">Camila</span></div>
+            <div class="horario__cell"><span class="horario__class">Mix</span><span class="horario__coach">Diego</span></div>
+            <div class="horario__cell"><span class="horario__class">Strength</span><span class="horario__coach">Camila</span></div>
+            <div class="horario__cell horario__cell--empty"></div>
+
+            <div class="horario__cell horario__hour">20:30</div>
+            <div class="horario__cell"><span class="horario__class">Flow</span><span class="horario__coach">Camila</span></div>
+            <div class="horario__cell"><span class="horario__class">Power</span><span class="horario__coach">Mateo</span></div>
+            <div class="horario__cell"><span class="horario__class">Flow</span><span class="horario__coach">Camila</span></div>
+            <div class="horario__cell"><span class="horario__class">Power</span><span class="horario__coach">Mateo</span></div>
+            <div class="horario__cell horario__cell--empty"></div>
+            <div class="horario__cell horario__cell--empty"></div>
+          </div>
+        </div>
+
+        <p class="horario__note">Cupo máximo 12 personas por clase · Cancela hasta 4 horas antes sin cargo</p>
+      </div>
+    </section>
+
+    <!-- ============ MEMBRESÍAS ============ -->
+    <section class="section membresias" id="membresias" data-reveal>
+      <div class="container--wide">
+        <div class="section__head">
+          <p class="eyebrow">Membresías</p>
+          <h2>Paga lo que entrenas.</h2>
+          <p>Tres planes simples. Sin contrato anual, sin penalidades, sin letra chica. Cambia o cancela cuando quieras.</p>
+        </div>
+
+        <div class="membresias__grid">
+
+          <article class="plan" data-reveal>
+            <h3 class="plan__name">Drop-in</h3>
+            <p class="plan__price">S/.&nbsp;45 <small>por clase</small></p>
+            <ul class="plan__features">
+              <li>Una clase suelta, cualquier formato</li>
+              <li>Sin compromiso de continuidad</li>
+              <li>Reserva por WhatsApp o web</li>
+              <li>Ideal para probar el estudio</li>
+            </ul>
+            <a href="https://wa.me/51978303358?text=Hola%20Forja%20Studio%2C%20quiero%20una%20clase%20Drop-in." class="btn btn--ghost" target="_blank" rel="noopener">
+              Reservar por WhatsApp
+            </a>
+          </article>
+
+          <article class="plan plan--featured" data-reveal>
+            <span class="plan__tag">Más elegido</span>
+            <h3 class="plan__name">8 clases / mes</h3>
+            <p class="plan__price">S/.&nbsp;280 <small>al mes</small></p>
+            <ul class="plan__features">
+              <li>Ocho clases para usar en 30 días</li>
+              <li>Cualquier horario, cualquier formato</li>
+              <li>Pausa hasta 7 días por viaje</li>
+              <li>S/. 35 por clase — el mejor ratio</li>
+            </ul>
+            <a href="https://wa.me/51978303358?text=Hola%20Forja%20Studio%2C%20quiero%20el%20plan%208%20clases." class="btn btn--primary" target="_blank" rel="noopener">
+              Reservar prueba gratis
+            </a>
+          </article>
+
+          <article class="plan" data-reveal>
+            <h3 class="plan__name">Ilimitado</h3>
+            <p class="plan__price">S/.&nbsp;380 <small>al mes</small></p>
+            <ul class="plan__features">
+              <li>Clases ilimitadas, todos los formatos</li>
+              <li>Reserva con 7 días de anticipación</li>
+              <li>Invita a un amigo una vez al mes</li>
+              <li>Acceso a workshops mensuales</li>
+            </ul>
+            <a href="https://wa.me/51978303358?text=Hola%20Forja%20Studio%2C%20quiero%20el%20plan%20Ilimitado." class="btn btn--ghost" target="_blank" rel="noopener">
+              Reservar por WhatsApp
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ COACHES ============ -->
+    <section class="section coaches" id="coaches" data-reveal>
+      <div class="container--wide">
+        <div class="section__head">
+          <p class="eyebrow">Coaches</p>
+          <h2>Tres entrenadores. Cero ego.</h2>
+          <p>El equipo completo tiene certificación internacional y al menos seis años entrenando grupos pequeños. Vienen del deporte, no del Instagram.</p>
+        </div>
+
+        <div class="coaches__grid">
+
+          <article class="coach" data-reveal>
+            <figure class="coach__photo">
+              <img
+                src="https://images.unsplash.com/photo-1567013127542-490d757e51fc?auto=format&fit=crop&w=600&q=80"
+                alt="Retrato del coach Mateo Reyes"
+                width="600" height="750"
+                loading="lazy" />
+            </figure>
+            <div class="coach__body">
+              <h3 class="coach__name">Mateo Reyes</h3>
+              <p class="coach__role">HIIT · Power</p>
+              <p class="coach__bio">Ex jugador de rugby, NSCA-CPT. Cree que una buena clase debería dejarte sin palabras, no sin rodillas.</p>
+            </div>
+          </article>
+
+          <article class="coach" data-reveal>
+            <figure class="coach__photo">
+              <img
+                src="https://images.unsplash.com/photo-1594381898411-846e7d193883?auto=format&fit=crop&w=600&q=80"
+                alt="Retrato de la coach Camila Vega"
+                width="600" height="750"
+                loading="lazy" />
+            </figure>
+            <div class="coach__body">
+              <h3 class="coach__name">Camila Vega</h3>
+              <p class="coach__role">Fuerza · Movilidad</p>
+              <p class="coach__bio">Powerlifter regional. Diez años puliendo técnica de barra. Te corrige sin gritar y te explica el porqué.</p>
+            </div>
+          </article>
+
+          <article class="coach" data-reveal>
+            <figure class="coach__photo">
+              <img
+                src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=600&q=80"
+                alt="Retrato del coach Diego Salas"
+                width="600" height="750"
+                loading="lazy" />
+            </figure>
+            <div class="coach__body">
+              <h3 class="coach__name">Diego Salas</h3>
+              <p class="coach__role">Mix · Programación</p>
+              <p class="coach__bio">Licenciado en Ciencias del Deporte. Diseña los bloques semanales. Su trabajo es que progreses sin que te lesiones.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CHATBOT DESTACADO ============ -->
+    <section class="section chatbot" id="chatbot" data-reveal>
+      <div class="container--wide">
+        <div class="chatbot__inner">
+          <div class="chatbot__copy">
+            <p class="eyebrow">Reserva por WhatsApp · 24/7</p>
+            <h2>Tu cupo, en <em>tres mensajes</em>.</h2>
+            <p class="chatbot__lede">
+              Nuestro asistente automático responde al toque. Reserva, cancela o reagenda sin descargar nada,
+              sin esperar respuesta, sin llamar a nadie. Sólo WhatsApp.
+            </p>
+            <ul class="chatbot__list">
+              <li>Reserva, cancela y reagenda en segundos</li>
+              <li>Te avisa si se libera un cupo en una clase llena</li>
+              <li>Recordatorio 2 horas antes de tu clase</li>
+              <li>Atiende 24/7, incluso a las 5 am del lunes</li>
+            </ul>
+            <a href="https://wa.me/51978303358?text=Hola%20Forja%20Studio%2C%20quiero%20probar%20una%20clase." class="btn btn--whatsapp btn--lg" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm0 18.15h-.01c-1.48 0-2.93-.4-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.247 8.247 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.16.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.42-.14 0-.31-.02-.48-.02s-.43.06-.66.31c-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29z"/></svg>
+              Probar el chatbot ahora
+            </a>
+          </div>
+
+          <div class="phone" aria-label="Simulación de conversación con el chatbot de WhatsApp" role="img">
+            <div class="phone__screen">
+              <div class="phone__header">
+                <div class="phone__avatar">F</div>
+                <div class="phone__contact">
+                  <strong>Forja Studio</strong>
+                  <small>en línea</small>
+                </div>
+              </div>
+              <div class="phone__chat">
+                <div class="bubble bubble--out">
+                  Hola, quiero probar una clase 🏋️
+                  <small>9:14</small>
+                </div>
+                <div class="bubble bubble--in">
+                  ¡Bienvenido a <strong>Forja Studio</strong>! 👊 Tu primera clase es gratis. ¿Cómo te llamas?
+                  <small>9:14</small>
+                </div>
+                <div class="bubble bubble--out">
+                  Soy Andrea
+                  <small>9:15</small>
+                </div>
+                <div class="bubble bubble--in">
+                  Genial Andrea. ¿Has entrenado en grupo antes? Responde <strong>1</strong> Sí · <strong>2</strong> No
+                  <small>9:15</small>
+                </div>
+                <div class="bubble bubble--out">
+                  2
+                  <small>9:15</small>
+                </div>
+                <div class="bubble bubble--in bubble--cta">
+                  Perfecto. Te recomiendo <strong>Forja Mix</strong> de mañana <strong>7:00 am</strong>. Quedan 3 cupos.<br>
+                  ¿Confirmo tu reserva? <strong>SÍ</strong> / <strong>NO</strong>
+                  <small>9:15</small>
+                </div>
+                <div class="typing" aria-hidden="true">
+                  <span></span><span></span><span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIOS ============ -->
+    <section class="section testimonios" id="testimonios" data-reveal>
+      <div class="container--wide">
+        <div class="section__head">
+          <p class="eyebrow">Lo que dicen</p>
+          <h2>Comunidad real. Resultados reales.</h2>
+        </div>
+
+        <div class="testimonios__grid">
+
+          <figure class="testimonio" data-reveal>
+            <div class="testimonio__stars" aria-label="5 de 5 estrellas">★★★★★</div>
+            <blockquote class="testimonio__quote">
+              "Llevo 8 meses entrenando acá. Es la primera vez que no abandono un gimnasio. El cupo limitado hace toda la diferencia."
+            </blockquote>
+            <figcaption class="testimonio__author">
+              <strong>Andrea M.</strong>
+              <span>32 años · Miembro desde 2024</span>
+            </figcaption>
+          </figure>
+
+          <figure class="testimonio" data-reveal>
+            <div class="testimonio__stars" aria-label="5 de 5 estrellas">★★★★★</div>
+            <blockquote class="testimonio__quote">
+              "Reservar por WhatsApp es lo mejor. Me confirma, me recuerda, y si se libera un cupo me avisa. Cero fricción."
+            </blockquote>
+            <figcaption class="testimonio__author">
+              <strong>Juan Carlos R.</strong>
+              <span>41 años · Miembro desde 2023</span>
+            </figcaption>
+          </figure>
+
+          <figure class="testimonio" data-reveal>
+            <div class="testimonio__stars" aria-label="5 de 5 estrellas">★★★★★</div>
+            <blockquote class="testimonio__quote">
+              "45 minutos bien programados rinden más que dos horas en una cadena. Camila me enseñó a hacer un peso muerto que ya no me molesta la espalda."
+            </blockquote>
+            <figcaption class="testimonio__author">
+              <strong>Lucía P.</strong>
+              <span>28 años · Miembro desde 2025</span>
+            </figcaption>
+          </figure>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ VISITA ============ -->
+    <section class="section visit" id="visit" data-reveal>
+      <div class="container--wide">
+        <div class="visit__inner">
+          <div class="visit__copy">
+            <p class="eyebrow">Visítanos</p>
+            <h2>Tu primera clase es <em>gratis</em>.</h2>
+            <p>
+              Llega 15 minutos antes para conocer el espacio. Trae ropa cómoda y una botella de agua —
+              nosotros ponemos toalla, tapete y ganas.
+            </p>
+
+            <dl class="visit__details">
+              <div class="visit__detail">
+                <dt>Dirección</dt>
+                <dd>Av. Pardo y Aliaga 640<br>San Isidro, Lima</dd>
+              </div>
+              <div class="visit__detail">
+                <dt>Horario</dt>
+                <dd>Lun–Vie · 06:00 – 21:00<br>Sábados · 08:00 – 14:00<br>Domingos cerrado</dd>
+              </div>
+              <div class="visit__detail">
+                <dt>WhatsApp</dt>
+                <dd>+51 978 303 358</dd>
+              </div>
+            </dl>
+
+            <div class="visit__cta">
+              <a href="https://wa.me/51978303358?text=Hola%20Forja%20Studio%2C%20quiero%20reservar%20mi%20clase%20de%20prueba%20gratis." class="btn btn--whatsapp btn--lg" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm0 18.15h-.01c-1.48 0-2.93-.4-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.247 8.247 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.16.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.42-.14 0-.31-.02-.48-.02s-.43.06-.66.31c-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29z"/></svg>
+                Reservar prueba gratis
+              </a>
+              <a href="https://maps.google.com/?q=Av.+Pardo+y+Aliaga+640+San+Isidro+Lima" class="btn btn--ghost btn--lg" target="_blank" rel="noopener">
+                Ver en Maps
+              </a>
+            </div>
+          </div>
+
+          <figure class="visit__visual">
+            <img
+              src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=800&q=80"
+              alt="Interior del estudio Forja con piso de madera, espejos y equipamiento funcional"
+              width="800" height="1000"
+              loading="lazy" />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container--wide">
+      <div class="footer__inner">
+        <div>
+          <p class="footer__brand">Forja<span>/</span>Studio</p>
+          <p style="margin-top: var(--space-3);">Estudio fitness boutique en San Isidro.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Contacto</h4>
+          <p>Av. Pardo y Aliaga 640<br>San Isidro · Lima</p>
+          <a href="https://wa.me/51978303358" target="_blank" rel="noopener">WhatsApp · +51 978 303 358</a>
+          <a href="mailto:hola@forjastudio.demo">hola@forjastudio.demo</a>
+        </div>
+        <div class="footer__col">
+          <h4>Síguenos</h4>
+          <a href="#" target="_blank" rel="noopener">Instagram · @forjastudio</a>
+          <a href="#" target="_blank" rel="noopener">TikTok · @forjastudio</a>
+          <a href="#" target="_blank" rel="noopener">Strava · Forja Run Club</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 Forja Studio · Sitio demo</span>
+        <span>Producido por Agencia Studio Gona Live</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp button -->
+  <a href="https://wa.me/51978303358?text=Hola%20Forja%20Studio%2C%20quiero%20reservar%20una%20clase%20de%20prueba%20gratis." class="fab-wa" target="_blank" rel="noopener" aria-label="Reservar por WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm0 18.15h-.01c-1.48 0-2.93-.4-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.247 8.247 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.16.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.42-.14 0-.31-.02-.48-.02s-.43.06-.66.31c-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29z"/></svg>
+  </a>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
